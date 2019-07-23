@@ -1,3 +1,3 @@
-/Users/forgot/14_CLionProjects/ForgotCLearn/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/forgot/14_CLionProjects/ForgotCLearn/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/forgot/14_CLionProjects/ForgotCLearn/cmake-build-debug/CMakeFiles/ForgotCLearn.dir
+/Users/forgot/14_CLionProjects/ForgotCLearning/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/forgot/14_CLionProjects/ForgotCLearning/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/forgot/14_CLionProjects/ForgotCLearning/cmake-build-debug/CMakeFiles/ForgotCLearning.dir

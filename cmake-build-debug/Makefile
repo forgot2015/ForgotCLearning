@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/forgot/14_CLionProjects/ForgotCLearn
+CMAKE_SOURCE_DIR = /Users/forgot/14_CLionProjects/ForgotCLearning
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/forgot/14_CLionProjects/ForgotCLearn/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/forgot/14_CLionProjects/ForgotCLearning/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/forgot/14_CLionProjects/ForgotCLearn/cmake-build-debug/CMakeFiles /Users/forgot/14_CLionProjects/ForgotCLearn/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/forgot/14_CLionProjects/ForgotCLearning/cmake-build-debug/CMakeFiles /Users/forgot/14_CLionProjects/ForgotCLearning/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/forgot/14_CLionProjects/ForgotCLearn/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/forgot/14_CLionProjects/ForgotCLearning/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ForgotCLearn
+# Target rules for targets named ForgotCLearning
 
 # Build rule for target.
-ForgotCLearn: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ForgotCLearn
-.PHONY : ForgotCLearn
+ForgotCLearning: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ForgotCLearning
+.PHONY : ForgotCLearning
 
 # fast build rule for target.
-ForgotCLearn/fast:
-	$(MAKE) -f CMakeFiles/ForgotCLearn.dir/build.make CMakeFiles/ForgotCLearn.dir/build
-.PHONY : ForgotCLearn/fast
+ForgotCLearning/fast:
+	$(MAKE) -f CMakeFiles/ForgotCLearning.dir/build.make CMakeFiles/ForgotCLearning.dir/build
+.PHONY : ForgotCLearning/fast
 
 main.o: main.c.o
 
@@ -129,7 +129,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) -f CMakeFiles/ForgotCLearn.dir/build.make CMakeFiles/ForgotCLearn.dir/main.c.o
+	$(MAKE) -f CMakeFiles/ForgotCLearning.dir/build.make CMakeFiles/ForgotCLearning.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -138,7 +138,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles/ForgotCLearn.dir/build.make CMakeFiles/ForgotCLearn.dir/main.c.i
+	$(MAKE) -f CMakeFiles/ForgotCLearning.dir/build.make CMakeFiles/ForgotCLearning.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -147,7 +147,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles/ForgotCLearn.dir/build.make CMakeFiles/ForgotCLearn.dir/main.c.s
+	$(MAKE) -f CMakeFiles/ForgotCLearning.dir/build.make CMakeFiles/ForgotCLearning.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... ForgotCLearn"
+	@echo "... ForgotCLearning"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

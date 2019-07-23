@@ -59,45 +59,45 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/forgot/14_CLionProjects/ForgotCLearn
+CMAKE_SOURCE_DIR = /Users/forgot/14_CLionProjects/ForgotCLearning
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/forgot/14_CLionProjects/ForgotCLearn/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/forgot/14_CLionProjects/ForgotCLearning/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/ForgotCLearn.dir
+# Target rules for target CMakeFiles/ForgotCLearning.dir
 
 # All Build rule for target.
-CMakeFiles/ForgotCLearn.dir/all:
-	$(MAKE) -f CMakeFiles/ForgotCLearn.dir/build.make CMakeFiles/ForgotCLearn.dir/depend
-	$(MAKE) -f CMakeFiles/ForgotCLearn.dir/build.make CMakeFiles/ForgotCLearn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/forgot/14_CLionProjects/ForgotCLearn/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ForgotCLearn"
-.PHONY : CMakeFiles/ForgotCLearn.dir/all
+CMakeFiles/ForgotCLearning.dir/all:
+	$(MAKE) -f CMakeFiles/ForgotCLearning.dir/build.make CMakeFiles/ForgotCLearning.dir/depend
+	$(MAKE) -f CMakeFiles/ForgotCLearning.dir/build.make CMakeFiles/ForgotCLearning.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/forgot/14_CLionProjects/ForgotCLearning/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ForgotCLearning"
+.PHONY : CMakeFiles/ForgotCLearning.dir/all
 
 # Include target in all.
-all: CMakeFiles/ForgotCLearn.dir/all
+all: CMakeFiles/ForgotCLearning.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ForgotCLearn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/forgot/14_CLionProjects/ForgotCLearn/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ForgotCLearn.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/forgot/14_CLionProjects/ForgotCLearn/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ForgotCLearn.dir/rule
+CMakeFiles/ForgotCLearning.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/forgot/14_CLionProjects/ForgotCLearning/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ForgotCLearning.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/forgot/14_CLionProjects/ForgotCLearning/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ForgotCLearning.dir/rule
 
 # Convenience name for target.
-ForgotCLearn: CMakeFiles/ForgotCLearn.dir/rule
+ForgotCLearning: CMakeFiles/ForgotCLearning.dir/rule
 
-.PHONY : ForgotCLearn
-
-# clean rule for target.
-CMakeFiles/ForgotCLearn.dir/clean:
-	$(MAKE) -f CMakeFiles/ForgotCLearn.dir/build.make CMakeFiles/ForgotCLearn.dir/clean
-.PHONY : CMakeFiles/ForgotCLearn.dir/clean
+.PHONY : ForgotCLearning
 
 # clean rule for target.
-clean: CMakeFiles/ForgotCLearn.dir/clean
+CMakeFiles/ForgotCLearning.dir/clean:
+	$(MAKE) -f CMakeFiles/ForgotCLearning.dir/build.make CMakeFiles/ForgotCLearning.dir/clean
+.PHONY : CMakeFiles/ForgotCLearning.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ForgotCLearning.dir/clean
 
 .PHONY : clean
 

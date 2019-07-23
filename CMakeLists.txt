@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
-project(ForgotCLearn C)
+project(ForgotCLearning C)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 11)
 
-add_executable(ForgotCLearn main.c)
+add_executable(ForgotCLearning main.c)
