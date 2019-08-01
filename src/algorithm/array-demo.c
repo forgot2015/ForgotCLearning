@@ -7,15 +7,49 @@
 #include <locale.h>
 #include <string.h>
 
+#include <time.h>
+
 void print_array1();
 
 void print_array2();
 
 void print_array3();
 
-int main() {
-//    a[5]占用5个int的内存空间，当前长度为5，后面没赋值的默认为0
-//需要注意的是，“不完全初始化”和“完全不初始化”不一样。如果“完全不初始化”，即只定义“int a[5]；”而不初始化，那么各个元素的值就不是0了，所有元素都是垃圾值。
+void print_string();
+
+void print_string2();
+
+char *getDateTime();
+
+//int main() {
+////    print_array1();
+////    print_array2();
+////    print_array3();
+//
+//    print_string();
+////    print_string2();
+//
+//    char *nowtime = getDateTime();
+//    printf("%s\n", nowtime);
+//
+//    return 0;
+//}
+
+// 获取当前系统时间
+char *getDateTime() {
+    static char nowtime[20];
+    time_t rawtime;
+    struct tm *ltime;
+    time(&rawtime);
+    ltime = localtime(&rawtime);
+    strftime(nowtime, 20, "%Y-%m-%d %H:%M:%S", ltime);
+    return nowtime;
+}
+
+void print_string() {
+    //    a[5]占用5个int的内存空间，当前长度为5，后面没赋值的默认为0
+//需要注意的是，“不完全初始化”和“完全不初始化”不一样。如果“完全不初始化”，即只定义“int a[5]；”而不初始化，那么各个元素的值就不是0了，
+// 所有元素都是垃圾值。无法预估是什么值
 //你也不能写成“int a[5]={}；”。如果大括号中什么都不写，那就是极其严重的语法错误
     int a[5] = {1, 2};
     printf("a=%d\n", a[2]);
@@ -26,7 +60,7 @@ int main() {
 //    怎么不初始化，那么各个元素的值也是0？ 好像不是，这值怎么回事？
     int b[5];
     for (int i = 0; i < 5; ++i) {
-        printf("b=%d\n", b[i]);
+        printf("b[%d]=%d\n", i,b[i]);
     }
 
 //    二维数组中的列，必须要声明数字。 行可以不声明
@@ -63,14 +97,10 @@ int main() {
 
     printf("str4=%s\n", str4);
     printf("str4.length=%d\n", strlen(str4));
+}
 
-    print_array1();
-    print_array2();
-    print_array3();
-
-
-
-//    char *str1 = "http://see.xidian.edu.cn/cpp/u/shipin/";
+void print_string2() {
+    //    char *str1 = "http://see.xidian.edu.cn/cpp/u/shipin/";
 //    char str2[100] = "http://see.xidian.edu.cn/cpp/u/shipin_liming/";
 //    char str3[5] = "12345";
 
@@ -81,7 +111,6 @@ int main() {
 //    printf("strlen(str1)=%d, sizeof(str1)=%d\n", strlen(str1), sizeof(str1));
 //    printf("strlen(str2)=%d, sizeof(str2)=%d\n", strlen(str2), sizeof(str2));
 //    printf("strlen(str3)=%d, sizeof(str3)=%d\n", strlen(str3), sizeof(str3));
-
 }
 
 //下标法打印数组
