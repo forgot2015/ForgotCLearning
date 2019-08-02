@@ -88,3 +88,26 @@ void printBook(struct Books *book) {
     printf("Book subject : %s\n", book->subject);
     printf("Book book_id : %d\n", book->book_id);
 }
+
+//用指针输入字符
+//int main(){
+//    char str[] = "http://c.biancheng.net";
+//    char *pstr = str;
+//    int len = strlen(str), i;
+//    //使用*(pstr+i)
+//    for(i=0; i<len; i++){
+//        printf("%c", *(pstr+i));
+//    }
+//    printf("\n");
+//    //使用pstr[i]
+//    for(i=0; i<len; i++){
+//        printf("%c", pstr[i]);
+//    }
+//    printf("\n");
+//    //使用*(str+i)
+//    for(i=0; i<len; i++){
+//        printf("%c", *(str+i));
+//    }
+//    printf("\n");
+//    return 0;
+//}
