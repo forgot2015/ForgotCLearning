@@ -12,19 +12,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1802cf37-a4f1-4020-a48c-cea8b761d02d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/algorithm/string_demo.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1003.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1004.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1005.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1007.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1008.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1009.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1010.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1011.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1012.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1013.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1014.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1015.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1016.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1017.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1018.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1019.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1020.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/point-demo.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/point-demo.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1001.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1001.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1002.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1002.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1009.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1009.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1010.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1010.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +73,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="net.vektah.codeglance.config.ConfigEntry" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -115,18 +116,9 @@
       <workItem from="1563864600146" duration="5161000" />
       <workItem from="1563951324186" duration="16191000" />
       <workItem from="1564361236597" duration="48080000" />
-      <workItem from="1564734466470" duration="5072000" />
+      <workItem from="1564734466470" duration="14352000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -231,6 +223,36 @@
           <url>file://$PROJECT_DIR$/src/problemB/problem1001.c</url>
           <line>38</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1013.c</url>
+          <line>43</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1013.c</url>
+          <line>44</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1013.c</url>
+          <line>45</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1013.c</url>
+          <line>46</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1013.c</url>
+          <line>47</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1013.c</url>
+          <line>48</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

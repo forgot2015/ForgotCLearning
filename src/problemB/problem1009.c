@@ -17,18 +17,42 @@ Hello World Here I Come
 Come I Here World Hello*/
 
 #include <stdio.h>
+#include <string.h>
 
-int main() {
-    char *p[81];
+//int main() {
+//    char str[81];
+//    gets(str);
+//    for (int i = strlen(str); i > 0; i--) {
+//        if (str[i] == ' ') {
+//            printf("%s ", &str[i + 1]);
+//            str[i] = '\0'; //把空格改为 \0，使后续输出也只有一个单词???
+//        }
+//    }
+//    printf("%s", &str[0]);
+//    return 0;
+//}
 
-    return 0;
-}
 
-void reverseStr() {
-    char c[81];
-    scanf("%s", c);
-    if (c != '\0') {
-        reverseStr();
-        printf("%s",c);
-    }
-}
+
+//int main() {
+//    char *p[81];
+//    int index = 0;
+//    char c[81];
+//    gets(c);
+//
+//    for (int j = strlen(c); j >= 0; j--) {
+//        if (c[j] == ' ') {
+//            p[index] = &c[j + 1];
+//            index++;
+//            c[j] = '\0';
+//        }
+//    }
+//    p[index] = &c[0];
+//
+//    for (int i = 0; i < index; ++i) {
+//        printf("%s ", p[i]);
+//    }
+//    printf("%s", p[index]);
+//
+//    return 0;
+//}
