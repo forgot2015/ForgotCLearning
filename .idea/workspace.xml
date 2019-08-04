@@ -12,20 +12,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1802cf37-a4f1-4020-a48c-cea8b761d02d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1011.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1012.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1013.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1014.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1015.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1016.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1017.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1018.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1019.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemB/problem1020.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1021.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1022.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1023.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1024.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1025.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1026.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1027.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1028.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1029.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1030.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1031.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1032.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1033.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1034.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1035.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1036.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1037.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1038.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1039.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1040.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1041.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1042.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1043.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1044.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1045.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1046.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1047.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1048.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1049.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1050.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1051.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1052.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1053.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1054.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1055.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1056.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1057.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1058.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1059.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1060.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1061.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1062.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1063.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1064.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1065.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1066.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1067.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1068.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1069.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1070.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1071.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1072.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1073.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1074.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1075.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1076.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1077.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1078.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1079.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1080.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1081.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1082.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1083.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1084.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1085.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1086.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1087.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1088.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemB/problem1089.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1009.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1009.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1010.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1010.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1013.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1013.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1014.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1014.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1015.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1015.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1016.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1016.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +126,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/problemB" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -116,7 +178,7 @@
       <workItem from="1563864600146" duration="5161000" />
       <workItem from="1563951324186" duration="16191000" />
       <workItem from="1564361236597" duration="48080000" />
-      <workItem from="1564734466470" duration="14352000" />
+      <workItem from="1564734466470" duration="26493000" />
     </task>
     <servers />
   </component>

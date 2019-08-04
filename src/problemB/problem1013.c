@@ -33,37 +33,37 @@
 #include <stdio.h>
 int isPrime(int a);
 
-int main() {
-    int M, N;
-    scanf("%d%d", &M, &N);
-
-    int prime[10001];
-    int primeCount = 0;
-    int num = 2;
-
-    while (primeCount <= N) {
-        if (isPrime(num)) {
-            prime[primeCount] = num;
-            primeCount++;
-        }
-        num++;
-    }
-
-    int printCount = 1;
-    for (int k = M; k <= N; k++) {
-        if (printCount == 1 || (printCount - 1) % 10 == 0) {
-            printf("%d", prime[k - 1]);
-        } else {
-            printf(" %d", prime[k - 1]);
-        }
-
-        if (printCount % 10 == 0) {
-            printf("\n");
-        }
-
-        printCount++;
-    }
-}
+//int main() {
+//    int M, N;
+//    scanf("%d%d", &M, &N);
+//
+//    int prime[10001];
+//    int primeCount = 0;
+//    int num = 2;
+//
+//    while (primeCount <= N) {
+//        if (isPrime(num)) {
+//            prime[primeCount] = num;
+//            primeCount++;
+//        }
+//        num++;
+//    }
+//
+//    int printCount = 1;
+//    for (int k = M; k <= N; k++) {
+//        if (printCount == 1 || (printCount - 1) % 10 == 0) {
+//            printf("%d", prime[k - 1]);
+//        } else {
+//            printf(" %d", prime[k - 1]);
+//        }
+//
+//        if (printCount % 10 == 0) {
+//            printf("\n");
+//        }
+//
+//        printCount++;
+//    }
+//}
 
 //判断是否素数，是则返回1，不是返回0
 int isPrime(int a) {
