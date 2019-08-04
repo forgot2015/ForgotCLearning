@@ -74,65 +74,65 @@ int compare(struct Student *a, struct Student *b) {
     }
 }
 
-int main() {
-    int N, L, H;
-    scanf("%d%d%d", &N, &L, &H);
-    struct Student student[N];
-    struct Student student1[N];
-    struct Student student2[N];
-    struct Student student3[N];
-    struct Student student4[N];
-    int index1 = 0;
-    int index2 = 0;
-    int index3 = 0;
-    int index4 = 0;
-    int count = 0;
-
-    for (int i = 0; i < N; i++) {
-        scanf("%d%d%d", &student[i].num, &student[i].virtue, &student[i].talent);
-    }
-
-    for (int j = 0; j < N; j++) {
-        if (student[j].virtue < L || student[j].talent < L) {
-            continue;
-        }
-        count++;
-
-        if (student[j].virtue >= H && student[j].talent >= H) {
-            student1[index1] = student[j];
-            index1++;
-        } else if (student[j].virtue >= H) {
-            student2[index2] = student[j];
-            index2++;
-        } else if (student[j].virtue < H && student[j].virtue >= student[j].talent) {
-            student3[index3] = student[j];
-            index3++;
-        } else {
-            student4[index4] = student[j];
-            index4++;
-        }
-    }
-
-    qsort(student1, index1 + 1, sizeof(student1[0]), compare);
-    qsort(student2, index2 + 1, sizeof(student2[0]), compare);
-    qsort(student3, index3 + 1, sizeof(student3[0]), compare);
-    qsort(student4, index4 + 1, sizeof(student4[0]), compare);
-
-    printf("%d\n", count);
-
-    for (int l = 0; l < index1; l++) {
-        printf("%d %d %d\n", student1[l].num, student1[l].virtue, student1[l].talent);
-    }
-    for (int l = 0; l < index2; l++) {
-        printf("%d %d %d\n", student2[l].num, student2[l].virtue, student2[l].talent);
-    }
-    for (int l = 0; l < index3; l++) {
-        printf("%d %d %d\n", student3[l].num, student3[l].virtue, student3[l].talent);
-    }
-    for (int l = 0; l < index4; l++) {
-        printf("%d %d %d\n", student4[l].num, student4[l].virtue, student4[l].talent);
-    }
-
-    return 0;
-}
+//int main() {
+//    int N, L, H;
+//    scanf("%d%d%d", &N, &L, &H);
+//    struct Student student[N];
+//    struct Student student1[N];
+//    struct Student student2[N];
+//    struct Student student3[N];
+//    struct Student student4[N];
+//    int index1 = 0;
+//    int index2 = 0;
+//    int index3 = 0;
+//    int index4 = 0;
+//    int count = 0;
+//
+//    for (int i = 0; i < N; i++) {
+//        scanf("%d%d%d", &student[i].num, &student[i].virtue, &student[i].talent);
+//    }
+//
+//    for (int j = 0; j < N; j++) {
+//        if (student[j].virtue < L || student[j].talent < L) {
+//            continue;
+//        }
+//        count++;
+//
+//        if (student[j].virtue >= H && student[j].talent >= H) {
+//            student1[index1] = student[j];
+//            index1++;
+//        } else if (student[j].virtue >= H) {
+//            student2[index2] = student[j];
+//            index2++;
+//        } else if (student[j].virtue < H && student[j].virtue >= student[j].talent) {
+//            student3[index3] = student[j];
+//            index3++;
+//        } else {
+//            student4[index4] = student[j];
+//            index4++;
+//        }
+//    }
+//
+//    qsort(student1, index1 + 1, sizeof(student1[0]), compare);
+//    qsort(student2, index2 + 1, sizeof(student2[0]), compare);
+//    qsort(student3, index3 + 1, sizeof(student3[0]), compare);
+//    qsort(student4, index4 + 1, sizeof(student4[0]), compare);
+//
+//    printf("%d\n", count);
+//
+//    for (int l = 0; l < index1; l++) {
+//        printf("%d %d %d\n", student1[l].num, student1[l].virtue, student1[l].talent);
+//    }
+//    for (int l = 0; l < index2; l++) {
+//        printf("%d %d %d\n", student2[l].num, student2[l].virtue, student2[l].talent);
+//    }
+//    for (int l = 0; l < index3; l++) {
+//        printf("%d %d %d\n", student3[l].num, student3[l].virtue, student3[l].talent);
+//    }
+//    for (int l = 0; l < index4; l++) {
+//        printf("%d %d %d\n", student4[l].num, student4[l].virtue, student4[l].talent);
+//    }
+//
+//    return 0;
+//}
 
