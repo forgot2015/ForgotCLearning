@@ -39,44 +39,44 @@
 
 #include <stdio.h>
 
-int main() {
-    int N, M;
-    scanf("%d %d", &N, &M);
-    int sum;
-    int count;
-    int min;
-    int max;
-    double G1, G2;
-
-    for (int i = 0; i < N; i++) {
-        sum = 0;
-        count = 0;
-        min = M;
-        max = 0;
-        scanf("%lf", &G2);
-
-//        看清题意，这里也是N个数，而不是固定6个数啊。。。
-        for (int k = 0; k < N - 1; k++) {
-            int G;
-            scanf("%d", &G);
-            if (G >= 0 && G <= M) {
-                count++;
-                sum += G;
-                if (G > max) {
-                    max = G;
-                }
-                if (G < min) {
-                    min = G;
-                }
-            }
-        }
-
-        G1 = (double) (sum - max - min) / (count - 2);
-        printf("%d", (int) ((G1 + G2 + 1) / 2.0));
-        if (i != N - 1) {
-            printf("\n");
-        }
-    }
-
-    return 0;
-}
+//int main() {
+//    int N, M;
+//    scanf("%d %d", &N, &M);
+//    int sum;
+//    int count;
+//    int min;
+//    int max;
+//    double G1, G2;
+//
+//    for (int i = 0; i < N; i++) {
+//        sum = 0;
+//        count = 0;
+//        min = M;
+//        max = 0;
+//        scanf("%lf", &G2);
+//
+////        看清题意，这里也是N个数，而不是固定6个数啊。。。
+//        for (int k = 0; k < N - 1; k++) {
+//            int G;
+//            scanf("%d", &G);
+//            if (G >= 0 && G <= M) {
+//                count++;
+//                sum += G;
+//                if (G > max) {
+//                    max = G;
+//                }
+//                if (G < min) {
+//                    min = G;
+//                }
+//            }
+//        }
+//
+//        G1 = (double) (sum - max - min) / (count - 2);
+//        printf("%d", (int) ((G1 + G2 + 1) / 2.0));
+//        if (i != N - 1) {
+//            printf("\n");
+//        }
+//    }
+//
+//    return 0;
+//}
