@@ -18,7 +18,6 @@
 
 
 #include <stdio.h>
-#include <math.h>
 
 //有一个用例没通过啊，不懂，在牛课网又是可以通过的
 //int main() {
@@ -41,7 +40,7 @@
 //    for (int i = 3; i < N; i++) {
 //        int isPrime = 1;
 //
-//        for (int j = 2; j <= sqrt(i); j++) {
+//        for (int j = 2; j <= i*i; j++) {
 //            if (i % j == 0) {
 //                isPrime = 0;
 //                break;
@@ -54,7 +53,7 @@
 //        }
 //    }
 //
-//    //输出差为2素数对
+//    //输出差为2的素数对
 //    for (int k = 0; k < primeIndex - 1; k++) {
 //        if ((prime[k + 1] - prime[k]) == 2) {
 //            pairCount++;

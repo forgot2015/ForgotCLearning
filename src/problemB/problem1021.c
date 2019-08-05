@@ -85,3 +85,28 @@
 //
 //    return 0;
 //}
+
+//法2
+//int main() {
+//    char strN[1001];
+//    scanf("%s", strN);
+//
+//    int count[11] = {0};
+//
+//    for (int i = 0; i < strlen(strN); i++) {
+//        for (int j = 0; j < 10; j++) {
+//            if (j + '0' == strN[i]) {
+//                count[j]++;
+//                break;
+//            }
+//        }
+//    }
+//
+//    for (int j = 0; j < 10; j++) {
+//        if (count[j]) {
+//            printf("%d:%d\n", j, count[j]);
+//        }
+//    }
+//
+//    return 0;
+//}

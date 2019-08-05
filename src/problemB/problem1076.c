@@ -28,19 +28,19 @@ C-T A-F B-F D-F
 #include <stdio.h>
 #include <string.h>
 
-int main() {
-    int N;
-    scanf("%d\n", &N);
-    char input[30];
-//??? 为何要i < N + 1？, 上面的scanf加一个回车即可，否则字符串输入会把回车当成是一个空字符串来处理
-    for (int i = 0; i < N; i++) {
-        gets(input);
-        for (int j = 0; j < strlen(input); j++) {
-            if (input[j] == 'T') {
-                printf("%d", input[j - 2] - 'A' + 1);
-                break;
-            }
-        }
-    }
-    return 0;
-}
+//int main() {
+//    int N;
+//    scanf("%d\n", &N);
+//    char input[30];
+////??? 为何要i < N + 1？, 上面的scanf加一个回车即可，否则字符串输入会把回车当成是一个空字符串来处理
+//    for (int i = 0; i < N; i++) {
+//        gets(input);
+//        for (int j = 0; j < strlen(input); j++) {
+//            if (input[j] == 'T') {
+//                printf("%d", input[j - 2] - 'A' + 1);
+//                break;
+//            }
+//        }
+//    }
+//    return 0;
+//}

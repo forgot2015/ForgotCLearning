@@ -55,7 +55,6 @@ yi san wu*/
 //    p=n;
 //    while (*p!=0){
 //        int num = *p - 48;
-//        printf("%d\n",num);
 //        sum += num;
 //        p++;
 //    }

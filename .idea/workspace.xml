@@ -13,13 +13,14 @@
   <component name="ChangeListManager">
     <list default="true" id="1802cf37-a4f1-4020-a48c-cea8b761d02d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1043.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1043.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1046.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1046.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1047.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1047.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1056.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1056.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1061.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1061.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1063.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1063.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1064.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1064.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1002.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1002.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1005.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1005.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1006.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1006.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1007.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1007.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1011.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1011.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1021.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1021.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1023.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1023.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1042.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1042.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problemB/problem1076.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1076.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,7 +118,7 @@
       <workItem from="1564361236597" duration="48080000" />
       <workItem from="1564734466470" duration="27503000" />
       <workItem from="1564904467397" duration="3132000" />
-      <workItem from="1564908342767" duration="14702000" />
+      <workItem from="1564908342767" duration="17857000" />
     </task>
     <servers />
   </component>
@@ -254,76 +255,6 @@
           <url>file://$PROJECT_DIR$/src/problemB/problem1013.c</url>
           <line>48</line>
           <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>41</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>42</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>43</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>44</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>45</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>46</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>47</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>48</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>52</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>53</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>55</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>54</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>73</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/problemB/problem1021.c</url>
-          <line>74</line>
-          <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/problemB/problem1036.c</url>
