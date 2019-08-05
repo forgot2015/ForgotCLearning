@@ -57,30 +57,30 @@
 //}
 
 //法2
-int main() {
-    int count[11];
-    char number[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
-
-    for (int i = 0; i < 10; i++) {
-        scanf("%d", &count[i]);
-    }
-
-//    计算第一位
-    for (int j = 1; j < 10; j++) {
-        if (count[j]) {
-            putchar(number[j]);
-            count[j]--;
-            break;
-        }
-    }
-
-//    计算剩余位
-    for (int j = 0; j < 10; j++) {
-        while (count[j]) {
-            putchar(number[j]);
-            count[j]--;
-        }
-    }
-
-    return 0;
-}
+//int main() {
+//    int count[11];
+//    char number[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+//
+//    for (int i = 0; i < 10; i++) {
+//        scanf("%d", &count[i]);
+//    }
+//
+////    计算第一位
+//    for (int j = 1; j < 10; j++) {
+//        if (count[j]) {
+//            putchar(number[j]);
+//            count[j]--;
+//            break;
+//        }
+//    }
+//
+////    计算剩余位
+//    for (int j = 0; j < 10; j++) {
+//        while (count[j]) {
+//            putchar(number[j]);
+//            count[j]--;
+//        }
+//    }
+//
+//    return 0;
+//}
