@@ -29,3 +29,16 @@
 //    printf("a=%d,b=%d", a, b);
 //
 //}
+
+//int main() {
+//    int a[3] = {1, 2, 3};
+//    printf("%d\n", a[3]);
+//    printf("%d\n", *a);
+//    printf("%d\n", *(a + 1));
+//
+//    int b=1;
+//    int *p ;
+//    p=&b;
+//    printf("%d",*&b);
+//    return 0;
+//}

@@ -30,4 +30,4 @@ add_executable(ForgotCLearning src/main.c src/support.c src/head2.h src/sort.c s
         src/problemB/problem1087.c src/problemB/problem1088.c src/problemB/problem1089.c src/problemB/problem1090.c
         src/problemB/problem1091.c src/problemB/problem1092.c src/problemB/problem1093.c src/problemB/problem1094.c
         src/problemB/problem1095.c
-        )
+        src/algorithm/classics.c)

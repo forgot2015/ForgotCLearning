@@ -27,42 +27,42 @@ mk.jpg
 
 #include <stdio.h>
 
-int main() {
-    int N, M;
-    scanf("%d %d", &N, &M);
-    int typeSale[N];
-    for (int m = 0; m < N; m++) {
-        typeSale[m] = 0;
-    }
-
-//    计算某种类的销量和
-    for (int i = 0; i < M; i++) {
-        for (int j = 0; j < N; j++) {
-            int sale;
-            scanf("%d", &sale);
-            typeSale[j] += sale;
-        }
-    }
-//取出最大销量
-    int maxSale = 0;
-    for (int k = 0; k < N; k++) {
-        if (typeSale[k] > maxSale) {
-            maxSale = typeSale[k];
-        }
-    }
-    printf("%d\n", maxSale);
-    int count = 0;
-//    打印最大销量的排序
-    for (int k = 0; k < N; k++) {
-        if (typeSale[k] == maxSale) {
-            if (count) {
-                printf(" ");
-            }
-
-            printf("%d", k + 1);
-            count++;
-        }
-    }
-
-    return 0;
-}
+//int main() {
+//    int N, M;
+//    scanf("%d %d", &N, &M);
+//    int typeSale[N];
+//    for (int m = 0; m < N; m++) {
+//        typeSale[m] = 0;
+//    }
+//
+////    计算某种类的销量和
+//    for (int i = 0; i < M; i++) {
+//        for (int j = 0; j < N; j++) {
+//            int sale;
+//            scanf("%d", &sale);
+//            typeSale[j] += sale;
+//        }
+//    }
+////取出最大销量
+//    int maxSale = 0;
+//    for (int k = 0; k < N; k++) {
+//        if (typeSale[k] > maxSale) {
+//            maxSale = typeSale[k];
+//        }
+//    }
+//    printf("%d\n", maxSale);
+//    int count = 0;
+////    打印最大销量的排序
+//    for (int k = 0; k < N; k++) {
+//        if (typeSale[k] == maxSale) {
+//            if (count) {
+//                printf(" ");
+//            }
+//
+//            printf("%d", k + 1);
+//            count++;
+//        }
+//    }
+//
+//    return 0;
+//}
