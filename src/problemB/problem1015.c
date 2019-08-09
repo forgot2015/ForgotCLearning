@@ -64,15 +64,15 @@ struct Student {
 };
 
 //排序规则
-int compare(struct Student *a, struct Student *b) {
-    if (a->virtue + a->talent != b->virtue + b->talent) {
-        return (b->virtue + b->talent) > (a->virtue + a->talent); //总分降序
-    } else if (a->virtue != b->virtue) {
-        return b->virtue > a->virtue; //德分降序
-    } else {
-        return a->num > b->num; //学号升序
-    }
-}
+//int compare(struct Student *a, struct Student *b) {
+//    if (a->virtue + a->talent != b->virtue + b->talent) {
+//        return (b->virtue + b->talent) > (a->virtue + a->talent); //总分降序
+//    } else if (a->virtue != b->virtue) {
+//        return b->virtue > a->virtue; //德分降序
+//    } else {
+//        return a->num > b->num; //学号升序
+//    }
+//}
 
 //int main() {
 //    int N, L, H;
