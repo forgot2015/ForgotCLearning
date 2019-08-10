@@ -31,7 +31,7 @@
 97 101 103*/
 
 #include <stdio.h>
-int isPrime(int a);
+//int isPrime(int a);
 
 //int main() {
 //    int M, N;
@@ -66,15 +66,15 @@ int isPrime(int a);
 //}
 
 //判断是否素数，是则返回1，不是返回0
-int isPrime(int a) {
-    for (int i = 2; i * i <= a; i++) {
-        if (a % i == 0) {
-            return 0;
-        }
-    }
-
-    return 1;
-}
+//int isPrime(int a) {
+//    for (int i = 2; i * i <= a; i++) {
+//        if (a % i == 0) {
+//            return 0;
+//        }
+//    }
+//
+//    return 1;
+//}
 
 // M=N=10000时没通过
 //int main() {

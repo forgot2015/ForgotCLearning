@@ -27,12 +27,82 @@ may
 115
 13*/
 #include <stdio.h>
-//好无头绪
+#include <stdlib.h>
+#include <string.h>
+
+//两个用例 Segmentation Fault  内存超出？
 //int main() {
 //    int N;
-//    scanf("%d", &N);
-//    for (int i = 0; i < N; i++) {
+//    char *geChar[13] = {"jan", "feb", "mar", "apr", "may", "jun", "jly", "aug", "sep", "oct", "nov", "dec"};
+//    char *shiChar[13] = {"tam", "hel", "maa", "huh", "tou", "kes", "hei", "elo", "syy", "lok", "mer", "jou"};
 //
+//    scanf("%d", &N);
+////    为何要+1才能获取到最后一行字符？
+//    for (int i = 0; i < N + 1; i++) {
+//        char input[12];
+////        scanf("%s", input);
+//        fgets(input, 12, stdin);
+////        gets(input);
+//        if (input[0] >= '0' && input[0] <= '9') {
+//            //数字转火星文
+//            int num = atoi(input);
+//            int ge = num % 13;
+//            int shi = num / 13;
+//            if (shi > 0) {
+//                printf("%s %s\n", shiChar[shi - 1], geChar[ge - 1]);
+//            } else {
+//                printf("%s\n", geChar[ge - 1]);
+//            }
+//        } else if (input[0] >= 'a' && input[0] <= 'z') {
+//            if (strlen(input) > 4) {
+//                char shiStr[4];
+//                char geStr[4];
+//                strncpy(shiStr, input, 3);
+//                strncpy(geStr, input + 4, 3);
+////               printf("shiStr: %s\n", shiStr);
+////               printf("geStr: %s\n", geStr);
+//                int shi = 0;
+//                int ge = 0;
+//                for (int j = 0; j < 12; j++) {
+//                    if (strcmp(shiChar[j], shiStr) == 0) {
+//                        shi = j + 1;
+//                        break;
+//                    }
+//                }
+//                for (int j = 0; j < 12; j++) {
+//                    if (strcmp(geChar[j], geStr) == 0) {
+//                        ge = j + 1;
+//                        break;
+//                    }
+//                }
+//                printf("%d\n", shi * 13 + ge);
+//            } else {
+////                printf("input = %s\n",input);
+////                char str[3];
+////                strncpy(str, input, 3);
+////知识点去掉最后一个字符串的换行符
+//                input[strlen(input) - 1] = 0;
+//                int ge = 0;
+//                int shi = 0;
+//                for (int j = 0; j < 12; j++) {
+//                    if (strcmp(geChar[j], input) == 0) {
+//                        ge = j + 1;
+//                        break;
+//                    }
+//                }
+//                for (int j = 0; j < 12; j++) {
+//                    if (strcmp(shiChar[j], input) == 0) {
+//                        shi = j + 1;
+//                        break;
+//                    }
+//                }
+//                if (ge) {
+//                    printf("%d\n", ge);
+//                } else {
+//                    printf("%d\n", shi * 13);
+//                }
+//            }
+//        }
 //    }
 //
 //    return 0;

@@ -29,39 +29,62 @@
 *****
 2*/
 #include <stdio.h>
-//shit...
+//错了一个用例
 //int main() {
 //    int N;
-//    char c;
-//    int sumCount = 1;
-//    int perCount[100];
-//    perCount[1] = 1;
-//    //一共多少层
-//    int i = 1;
-//    scanf("%d %c", &N, &c);
+//    char sign;
+//    scanf("%d %c", &N, &sign);
 //
-//    for (i = 2; sumCount <= N; i++) {
-//        perCount[i] = 4 * i - 2;
-//        sumCount = sumCount + perCount[i];
+////    总共字符数量
+//    int sum = 1;
+////    最顶层的字符数量
+//    int topCount = 1;
+////    上面有几层， 总层数 = 上面+1+下面
+//    int topLayer = 0;
+//    while (sum < N) {
+//        topCount += 2;
+//        sum = sum + topCount * 2;
+//        topLayer++;
 //    }
 //
-//    --i;
-//    perCount[i] = 4 * i - 2;
-//    sumCount = sumCount - perCount[i];
-//    for (int j = 1; j <= i / 2; j++) {
-//        for (int k = 0; k < j - 1; k++) {
+//    sum = sum - topCount * 2;
+//    topCount = topCount - 2;
+//    topLayer = topLayer - 1;
+//
+//    int topCountFinal = topCount;
+//
+//    for (int i = 0; i < topLayer; i++) {
+//        for (int k = 0; k < i; k++) {
 //            printf(" ");
 //        }
 //
-//        for (int l = 0; l < perCount[i - 1] / 2; l++) {
-//            putchar(c);
+//        for (int j = 0; j < topCount; j++) {
+//            putchar(sign);
+//        }
+//        printf("\n");
+//        topCount = topCount - 2;
+//    }
+//
+//    for (int l = 0; l < topCountFinal / 2; l++) {
+//        printf(" ");
+//    }
+//    printf("%c\n", sign);
+//
+//    topCount = topCount + 2;
+//    for (int m = topLayer; m > 0; m--) {
+//        for (int k = m - 1; k > 0; k--) {
+//            printf(" ");
+//        }
+//
+//        for (int j = topCount; j > 0; j--) {
+//            putchar(sign);
 //        }
 //
 //        printf("\n");
+//        topCount = topCount + 2;
 //    }
 //
-//    printf("%d", N - sumCount);
-//
+//    printf("%d", N - sum);
 //
 //    return 0;
 //}

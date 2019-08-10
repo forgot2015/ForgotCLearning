@@ -27,12 +27,159 @@
 
 #include <stdio.h>
 
+//shit 分子分母的计算啊
+
+void printFlag0(int a, int b) {
+    if (a > 0) {
+        printf("%d/%d", a, b);
+    } else {
+        printf("(%d/%d)", a, b);
+    }
+}
+
+void printFlag1(int a, int b) {
+    printf("0");
+}
+
+void printFlag2(int a, int b) {
+    if (a > 0) {
+        printf("%d", a / b);
+        printf("%d/%d", a - b, b);
+    } else {
+        printf("(%d", a / b);
+        printf("%d/%d)", a - b, b);
+    }
+}
+
+void printFlag3(int a, int b) {
+    if (a > 0) {
+        printf("%d", a / b);
+    } else {
+        printf("(%d)", a / b);
+    }
+}
+
 //int main() {
 //    int a1, b1, a2, b2;
-//    scanf("%d/%d %d/%d",&a1,&b1,&a2,&b2);
-////    printf("")
+//    scanf("%d/%d %d/%d", &a1, &b1, &a2, &b2);
+////    printf("%d %d %d %d", a1, b1, a2, b2);
+//
+////数字 + 分数 中的数字
+//    int c1, c2;
+////   数字 + 分数 中的分子
+//    int d1, d2;
+//
+//    //0表示最普通的情况，1表示a=0的情况, 2表示数字+分数的情况，3表示整除成纯数字的情况
+//    int flag1 = -1;
+//    if (a1 == 0) {
+//        flag1 = 1;
+//    } else if (a1 / b1 != 0) {
+//        if (a1 % b1 == 0) {
+//            flag1 = 3;
+//        } else {
+//            flag1 = 2;
+//        }
+//    } else {
+//        flag1 = 0;
+//    }
+//
+//    //0表示最普通的情况，1表示a=0的情况, 2表示数字+分数的情况，3表示整除成纯数字的情况
+//    int flag2 = -1;
+//    if (a2 == 0) {
+//        flag2 = 1;
+//    } else if (a2 / b2 != 0) {
+//        if (a2 % b2 != 0) {
+//            flag2 = 2;
+//        } else {
+//            flag2 = 3;
+//        }
+//    } else {
+//        flag2 = 0;
+//    }
+//
+//    if (flag1 == 0) {
+//        printFlag0(a1, b1);
+//        printf(" + ");
+//
+//        if (flag2 == 0) {
+//            printFlag0(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 1) {
+//            printFlag1(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 2) {
+//            printFlag2(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 3) {
+//            printFlag3(a2, b2);
+//            printf(" = ");
+//        }
+//
+//        printf("\n");
+//    }else if (flag1 == 1) {
+//        printFlag1(a1, b1);
+//        printf(" - ");
+//
+//        if (flag2 == 0) {
+//            printFlag0(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 1) {
+//            printFlag1(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 2) {
+//            printFlag2(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 3) {
+//            printFlag3(a2, b2);
+//            printf(" = ");
+//        }
+//
+//        printf("\n");
+//    }
+//    else if (flag1 == 2) {
+//        printFlag1(a1, b1);
+//        printf(" * ");
+//
+//        if (flag2 == 0) {
+//            printFlag0(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 1) {
+//            printFlag1(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 2) {
+//            printFlag2(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 3) {
+//            printFlag3(a2, b2);
+//            printf(" = ");
+//        }
+//
+//        printf("\n");
+//    }else if (flag1 == 3) {
+//        printFlag1(a1, b1);
+//        printf(" / ");
+//
+//        if (flag2 == 0) {
+//            printFlag0(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 1) {
+//            printFlag1(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 2) {
+//            printFlag2(a2, b2);
+//            printf(" = ");
+//        } else if (flag2 == 3) {
+//            printFlag3(a2, b2);
+//            printf(" = ");
+//        }
+//
+//    }
 //
 //    return 0;
 //}
+
+
+
+
 
 
