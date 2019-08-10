@@ -35,24 +35,54 @@
 2222 - 2222 = 0000*/
 
 #include <stdio.h>
+#include <stdlib.h>
 
+int sortMax(const void *a, const void *b) {
+    return *(int *) b - *(int *) a;
+}
+
+int sortMin(const void *a, const void *b) {
+    return *(int *) a - *(int *) b;
+}
+//有两个用例超时，待优化
 //int main() {
 //    int N;
-//    char str[4];
+//    char str[5];
 //    scanf("%s", str);
+//    int NN[5];
+//    int nn[5];
 //
+//    NN[0] = str[0] - '0';
+//    NN[1] = str[1] - '0';
+//    NN[2] = str[2] - '0';
+//    NN[3] = str[3] - '0';
 //
-//    int n1, n2, n3;
-//    int N1, N2, N3, N4;
-//    N1 = N2 = N3 = N4 = 0;
-//
-//
-//    while (n3 != 6174) {
-//
-//
-//        printf("%d - %d = %d", n1, n2, n3);
+//    if (NN[0] == NN[1] && NN[2] == NN[3] && NN[0] == NN[2]) {
+//        printf("%s - %s = 0000", str, str);
+//        return 0;
 //    }
-//    printf("%d - %d = %d", n1, n2, n3);
+//
+//    int right = 0;
+//    while (right != 6174) {
+//        qsort(NN, 4, sizeof(NN[0]), sortMax);
+//        int left = NN[0] * 1000 + NN[1] * 100 + NN[2] * 10 + NN[3];
+//
+//        qsort(NN, 4, sizeof(NN[0]), sortMin);
+//        int left2 = NN[0] * 1000 + NN[1] * 100 + NN[2] * 10 + NN[3];
+//        right = left - left2;
+//        printf("%04d - %04d = %04d\n", left, left2, right);
+//
+//        NN[0] = right / 1000;
+//        NN[1] = right % 1000 / 100;
+//        NN[2] = right % 100 / 10;
+//        NN[3] = right % 10;
+//
+//        if (NN[0] == NN[1] && NN[2] == NN[3] && NN[0] == NN[2]) {
+//            printf("%s - %s = 0000", str, str);
+//            return 0;
+//        }
+//    }
 //
 //    return 0;
 //}
+

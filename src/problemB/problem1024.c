@@ -23,21 +23,42 @@
 
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
+#include <math.h>
+//不能用常规数学算法去算，要用字符直接输出的思路
 //int main() {
 //    char A[10000];
-//    char *sign[5];
-//    fgets(A, 256, stdin);
 //    scanf("%s", A);
-//    *sign[0] = A[0];
-//    for (int i = 1; i < strlen(A); i++) {
-//        if (A[i] != 'E') {
-//            *sign[1] = strcat(sign[1], A[i]);
-//            continue;
-//        }
-//        break;
-//
+//    if (A[0] == '-') {
+//        printf("%c", A[0]);
 //    }
+//
+//    double num = 0.0;
+//    char numStr[10000];
+//    int flag = 0;
+//    char indexStr[10000];
+//    int index;
+//    for (int i = 1; i < strlen(A); i++) {
+//        if (A[i] == 'E') {
+//            strncpy(numStr, A + 1, i - 1);
+//            printf("%s ", numStr);
+//            if (A[i] + 1 == '+') {
+//                flag = 1;
+//            } else {
+//                flag = 0;
+//            }
+//            strncpy(indexStr, A + i + 2, strlen(A) - 1);
+//            printf("%s ", indexStr);
+//        }
+//    }
+//
+//    num = atof(numStr);
+//    index = atoi(indexStr);
+//    if (!flag) {
+//        index = -index;
+//    }
+//    printf("%lf ",pow(10, index));
+//    printf("%lf", num * pow(10, index));
 //
 //    return 0;
 //}
