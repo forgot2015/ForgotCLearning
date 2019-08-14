@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1090.c
+stdio.h
+C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/stdio.h
+

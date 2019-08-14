@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ForgotCLearning"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ForgotCLearning">
+				<Option output="C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/ForgotCLearning.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 ForgotCLearning"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ForgotCLearning/fast">
+				<Option output="C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/ForgotCLearning.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 ForgotCLearning/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/algorithm/array-demo.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/algorithm/classics.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/algorithm/demo.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/algorithm/point-demo.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/algorithm/sort.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/algorithm/string_demo.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/head.h">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/main.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemA/problem1008.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1001.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1002.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1003.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1004.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1005.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1006.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1007.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1008.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1009.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1010.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1011.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1012.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1013.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1014.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1015.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1016.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1017.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1018.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1019.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1020.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1021.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1022.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1023.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1024.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1025.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1026.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1027.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1028.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1029.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1030.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1031.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1032.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1033.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1034.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1035.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1036.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1037.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1038.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1039.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1040.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1041.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1042.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1043.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1044.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1045.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1046.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1047.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1048.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1049.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1050.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1051.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1052.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1053.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1054.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1055.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1056.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1057.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1058.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1059.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1060.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1061.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1062.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1063.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1064.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1065.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1066.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1067.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1068.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1069.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1070.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1071.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1072.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1073.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1074.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1075.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1076.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1077.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1078.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1079.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1080.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1081.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1082.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1083.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1084.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1085.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1086.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1087.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1088.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1089.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1090.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1091.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1092.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1093.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1094.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1095.c">
+			<Option target="ForgotCLearning"/>
+		</Unit>
+		<Unit filename="C:/Users/forgot/CLionProjects/ForgotCLearning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

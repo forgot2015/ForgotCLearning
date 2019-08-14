@@ -16,6 +16,7 @@ void reverseSentence();
 //    return 0;
 //}
 
+//使用递归来翻转字符串。
 void reverseSentence() {
     char c;
     scanf("%c", &c);
