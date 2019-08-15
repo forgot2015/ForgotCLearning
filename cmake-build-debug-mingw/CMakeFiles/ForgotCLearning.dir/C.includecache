@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1090.c
+C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/problem1080.c
 stdio.h
-C:/Users/forgot/CLionProjects/ForgotCLearning/src/problemB/stdio.h
+-
+string.h
+-
+stdlib.h
+-
 

@@ -12,21 +12,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1802cf37-a4f1-4020-a48c-cea8b761d02d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/array-demo.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/array-demo.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/kmp_demo.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/point-demo.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/point-demo.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/string_demo.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/string_demo.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/head2.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/head.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1089.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1089.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1090.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1090.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sort.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/support.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1058.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1058.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1060.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1060.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1062.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1062.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1071.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1071.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1080.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1080.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1081.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1081.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1085.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1085.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1088.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1088.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1090.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1090.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1094.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1094.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/ForgotCLearning.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/ForgotCLearning.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1055.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1055.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1058.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1058.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1060.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1060.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1062.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1062.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1071.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1071.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1080.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1080.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1081.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1081.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1085.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1085.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1088.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1088.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1094.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1094.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +85,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -135,7 +144,8 @@
       <workItem from="1565682150994" duration="773000" />
       <workItem from="1565684981971" duration="42000" />
       <workItem from="1565685038946" duration="5396000" />
-      <workItem from="1565742735782" duration="880000" />
+      <workItem from="1565742735782" duration="22357000" />
+      <workItem from="1565829649219" duration="4887000" />
     </task>
     <servers />
   </component>

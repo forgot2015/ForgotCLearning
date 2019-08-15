@@ -68,6 +68,8 @@ int comparePerson(const void *personA, const void *personB);
 //    return 0;
 //}
 //
-//int comparePerson(const void *personA, const void *personB) {
-//    return personA->height > personB->height;
+//int comparePerson(const void *a, const void *b) {
+//    struct Person *c=(Person*)a;
+//    return
 //}
+
