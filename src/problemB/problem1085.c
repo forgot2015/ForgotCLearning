@@ -39,8 +39,8 @@ A03274 45 hypu
 3 pku 100 1
 4 hypu 81 2
 4 lanx 81 2*/
-#include "stdio.h"
-
+//#include "stdio.h"
+//
 //typedef struct Students {
 //    char num[7];
 //    int score;

@@ -15,27 +15,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1058.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1058.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1060.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1060.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1062.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1062.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1071.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1071.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1065.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1065.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1067.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1067.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1079.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1079.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1080.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1080.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1081.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1081.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1085.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1085.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1088.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1088.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1090.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1090.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1094.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1094.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/ForgotCLearning.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/ForgotCLearning.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1055.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1055.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1058.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1058.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1060.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1060.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1062.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1062.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1071.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1071.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1065.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1065.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1067.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1067.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1079.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1079.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problemB/problem1080.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1080.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1081.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1081.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problemB/problem1085.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1085.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1088.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1088.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1094.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1094.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1095.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1095.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +76,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
@@ -145,7 +137,7 @@
       <workItem from="1565684981971" duration="42000" />
       <workItem from="1565685038946" duration="5396000" />
       <workItem from="1565742735782" duration="22357000" />
-      <workItem from="1565829649219" duration="4887000" />
+      <workItem from="1565829649219" duration="24315000" />
     </task>
     <servers />
   </component>
