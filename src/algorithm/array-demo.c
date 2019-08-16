@@ -22,15 +22,17 @@ void print_string2();
 char *getDateTime();
 
 //int main() {
+//    char str3[8] = "Let's go";             //8会出错，9或以上才正常
+//    printf("size:%d",strlen(str3));
 ////    print_array1();
 ////    print_array2();
 ////    print_array3();
 //
-//    print_string();
+////    print_string();
 ////    print_string2();
 //
-//    char *nowtime = getDateTime();
-//    printf("%s\n", nowtime);
+////    char *nowtime = getDateTime();
+////    printf("%s\n", nowtime);
 //
 //    return 0;
 //}
@@ -68,8 +70,10 @@ void print_string() {
 
 //    若数组只定义，但没有初始化，则行和列都需要声明数字
     int d[2][2];
+//    int e[2][];//wrong
 
     char str1[30] = "Let's go";             // 字符串长度：8；数组长度：30
+
 //    存储字符串的数组一定比字符串长度多一个元素，以容纳下字符串终止符（空字符'\0'）。因此，str1 数组能够存储的字符串最大长度是 29。
 //    如果定义数组长度为 8，而不是 30，就会发生错误，因为它无法包含字符串终止符。
     char str2[30] = {'L', 'e', 't', '\'', 's', ' ', 'g', 'o', '\0'};
@@ -107,7 +111,7 @@ void print_string2() {
 //strlen()函数求出的字符串长度为有效长度，既不包含字符串末尾结束符 ‘\0’；
 //sizeof()操作符求出的长度包含字符串末尾的结束符 ‘\0’；
 //当在函数内部使用sizeof()求解由函数的形参传入的字符数组的长度时，得到的结果为指针的长度，既对应变量的字节数，而不是字符串的长度，此处一定要小心。【1】
-
+//一般要用sizeof(str1)/sizeof(str[0])去求，但也不一定准
 //    printf("strlen(str1)=%d, sizeof(str1)=%d\n", strlen(str1), sizeof(str1));
 //    printf("strlen(str2)=%d, sizeof(str2)=%d\n", strlen(str2), sizeof(str2));
 //    printf("strlen(str3)=%d, sizeof(str3)=%d\n", strlen(str3), sizeof(str3));

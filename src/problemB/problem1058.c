@@ -24,4 +24,37 @@
 6
 5
 2 2 3 4*/
+// 最后一行， 2表示错误最多的次数是2次， 2 3 4 表示错误2次的题目是第2、3、4题
+
+#include "stdio.h"
+
+//int main() {
+//    int N, M;
+//    scanf("%d %d", &N, &M);
+////    题目分数
+//    int mScore[M];
+////    题目选项数量
+//    int mAnswerSelect[M];
+////    题目答案数量
+//    int mAnswerCount[M];
+////    题目答案
+//    char *mAnswer[M];
+//    char mAnswerChar[M][6];
+//
+////    遍历题目，记录分数和答案
+//    for (int i = 1; i < M + 1; ++i) {
+//        int score, selectedCount, answerCount;
+//        scanf("%d %d %d", &score, &selectedCount, &answerCount);
+//        for (int j = 0; j < answerCount; ++j) {
+//            scanf("%c", &mAnswerChar[i][j]);
+//        }
+//        mAnswer[i] = mAnswerChar[i];
+//    }
+//
+//    for (int k = 0; k < N; ++k) {
+//
+//    }
+//
+//    return 0;
+//}
 

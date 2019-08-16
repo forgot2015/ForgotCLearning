@@ -2,28 +2,24 @@
 #include <errno.h>
 #include <string.h>
 
-extern int errno ;
+extern int errno;
 
-//int main ()
-//{
-//    FILE * pf;
+//int main() {
+//    FILE *pf;
 //    int errnum;
-//    pf = fopen ("unexist.txt", "rb");
-//    if (pf == NULL)
-//    {
+//    pf = fopen("unexist.txt", "rb");
+//    if (pf == NULL) {
 //        errnum = errno;
-//        fprintf(stderr, "é”™è¯¯å·: %d\n", errno);
-//        perror("é€šè¿‡ perror è¾“å‡ºé”™è¯¯");
-//        fprintf(stderr, "æ‰“å¼€æ–‡ä»¶é”™è¯¯: %s\n", strerror( errnum ));
-//    }
-//    else
-//    {
-//        fclose (pf);
+//        fprintf(stderr, "´íÎóºÅ: %d\n", errno);
+//        perror("Í¨¹ı perror Êä³ö´íÎó");
+//        fprintf(stderr, "´ò¿ªÎÄ¼ş´íÎó: %s\n", strerror(errnum));
+//    } else {
+//        fclose(pf);
 //    }
 //    return 0;
 //}
 
-//#include "head2.h"
+//#include "head.h"
 
 //#include <stdio.h>
 //
@@ -100,8 +96,7 @@ extern int errno ;
 //}
 
 
-//#include <stdio.h>
-//
+//³¬³ö¾«¶È·¶Î§£¬ÏÔÊ¾Òì³£
 //int main() {
 //    printf("f = %f\n", 3.1415);
 //    printf("f = %f\n", 314123456789123456789.15);
@@ -132,9 +127,9 @@ extern int errno ;
 //    if (pf == NULL)
 //    {
 //        errnum = errno;
-//        fprintf(stderr, "é”™è¯¯å·: %d\n", errno);
-//        perror("é€šè¿‡ perror è¾“å‡ºé”™è¯¯");
-//        fprintf(stderr, "æ‰“å¼€æ–‡ä»¶é”™è¯¯: %s\n", strerror( errnum ));
+//        fprintf(stderr, "´íÎóºÅ: %d\n", errno);
+//        perror("Í¨¹ı perror Êä³ö´íÎó");
+//        fprintf(stderr, "´ò¿ªÎÄ¼ş´íÎó: %s\n", strerror( errnum ));
 //    }
 //    else
 //    {
@@ -143,57 +138,48 @@ extern int errno ;
 //    return 0;
 //}
 
-////ç©ºæŒ‡é’ˆ
+////¿ÕÖ¸Õë
 //#include <stdio.h>
 //
-//int main ()
-//{
-//    int  *ptr = NULL;
+//int main() {
+//    int *ptr = NULL;
 //
-//    printf("ptr çš„åœ°å€æ˜¯ %p\n", ptr  );
+//    printf("ptr µÄµØÖ·ÊÇ %p\n", ptr);
 //
 //    return 0;
 //}
 
 
-//æŒ‡é’ˆçš„ä½¿ç”¨
+//Ö¸ÕëµÄÊ¹ÓÃ
 //#include <stdio.h>
-//
-//int main ()
-//{
-//    int  var = 20;   /* å®é™…å˜é‡çš„å£°æ˜ */
-//    int  *ip;        /* æŒ‡é’ˆå˜é‡çš„å£°æ˜ */
-//
-//    ip = &var;  /* åœ¨æŒ‡é’ˆå˜é‡ä¸­å­˜å‚¨ var çš„åœ°å€ */
-//
-//    printf("Address of var variable: %p\n", &var  );
-//
-//    /* åœ¨æŒ‡é’ˆå˜é‡ä¸­å­˜å‚¨çš„åœ°å€ */
-//    printf("Address stored in ip variable: %p\n", ip );
-//
-//    /* ä½¿ç”¨æŒ‡é’ˆè®¿é—®å€¼ */
-//    printf("Value of *ip variable: %d\n", *ip );
-//
+//int main() {
+//    int var = 20;   /* Êµ¼Ê±äÁ¿µÄÉùÃ÷ */
+//    int *ip;        /* Ö¸Õë±äÁ¿µÄÉùÃ÷ */
+//    ip = &var;  /* ÔÚÖ¸Õë±äÁ¿ÖĞ´æ´¢ var µÄµØÖ· */
+//    printf("Address of var variable: %p\n", &var);
+//    /* ÔÚÖ¸Õë±äÁ¿ÖĞ´æ´¢µÄµØÖ· */
+//    printf("Address stored in ip variable: %p\n", ip);
+//    /* Ê¹ÓÃÖ¸Õë·ÃÎÊÖµ */
+//    printf("Value of *ip variable: %d\n", *ip);
 //    return 0;
 //}
 
 
-////è®¡ç®— int, float, double å’Œ char å­—èŠ‚å¤§å°
+////¼ÆËã int, float, double ºÍ char ×Ö½Ú´óĞ¡
 //
 //#include <stdio.h>
 //
-//int main()
-//{
+//int main() {
 //    int integerType;
 //    float floatType;
 //    double doubleType;
 //    char charType;
 //
-//    // sizeof æ“ä½œç¬¦ç”¨äºè®¡ç®—å˜é‡çš„å­—èŠ‚å¤§å°
-//    printf("Size of int: %ld bytes\n",sizeof(integerType));
-//    printf("Size of float: %ld bytes\n",sizeof(floatType));
-//    printf("Size of double: %ld bytes\n",sizeof(doubleType));
-//    printf("Size of char: %ld byte\n",sizeof(charType));
+//    // sizeof ²Ù×÷·ûÓÃÓÚ¼ÆËã±äÁ¿µÄ×Ö½Ú´óĞ¡
+//    printf("Size of int: %ld bytes\n", sizeof(integerType));
+//    printf("Size of float: %ld bytes\n", sizeof(floatType));
+//    printf("Size of double: %ld bytes\n", sizeof(doubleType));
+//    printf("Size of char: %ld byte\n", sizeof(charType));
 //
 //    return 0;
 //}
@@ -222,10 +208,10 @@ extern int errno ;
 //}
 
 
-//é‡æ–°è°ƒæ•´å†…å­˜çš„å¤§å°å’Œé‡Šæ”¾å†…å­˜
-//        å½“ç¨‹åºé€€å‡ºæ—¶ï¼Œæ“ä½œç³»ç»Ÿä¼šè‡ªåŠ¨é‡Šæ”¾æ‰€æœ‰åˆ†é…ç»™ç¨‹åºçš„å†…å­˜ï¼Œä½†æ˜¯ï¼Œå»ºè®®æ‚¨åœ¨ä¸éœ€è¦å†…å­˜æ—¶ï¼Œéƒ½åº”è¯¥è°ƒç”¨å‡½æ•° free() æ¥é‡Šæ”¾å†…å­˜ã€‚
+//ÖØĞÂµ÷ÕûÄÚ´æµÄ´óĞ¡ºÍÊÍ·ÅÄÚ´æ
+//        µ±³ÌĞòÍË³öÊ±£¬²Ù×÷ÏµÍ³»á×Ô¶¯ÊÍ·ÅËùÓĞ·ÖÅä¸ø³ÌĞòµÄÄÚ´æ£¬µ«ÊÇ£¬½¨ÒéÄúÔÚ²»ĞèÒªÄÚ´æÊ±£¬¶¼Ó¦¸Ãµ÷ÓÃº¯Êı free() À´ÊÍ·ÅÄÚ´æ¡£
 //
-//æˆ–è€…ï¼Œæ‚¨å¯ä»¥é€šè¿‡è°ƒç”¨å‡½æ•° realloc() æ¥å¢åŠ æˆ–å‡å°‘å·²åˆ†é…çš„å†…å­˜å—çš„å¤§å°ã€‚è®©æˆ‘ä»¬ä½¿ç”¨ realloc() å’Œ free() å‡½æ•°ï¼Œå†æ¬¡æŸ¥çœ‹ä¸Šé¢çš„å®ä¾‹ï¼š
+//»òÕß£¬Äú¿ÉÒÔÍ¨¹ıµ÷ÓÃº¯Êı realloc() À´Ôö¼Ó»ò¼õÉÙÒÑ·ÖÅäµÄÄÚ´æ¿éµÄ´óĞ¡¡£ÈÃÎÒÃÇÊ¹ÓÃ realloc() ºÍ free() º¯Êı£¬ÔÙ´Î²é¿´ÉÏÃæµÄÊµÀı£º
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
@@ -236,14 +222,14 @@ extern int errno ;
 //
 //    strcpy(name, "Zara Ali");
 //
-//    /* åŠ¨æ€åˆ†é…å†…å­˜ */
+//    /* ¶¯Ì¬·ÖÅäÄÚ´æ */
 //    description = (char *) malloc(30 * sizeof(char));
 //    if (description == NULL) {
 //        fprintf(stderr, "Error - unable to allocate required memory\n");
 //    } else {
 //        strcpy(description, "Zara ali a DPS student.");
 //    }
-//    /* å‡è®¾æ‚¨æƒ³è¦å­˜å‚¨æ›´å¤§çš„æè¿°ä¿¡æ¯ */
+//    /* ¼ÙÉèÄúÏëÒª´æ´¢¸ü´óµÄÃèÊöĞÅÏ¢ */
 //    description = (char *) realloc(description, 100 * sizeof(char));
 //    if (description == NULL) {
 //        fprintf(stderr, "Error - unable to allocate required memory\n");
@@ -254,7 +240,7 @@ extern int errno ;
 //    printf("Name = %s\n", name);
 //    printf("Description: %s\n", description);
 //
-//    /* ä½¿ç”¨ free() å‡½æ•°é‡Šæ”¾å†…å­˜ */
+//    /* Ê¹ÓÃ free() º¯ÊıÊÍ·ÅÄÚ´æ */
 //    free(description);
 //}
 
@@ -269,14 +255,14 @@ extern int errno ;
 //    double sum = 0.0;
 //    int i;
 //
-//    /* ä¸º num ä¸ªå‚æ•°åˆå§‹åŒ– valist */
+//    /* Îª num ¸ö²ÎÊı³õÊ¼»¯ valist */
 //    va_start(valist, num);
 //
-//    /* è®¿é—®æ‰€æœ‰èµ‹ç»™ valist çš„å‚æ•° */
+//    /* ·ÃÎÊËùÓĞ¸³¸ø valist µÄ²ÎÊı */
 //    for (i = 0; i < num; i++) {
 //        sum += va_arg(valist, int);
 //    }
-//    /* æ¸…ç†ä¸º valist ä¿ç•™çš„å†…å­˜ */
+//    /* ÇåÀíÎª valist ±£ÁôµÄÄÚ´æ */
 //    va_end(valist);
 //
 //    return sum / num;
@@ -295,17 +281,17 @@ extern int errno ;
 //{
 //    int dividend = 20;
 //    int divisor = 5;
-////    é€šå¸¸æƒ…å†µä¸‹ï¼Œç¨‹åºæˆåŠŸæ‰§è¡Œå®Œä¸€ä¸ªæ“ä½œæ­£å¸¸é€€å‡ºçš„æ—¶å€™ä¼šå¸¦æœ‰å€¼ EXIT_SUCCESSã€‚åœ¨è¿™é‡Œï¼ŒEXIT_SUCCESS æ˜¯å®ï¼Œå®ƒè¢«å®šä¹‰ä¸º 0ã€‚
-////å¦‚æœç¨‹åºä¸­å­˜åœ¨ä¸€ç§é”™è¯¯æƒ…å†µï¼Œå½“æ‚¨é€€å‡ºç¨‹åºæ—¶ï¼Œä¼šå¸¦æœ‰çŠ¶æ€å€¼ EXIT_FAILUREï¼Œè¢«å®šä¹‰ä¸º -1
+////    Í¨³£Çé¿öÏÂ£¬³ÌĞò³É¹¦Ö´ĞĞÍêÒ»¸ö²Ù×÷Õı³£ÍË³öµÄÊ±ºò»á´øÓĞÖµ EXIT_SUCCESS¡£ÔÚÕâÀï£¬EXIT_SUCCESS ÊÇºê£¬Ëü±»¶¨ÒåÎª 0¡£
+////Èç¹û³ÌĞòÖĞ´æÔÚÒ»ÖÖ´íÎóÇé¿ö£¬µ±ÄúÍË³ö³ÌĞòÊ±£¬»á´øÓĞ×´Ì¬Öµ EXIT_FAILURE£¬±»¶¨ÒåÎª -1
 ////    int divisor = 0;
 //    int quotient;
 //
 //    if( divisor == 0){
-//        fprintf(stderr, "é™¤æ•°ä¸º 0 é€€å‡ºè¿è¡Œ...\n");
+//        fprintf(stderr, "³ıÊıÎª 0 ÍË³öÔËĞĞ...\n");
 //        exit(EXIT_FAILURE);
 //    }
 //    quotient = dividend / divisor;
-//    fprintf(stderr, "quotient å˜é‡çš„å€¼ä¸º: %d\n", quotient );
+//    fprintf(stderr, "quotient ±äÁ¿µÄÖµÎª: %d\n", quotient );
 //
 //    exit(EXIT_SUCCESS);
 //}
@@ -313,7 +299,7 @@ extern int errno ;
 
 //#include <stdio.h>
 //
-////è¿™ä¸ªæŒ‡ä»¤å‘Šè¯‰ CPP å–æ¶ˆå·²å®šä¹‰çš„ FILE_SIZEã€‚
+////Õâ¸öÖ¸Áî¸æËß CPP È¡ÏûÒÑ¶¨ÒåµÄ FILE_SIZE¡£
 ////#undef  FILE_SIZE
 //#define  FILE_SIZE 41
 //#define FILE_SIZE 42
@@ -341,6 +327,7 @@ extern int errno ;
 //    char str[100];
 //
 //    printf( "Enter a value :");
+//»ñÈ¡Ò»ĞĞÊäÈë
 //    gets( str );
 //
 //    printf( "\nYou entered: ");
@@ -370,22 +357,22 @@ extern int errno ;
 //{
 //    float f;
 //    printf("Enter a number: ");
-//    // %f åŒ¹é…æµ®ç‚¹å‹æ•°æ®
+//    // %f Æ¥Åä¸¡µãĞÍÊı¾İ
 //    scanf("%f",&f);
 //    printf("Value = %f", f);
 //    return 0;
 //}
 
 
-////æ‚¨ä¹Ÿå¯ä»¥ä½¿ç”¨ typedef æ¥ä¸ºç”¨æˆ·è‡ªå®šä¹‰çš„æ•°æ®ç±»å‹å–ä¸€ä¸ªæ–°çš„åå­—ã€‚ä¾‹å¦‚ï¼Œæ‚¨å¯ä»¥å¯¹ç»“æ„ä½“ä½¿ç”¨ typedef æ¥å®šä¹‰ä¸€ä¸ªæ–°çš„æ•°æ®ç±»å‹åå­—ï¼Œç„¶åä½¿ç”¨è¿™ä¸ªæ–°çš„æ•°æ®ç±»å‹æ¥ç›´æ¥å®šä¹‰ç»“æ„å˜é‡ï¼Œå¦‚ä¸‹ï¼š
+////ÄúÒ²¿ÉÒÔÊ¹ÓÃ typedef À´ÎªÓÃ»§×Ô¶¨ÒåµÄÊı¾İÀàĞÍÈ¡Ò»¸öĞÂµÄÃû×Ö¡£ÀıÈç£¬Äú¿ÉÒÔ¶Ô½á¹¹ÌåÊ¹ÓÃ typedef À´¶¨ÒåÒ»¸öĞÂµÄÊı¾İÀàĞÍÃû×Ö£¬È»ºóÊ¹ÓÃÕâ¸öĞÂµÄÊı¾İÀàĞÍÀ´Ö±½Ó¶¨Òå½á¹¹±äÁ¿£¬ÈçÏÂ£º
 //#include <stdio.h>
 //#include <string.h>
 //
-////å°†unsigned char å®šä¹‰ç»™ä¸€ç§æ–°çš„ç±»å‹ BYTEï¼Œ å³BYTEä¹Ÿä»£è¡¨unsigned charäº†
+////½«unsigned char ¶¨Òå¸øÒ»ÖÖĞÂµÄÀàĞÍ BYTE£¬ ¼´BYTEÒ²´ú±íunsigned charÁË
 //typedef unsigned char BYTE;
 //BYTE  b1, b2;
 //
-////å°†Booksç»“æ„ä½“å®šä¹‰ç»™ä¸€ç§æ–°çš„ç±»å‹ Book
+////½«Books½á¹¹Ìå¶¨Òå¸øÒ»ÖÖĞÂµÄÀàĞÍ Book
 //typedef struct Books
 //{
 //    char  title[50];
@@ -398,20 +385,20 @@ extern int errno ;
 //{
 //    Book book;
 //
-//    strcpy( book.title, "C æ•™ç¨‹");
+//    strcpy( book.title, "C ½Ì³Ì");
 //    strcpy( book.author, "Runoob");
-//    strcpy( book.subject, "ç¼–ç¨‹è¯­è¨€");
+//    strcpy( book.subject, "±à³ÌÓïÑÔ");
 //    book.book_id = 12345;
 //
-//    printf( "ä¹¦æ ‡é¢˜ : %s\n", book.title);
-//    printf( "ä¹¦ä½œè€… : %s\n", book.author);
-//    printf( "ä¹¦ç±»ç›® : %s\n", book.subject);
-//    printf( "ä¹¦ ID : %d\n", book.book_id);
+//    printf( "Êé±êÌâ : %s\n", book.title);
+//    printf( "Êé×÷Õß : %s\n", book.author);
+//    printf( "ÊéÀàÄ¿ : %s\n", book.subject);
+//    printf( "Êé ID : %d\n", book.book_id);
 //
 //    return 0;
 //}
 
-//å…±åŒä½“
+//¹²Í¬Ìå
 //#include <stdio.h>
 //#include <string.h>
 //
@@ -431,19 +418,16 @@ extern int errno ;
 //
 //    data.f = 220.5;
 //    printf( "data.f : %f\n", data.f);
-////    ä¼šå‘ç°içš„å€¼ä¸fä¸€æ ·ï¼Œå› ä¸ºåœ¨åŒä¸€æ—¶é—´åªä½¿ç”¨ä¸€ä¸ªå˜é‡
+////    »á·¢ÏÖiµÄÖµÓëfÒ»Ñù£¬ÒòÎªÔÚÍ¬Ò»Ê±¼äÖ»Ê¹ÓÃÒ»¸ö±äÁ¿
 //    printf( "data.i : %f\n", data.i);
 //
 //    strcpy( data.str, "C Programming");
 //    printf( "data.str : %s\n", data.str);
-//
-//
 //    return 0;
 //}
 
-
 //#include <stdio.h>
-////gccè®©ä¸åŒç±»å‹çš„å˜é‡å…±äº«å†…å­˜åœ°å€ ,åŒä¸€æ—¶é—´åªæœ‰ä¸€ä¸ªæˆå‘˜æœ‰æ•ˆ
+////¹²Í¬ÌåÈÃ²»Í¬ÀàĞÍµÄ±äÁ¿¹²ÏíÄÚ´æµØÖ· ,Í¬Ò»Ê±¼äÖ»ÓĞÒ»¸ö³ÉÔ±ÓĞĞ§
 //union data{
 //    int a;
 //    char b;
@@ -451,17 +435,17 @@ extern int errno ;
 //};
 //
 //int main(){
-//    union data data_1 = {1};//åˆå§‹åŒ–æ—¶åªå¡«å†™ä¸€ä¸ªå€¼ã€‚(åŒä¸€æ—¶é—´åªæœ‰ä¸€ä¸ªæˆå‘˜æœ‰æ•ˆ)
+//    union data data_1 = {1};//³õÊ¼»¯Ê±Ö»ÌîĞ´Ò»¸öÖµ¡£(Í¬Ò»Ê±¼äÖ»ÓĞÒ»¸ö³ÉÔ±ÓĞĞ§)
 //    data_1.b = 'c';
-//    data_1.a = 10;//åèµ‹å€¼çš„æ‰æœ‰æ•ˆã€‚å‰é¢çš„èµ‹å€¼è¢«è¦†ç›–
-//    //æ‰“å°åœ°å€ï¼Œå‘ç°æŒ‡å‘åŒä¸€ä¸ªåœ°å€
+//    data_1.a = 10;//ºó¸³ÖµµÄ²ÅÓĞĞ§¡£Ç°ÃæµÄ¸³Öµ±»¸²¸Ç
+//    //´òÓ¡µØÖ·£¬·¢ÏÖÖ¸ÏòÍ¬Ò»¸öµØÖ·
 //    printf("%p\n%p\n%p\n",&data_1.a,&data_1.b,&data_1.c);
 //    return 0;
 //}
 
 
-//ç»“æ„ä½œä¸ºå‡½æ•°å‚æ•°
-//æ‚¨å¯ä»¥æŠŠç»“æ„ä½œä¸ºå‡½æ•°å‚æ•°ï¼Œä¼ å‚æ–¹å¼ä¸å…¶ä»–ç±»å‹çš„å˜é‡æˆ–æŒ‡é’ˆç±»ä¼¼ã€‚æ‚¨å¯ä»¥ä½¿ç”¨ä¸Šé¢å®ä¾‹ä¸­çš„æ–¹å¼æ¥è®¿é—®ç»“æ„å˜é‡ï¼š
+//½á¹¹×÷Îªº¯Êı²ÎÊı
+//Äú¿ÉÒÔ°Ñ½á¹¹×÷Îªº¯Êı²ÎÊı£¬´«²Î·½Ê½ÓëÆäËûÀàĞÍµÄ±äÁ¿»òÖ¸ÕëÀàËÆ¡£Äú¿ÉÒÔÊ¹ÓÃÉÏÃæÊµÀıÖĞµÄ·½Ê½À´·ÃÎÊ½á¹¹±äÁ¿£º
 
 //#include <stdio.h>
 //#include <string.h>
@@ -481,31 +465,31 @@ extern int errno ;
 //    int   book_id;
 //};
 //
-///* å‡½æ•°å£°æ˜ */
+///* º¯ÊıÉùÃ÷ */
 //void printBook( struct Books book );
 //int main( )
 //{
 //    lilei.age=10;
 //
-//    struct Books Book1;        /* å£°æ˜ Book1ï¼Œç±»å‹ä¸º Books */
-//    struct Books Book2;        /* å£°æ˜ Book2ï¼Œç±»å‹ä¸º Books */
+//    struct Books Book1;        /* ÉùÃ÷ Book1£¬ÀàĞÍÎª Books */
+//    struct Books Book2;        /* ÉùÃ÷ Book2£¬ÀàĞÍÎª Books */
 //
-//    /* Book1 è¯¦è¿° */
+//    /* Book1 ÏêÊö */
 //    strcpy( Book1.title, "C Programming");
 //    strcpy( Book1.author, "Nuha Ali");
 //    strcpy( Book1.subject, "C Programming Tutorial");
 //    Book1.book_id = 6495407;
 //
-//    /* Book2 è¯¦è¿° */
+//    /* Book2 ÏêÊö */
 //    strcpy( Book2.title, "Telecom Billing");
 //    strcpy( Book2.author, "Zara Ali");
 //    strcpy( Book2.subject, "Telecom Billing Tutorial");
 //    Book2.book_id = 6495700;
 //
-//    /* è¾“å‡º Book1 ä¿¡æ¯ */
+//    /* Êä³ö Book1 ĞÅÏ¢ */
 //    printBook( Book1 );
 //
-//    /* è¾“å‡º Book2 ä¿¡æ¯ */
+//    /* Êä³ö Book2 ĞÅÏ¢ */
 //    printBook( Book2 );
 //
 //    return 0;
@@ -528,7 +512,7 @@ extern int errno ;
 //    char author[50];
 //    char subject[100];
 //    int book_id;
-//} book = {"C è¯­è¨€", "RUNOOB", "ç¼–ç¨‹è¯­è¨€", 123456};
+//} book = {"C ÓïÑÔ", "RUNOOB", "±à³ÌÓïÑÔ", 123456};
 //
 //int main() {
 //    printf("title : %s\nauthor: %s\nsubject: %s\nbook_id: %d\n\n", book.title, book.author, book.subject, book.book_id);
@@ -537,16 +521,16 @@ extern int errno ;
 //}
 //
 //
-////å¦‚æœä¸¤ä¸ªç»“æ„ä½“äº’ç›¸åŒ…å«ï¼Œåˆ™éœ€è¦å¯¹å…¶ä¸­ä¸€ä¸ªç»“æ„ä½“è¿›è¡Œä¸å®Œæ•´å£°æ˜ï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼š
-//struct B;    //å¯¹ç»“æ„ä½“Bè¿›è¡Œä¸å®Œæ•´å£°æ˜
+////Èç¹ûÁ½¸ö½á¹¹Ìå»¥Ïà°üº¬£¬ÔòĞèÒª¶ÔÆäÖĞÒ»¸ö½á¹¹Ìå½øĞĞ²»ÍêÕûÉùÃ÷£¬ÈçÏÂËùÊ¾£º
+//struct B;    //¶Ô½á¹¹ÌåB½øĞĞ²»ÍêÕûÉùÃ÷
 //
-////ç»“æ„ä½“Aä¸­åŒ…å«æŒ‡å‘ç»“æ„ä½“Bçš„æŒ‡é’ˆ
+////½á¹¹ÌåAÖĞ°üº¬Ö¸Ïò½á¹¹ÌåBµÄÖ¸Õë
 //struct A {
 //    struct B *partner;
 //    //other members;
 //};
 //
-////ç»“æ„ä½“Bä¸­åŒ…å«æŒ‡å‘ç»“æ„ä½“Açš„æŒ‡é’ˆï¼Œåœ¨Aå£°æ˜å®Œåï¼ŒBä¹Ÿéšä¹‹è¿›è¡Œå£°æ˜
+////½á¹¹ÌåBÖĞ°üº¬Ö¸Ïò½á¹¹ÌåAµÄÖ¸Õë£¬ÔÚAÉùÃ÷Íêºó£¬BÒ²ËæÖ®½øĞĞÉùÃ÷
 //struct B {
 //    struct A *partner;
 //    //other members;
@@ -563,27 +547,27 @@ extern int errno ;
 //    char str3[12];
 //    int  len ;
 //
-//    /* å¤åˆ¶ str1 åˆ° str3 */
+//    /* ¸´ÖÆ str1 µ½ str3 */
 //    strcpy(str3, str1);
 //    printf("strcpy( str3, str1) :  %s\n", str3 );
 //
-//    /* è¿æ¥ str1 å’Œ str2 */
+//    /* Á¬½Ó str1 ºÍ str2 */
 //    strcat( str1, str2);
 //    printf("strcat( str1, str2):   %s\n", str1 );
 //
-//    /* è¿æ¥åï¼Œstr1 çš„æ€»é•¿åº¦ */
+//    /* Á¬½Óºó£¬str1 µÄ×Ü³¤¶È */
 //    len = strlen(str1);
 //    printf("strlen(str1) :  %d\n", len );
 //
-////    ???ä¸æ‡‚
+////    ???²»¶®
 //    printf("strchr(str1,0) :  %d\n", *strchr(str1,'W') );
 //
 //    return 0;
 //}
 
-//åœ¨ C è¯­è¨€ä¸­ï¼Œå­—ç¬¦ä¸²å®é™…ä¸Šæ˜¯ä½¿ç”¨ null å­—ç¬¦ '\0' ç»ˆæ­¢çš„ä¸€ç»´å­—ç¬¦æ•°ç»„ã€‚å› æ­¤ï¼Œä¸€ä¸ªä»¥ null ç»“å°¾çš„å­—ç¬¦ä¸²ï¼ŒåŒ…å«äº†ç»„æˆå­—ç¬¦ä¸²çš„å­—ç¬¦ã€‚
+//ÔÚ C ÓïÑÔÖĞ£¬×Ö·û´®Êµ¼ÊÉÏÊÇÊ¹ÓÃ null ×Ö·û '\0' ÖÕÖ¹µÄÒ»Î¬×Ö·ûÊı×é¡£Òò´Ë£¬Ò»¸öÒÔ null ½áÎ²µÄ×Ö·û´®£¬°üº¬ÁË×é³É×Ö·û´®µÄ×Ö·û¡£
 //
-//ä¸‹é¢çš„å£°æ˜å’Œåˆå§‹åŒ–åˆ›å»ºäº†ä¸€ä¸ª "Hello" å­—ç¬¦ä¸²ã€‚ç”±äºåœ¨æ•°ç»„çš„æœ«å°¾å­˜å‚¨äº†ç©ºå­—ç¬¦ï¼Œæ‰€ä»¥å­—ç¬¦æ•°ç»„çš„å¤§å°æ¯”å•è¯ "Hello" çš„å­—ç¬¦æ•°å¤šä¸€ä¸ªã€‚
+//ÏÂÃæµÄÉùÃ÷ºÍ³õÊ¼»¯´´½¨ÁËÒ»¸ö "Hello" ×Ö·û´®¡£ÓÉÓÚÔÚÊı×éµÄÄ©Î²´æ´¢ÁË¿Õ×Ö·û£¬ËùÒÔ×Ö·ûÊı×éµÄ´óĞ¡±Èµ¥´Ê "Hello" µÄ×Ö·ûÊı¶àÒ»¸ö¡£
 
 //#include <stdio.h>
 //#include <string.h>
@@ -608,9 +592,9 @@ extern int errno ;
 
 //
 //ptr++
-//åœ¨æ‰§è¡Œå®Œä¸Šè¿°çš„è¿ç®—ä¹‹åï¼Œptr å°†æŒ‡å‘ä½ç½® 1004ï¼Œå› ä¸º ptr æ¯å¢åŠ ä¸€æ¬¡ï¼Œå®ƒéƒ½å°†æŒ‡å‘ä¸‹ä¸€ä¸ªæ•´æ•°ä½ç½®ï¼Œ
-//å³å½“å‰ä½ç½®å¾€åç§» 4 ä¸ªå­—èŠ‚ã€‚è¿™ä¸ªè¿ç®—ä¼šåœ¨ä¸å½±å“å†…å­˜ä½ç½®ä¸­å®é™…å€¼çš„æƒ…å†µä¸‹ï¼Œç§»åŠ¨æŒ‡é’ˆåˆ°ä¸‹ä¸€ä¸ªå†…å­˜ä½ç½®ã€‚
-//å¦‚æœ ptr æŒ‡å‘ä¸€ä¸ªåœ°å€ä¸º 1000 çš„å­—ç¬¦ï¼Œä¸Šé¢çš„è¿ç®—ä¼šå¯¼è‡´æŒ‡é’ˆæŒ‡å‘ä½ç½® 1001ï¼Œå› ä¸ºä¸‹ä¸€ä¸ªå­—ç¬¦ä½ç½®æ˜¯åœ¨ 1001ã€‚
+//ÔÚÖ´ĞĞÍêÉÏÊöµÄÔËËãÖ®ºó£¬ptr ½«Ö¸ÏòÎ»ÖÃ 1004£¬ÒòÎª ptr Ã¿Ôö¼ÓÒ»´Î£¬Ëü¶¼½«Ö¸ÏòÏÂÒ»¸öÕûÊıÎ»ÖÃ£¬
+//¼´µ±Ç°Î»ÖÃÍùºóÒÆ 4 ¸ö×Ö½Ú¡£Õâ¸öÔËËã»áÔÚ²»Ó°ÏìÄÚ´æÎ»ÖÃÖĞÊµ¼ÊÖµµÄÇé¿öÏÂ£¬ÒÆ¶¯Ö¸Õëµ½ÏÂÒ»¸öÄÚ´æÎ»ÖÃ¡£
+//Èç¹û ptr Ö¸ÏòÒ»¸öµØÖ·Îª 1000 µÄ×Ö·û£¬ÉÏÃæµÄÔËËã»áµ¼ÖÂÖ¸ÕëÖ¸ÏòÎ»ÖÃ 1001£¬ÒòÎªÏÂÒ»¸ö×Ö·ûÎ»ÖÃÊÇÔÚ 1001¡£
 
 //#include <stdio.h>
 //
@@ -621,15 +605,15 @@ extern int errno ;
 //    int  var[] = {10, 100, 200};
 //    int  i, *ptr;
 //
-//    /* æŒ‡é’ˆä¸­çš„æ•°ç»„åœ°å€ */
+//    /* Ö¸ÕëÖĞµÄÊı×éµØÖ· */
 //    ptr = var;
 //    for ( i = 0; i < MAX; i++)
 //    {
 //
-//        printf("å­˜å‚¨åœ°å€ï¼švar[%d] = %x\n", i, ptr );
-//        printf("å­˜å‚¨å€¼ï¼švar[%d] = %d\n", i, *ptr );
+//        printf("´æ´¢µØÖ·£ºvar[%d] = %x\n", i, ptr );
+//        printf("´æ´¢Öµ£ºvar[%d] = %d\n", i, *ptr );
 //
-//        /* ç§»åŠ¨åˆ°ä¸‹ä¸€ä¸ªä½ç½® */
+//        /* ÒÆ¶¯µ½ÏÂÒ»¸öÎ»ÖÃ */
 //        ptr++;
 //    }
 //    return 0;
@@ -637,40 +621,44 @@ extern int errno ;
 
 
 
-//åœ¨å˜é‡å£°æ˜çš„æ—¶å€™ï¼Œå¦‚æœæ²¡æœ‰ç¡®åˆ‡çš„åœ°å€å¯ä»¥èµ‹å€¼ï¼Œä¸ºæŒ‡é’ˆå˜é‡èµ‹ä¸€ä¸ª NULL å€¼æ˜¯ä¸€ä¸ªè‰¯å¥½çš„ç¼–ç¨‹ä¹ æƒ¯
-//#include <stdio.h>
-//
-//int main ()
-//{
-//    int  *ptr = NULL;
-//
-//    printf("ptr çš„åœ°å€æ˜¯ %p\n", ptr  );
-//
-//    return 0;
-//}
-//åœ¨å¤§å¤šæ•°çš„æ“ä½œç³»ç»Ÿä¸Šï¼Œç¨‹åºä¸å…è®¸è®¿é—®åœ°å€ä¸º 0 çš„å†…å­˜ï¼Œå› ä¸ºè¯¥å†…å­˜æ˜¯æ“ä½œç³»ç»Ÿä¿ç•™çš„ã€‚ç„¶è€Œï¼Œå†…å­˜åœ°å€ 0 æœ‰ç‰¹åˆ«é‡è¦çš„æ„ä¹‰ï¼Œå®ƒè¡¨æ˜è¯¥æŒ‡é’ˆä¸æŒ‡å‘ä¸€ä¸ªå¯è®¿é—®çš„å†…å­˜ä½ç½®ã€‚ä½†æŒ‰ç…§æƒ¯ä¾‹ï¼Œå¦‚æœæŒ‡é’ˆåŒ…å«ç©ºå€¼ï¼ˆé›¶å€¼ï¼‰ï¼Œåˆ™å‡å®šå®ƒä¸æŒ‡å‘ä»»ä½•ä¸œè¥¿ã€‚
-//
-//å¦‚éœ€æ£€æŸ¥ä¸€ä¸ªç©ºæŒ‡é’ˆï¼Œæ‚¨å¯ä»¥ä½¿ç”¨ if è¯­å¥ï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼š
-//
-//if(ptr)     /* å¦‚æœ p éç©ºï¼Œåˆ™å®Œæˆ */
-//if(!ptr)    /* å¦‚æœ p ä¸ºç©ºï¼Œåˆ™å®Œæˆ */
-
-
-//æŒ‡é’ˆçš„ä½¿ç”¨
+//ÔÚ±äÁ¿ÉùÃ÷µÄÊ±ºò£¬Èç¹ûÃ»ÓĞÈ·ÇĞµÄµØÖ·¿ÉÒÔ¸³Öµ£¬ÎªÖ¸Õë±äÁ¿¸³Ò»¸ö NULL ÖµÊÇÒ»¸öÁ¼ºÃµÄ±à³ÌÏ°¹ß
 //#include <stdio.h>
 //
 //int main() {
-//    int var = 20;   /* å®é™…å˜é‡çš„å£°æ˜ */
-//    int *ip;        /* æŒ‡é’ˆå˜é‡çš„å£°æ˜ */
+//    int *ptr = NULL;
 //
-//    ip = &var;  /* åœ¨æŒ‡é’ˆå˜é‡ä¸­å­˜å‚¨ var çš„åœ°å€ */
+//    printf("ptr µÄµØÖ·ÊÇ %p\n", ptr);
+////    Èô¸³ÖµNULL£¬Ôò*ptrÖ¸Ïò ¿ÕµØÖ·£¬Îª00000000£¬ÈôÖ»ÉùÃ÷int *ptr; Ôò²»ÊÇ¿ÕµØÖ·
+//    if (!ptr) {
+//        printf("empty");
+//    }
+//
+//    return 0;
+//}
+//ÔÚ´ó¶àÊıµÄ²Ù×÷ÏµÍ³ÉÏ£¬³ÌĞò²»ÔÊĞí·ÃÎÊµØÖ·Îª 0 µÄÄÚ´æ£¬ÒòÎª¸ÃÄÚ´æÊÇ²Ù×÷ÏµÍ³±£ÁôµÄ¡£È»¶ø£¬ÄÚ´æµØÖ· 0 ÓĞÌØ±ğÖØÒªµÄÒâÒå£¬
+// Ëü±íÃ÷¸ÃÖ¸Õë²»Ö¸ÏòÒ»¸ö¿É·ÃÎÊµÄÄÚ´æÎ»ÖÃ¡£µ«°´ÕÕ¹ßÀı£¬Èç¹ûÖ¸Õë°üº¬¿ÕÖµ£¨ÁãÖµ£©£¬Ôò¼Ù¶¨Ëü²»Ö¸ÏòÈÎºÎ¶«Î÷¡£
+//
+//ÈçĞè¼ì²éÒ»¸ö¿ÕÖ¸Õë£¬Äú¿ÉÒÔÊ¹ÓÃ if Óï¾ä£¬ÈçÏÂËùÊ¾£º
+//
+//if(ptr)     /* Èç¹û p ·Ç¿Õ£¬ÔòÍê³É */
+//if(!ptr)    /* Èç¹û p Îª¿Õ£¬ÔòÍê³É */
+
+
+//Ö¸ÕëµÄÊ¹ÓÃ
+//#include <stdio.h>
+//
+//int main() {
+//    int var = 20;   /* Êµ¼Ê±äÁ¿µÄÉùÃ÷ */
+//    int *ip;        /* Ö¸Õë±äÁ¿µÄÉùÃ÷ */
+//
+//    ip = &var;  /* ÔÚÖ¸Õë±äÁ¿ÖĞ´æ´¢ var µÄµØÖ· */
 //
 //    printf("Address of var variable: %p\n", &var);
 //
-//    /* åœ¨æŒ‡é’ˆå˜é‡ä¸­å­˜å‚¨çš„åœ°å€ */
+//    /* ÔÚÖ¸Õë±äÁ¿ÖĞ´æ´¢µÄµØÖ· */
 //    printf("Address stored in ip variable: %p\n", ip);
 //
-//    /* ä½¿ç”¨æŒ‡é’ˆè®¿é—®å€¼ */
+//    /* Ê¹ÓÃÖ¸Õë·ÃÎÊÖµ */
 //    printf("Value of *ip variable: %d\n", *ip);
 //
 //    return 0;
@@ -684,11 +672,10 @@ extern int errno ;
 //
 //int main() {
 //    count = 6;
-//    printf("count çš„åœ°å€æ˜¯ %d\n",&count);
-//    printf("count çš„å€¼æ˜¯ %d\n",*&count);
-//
-//
+//    printf("count µÄµØÖ·ÊÇ %d\n",&count);
+//    printf("count µÄÖµÊÇ %d\n",*&count);
 //    write_extern();
+// return 0;
 //}
 
 
@@ -699,8 +686,8 @@ extern int errno ;
 //int main() {
 ////    int var1;
 ////    char var2[10];
-////    printf("var1 å˜é‡çš„åœ°å€ï¼š %p\n", &var1);
-////    printf("var2 å˜é‡çš„åœ°å€ï¼š %p\n", &var2);
+////    printf("var1 ±äÁ¿µÄµØÖ·£º %p\n", &var1);
+////    printf("var2 ±äÁ¿µÄµØÖ·£º %p\n", &var2);
 //
 //    printf("Hello, World!\n");
 //    return 0;
@@ -715,7 +702,7 @@ extern int errno ;
 //    return x+y;
 //}
 //
-///*å®šä¹‰ä¸¤ä¸ªå…¨å±€å˜é‡*/
+///*¶¨ÒåÁ½¸öÈ«¾Ö±äÁ¿*/
 //int x=1;
 //int y=2;
 //int addtwonum();
@@ -723,7 +710,7 @@ extern int errno ;
 //{
 //    int result;
 //    result = addtwonum();
-//    printf("result ä¸º: %d\n",result);
+//    printf("result Îª: %d\n",result);
 //    return 0;
 //}
 
@@ -732,24 +719,21 @@ extern int errno ;
 //int main() {
 //    const int h = 20;
 //    const int w = 30;
-//    printf("é¢ç§¯æ˜¯ï¼š%d" , h * w);
+//    printf("Ãæ»ıÊÇ£º%d" , h * w);
 //    printf("\n");
 //}
 
-
-
 //#include <stdio.h>
-//
-///* å‡½æ•°å£°æ˜ */
+///* º¯ÊıÉùÃ÷ */
 //int max(int num1, int num2);
 //
 //int main() {
-//    /* å±€éƒ¨å˜é‡å®šä¹‰ */
+//    /* ¾Ö²¿±äÁ¿¶¨Òå */
 //    int a = 100;
 //    int b = 200;
 //    int ret;
 //
-//    /* è°ƒç”¨å‡½æ•°æ¥è·å–æœ€å¤§å€¼ */
+//    /* µ÷ÓÃº¯ÊıÀ´»ñÈ¡×î´óÖµ */
 //    ret = max(a, b);
 //
 //    printf("Max value is : %d\n", ret);
@@ -757,9 +741,9 @@ extern int errno ;
 //    return 0;
 //}
 //
-///* å‡½æ•°è¿”å›ä¸¤ä¸ªæ•°ä¸­è¾ƒå¤§çš„é‚£ä¸ªæ•° */
+///* º¯Êı·µ»ØÁ½¸öÊıÖĞ½Ï´óµÄÄÇ¸öÊı */
 //int max(int num1, int num2) {
-//    /* å±€éƒ¨å˜é‡å£°æ˜ */
+//    /* ¾Ö²¿±äÁ¿ÉùÃ÷ */
 //    int result;
 //
 //    if (num1 > num2)

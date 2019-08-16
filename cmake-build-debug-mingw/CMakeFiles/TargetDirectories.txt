@@ -1,0 +1,3 @@
+C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
+C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir
+C:/Users/forgot/CLionProjects/ForgotCLearning/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
