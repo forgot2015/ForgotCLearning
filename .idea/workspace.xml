@@ -13,14 +13,14 @@
   <component name="ChangeListManager">
     <list default="true" id="1802cf37-a4f1-4020-a48c-cea8b761d02d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1002.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1002.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1003.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1003.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1004.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1004.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1005.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1005.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1006.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1006.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1007.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1007.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1067.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1067.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1094.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1094.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1008.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1008.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1009.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1009.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1010.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1010.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1011.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1011.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1012.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1012.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1013.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1013.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1014.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1014.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1015.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1015.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +132,7 @@
       <workItem from="1565685038946" duration="5396000" />
       <workItem from="1565742735782" duration="22357000" />
       <workItem from="1565829649219" duration="24315000" />
-      <workItem from="1565922605949" duration="10771000" />
+      <workItem from="1565922605949" duration="25440000" />
     </task>
     <servers />
   </component>

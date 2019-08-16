@@ -31,11 +31,50 @@ THU 14:04*/
 
 //int main() {
 //    char *day[] = {"MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"};
+//    char str1[61];
+//    char str2[61];
+//    char str3[61];
+//    char str4[61];
+//
+//    scanf("%s %s %s %s", str1, str2, str3, str4);
+//    int first = 0;
+//    for (int i = 0; i < strlen(str1); i++) {
+//        if (str1[i] == str2[i] && (str1[i] >= 'A' && str1[i] <= 'G')) {
+//            printf("%s ", day[str1[i] - 'A']);
+//            first = i;
+//            break;
+//        }
+//    }
+//
+//    for (int i = first + 1; i < strlen(str1); i++) {
+//        if (str1[i] == str2[i]) {
+//            if (str1[i] >= '0' && str1[i] <= '9') {
+//                printf("%02d:", str1[i] - '0');
+//                break;
+//            } else if (str1[i] >= 'A' && str1[i] <= 'N') {
+//                printf("%02d:", str1[i] - 'A' + 10);
+//                break;
+//            }
+//        }
+//    }
+//
+//    for (int i = 0; i < strlen(str3); i++) {
+//        if (str3[i] == str4[i] && ((str3[i] >= 'A' && str3[i] <= 'Z') || (str3[i] >= 'a' && str3[i] <= 'z'))) {
+//            printf("%02d", i);
+//            break;
+//        }
+//    }
+//
+//    return 0;
+//}
+
+//int main() {
+//    char *day[] = {"MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"};
 //    char s1[61];
 //    char s2[61];
 //    char s3[61];
 //    char s4[61];
-//    scanf("%s%s%s%s", s1, s2, s3, s4);
+//    scanf("%s %s %s %s", s1, s2, s3, s4);
 //    int dayIndex = 0;
 //    int s1len = strlen(s1);
 //

@@ -51,77 +51,80 @@ N 11 2 N 9*/
 
 #include <stdio.h>
 
-//有一个用例没过，不知道原因
+//一开始错了一个用例，看网友分享才发现坑点，A2交错和为0，不代表不存在，故还是要统计A2的数量的
 //int main() {
 //    int N;
-//    int a;
-//    int sumA1 = 0;
-//    int sumA2 = 0;
-//    int flagA2 = 1;
-//    int countA3 = 0;
-//    int countA4 = 0;
-//    float sumA4 = 0;
-//    int maxA5 = 0;
-//
 //    scanf("%d", &N);
-//    for (int i = 0; i < N; ++i) {
-//        scanf("%d", &a);
-////        能被 5 整除的数字中所有偶数的和，也就是能被10整除的数
-//        if (a % 10 == 0) {
-//            sumA1 += a;
+//
+//    int n;
+//    int A1 = 0, A2 = 0, A3 = 0, A4 = 0, A5 = 0;
+//    int A2flag = 1;
+//    int A2Count = 0;
+//    double A4Ave;
+//    int A4Count = 0;
+//
+//    for (int i = 0; i < N; i++) {
+//        scanf("%d", &n);
+//        if (n % 10 == 0) {
+//            A1 += n;
 //        }
 //
-//        if (a % 5 == 1) {
-//            sumA2 += flagA2 * a;
-//            if (flagA2 == 1) {
-//                flagA2 = -1;
+//        if (n % 5 == 1) {
+//            A2 += n * A2flag;
+//            A2Count++;
+//            if (A2flag == 1) {
+//                A2flag = -1;
 //            } else {
-//                flagA2 = 1;
+//                A2flag = 1;
 //            }
 //        }
 //
-//        if (a % 5 == 2) {
-//            countA3++;
+//        if (n % 5 == 2) {
+//            A3++;
 //        }
 //
-//        if (a % 5 == 3) {
-//            countA4++;
-//            sumA4 += a;
+//        if (n % 5 == 3) {
+//            A4 += n;
+//            A4Count++;
 //        }
 //
-//        if (a % 5 == 4) {
-//            if (a > maxA5) {
-//                maxA5 = a;
+//        if (n % 5 == 4) {
+//            if (n > A5) {
+//                A5 = n;
 //            }
 //        }
 //    }
 //
-//    if (sumA1) {
-//        printf("%d ", sumA1);
+//    if (A1) {
+//        printf("%d ", A1);
 //    } else {
 //        printf("N ");
 //    }
-//    if (sumA2) {
-//        printf("%d ", sumA2);
+//
+//    if (A2Count) {
+//        printf("%d ", A2);
 //    } else {
 //        printf("N ");
 //    }
-//    if (countA3) {
-//        printf("%d ", countA3);
+//
+//    if (A3) {
+//        printf("%d ", A3);
 //    } else {
 //        printf("N ");
 //    }
-//    if (countA4) {
-//        printf("%0.1f ", sumA4 / countA4);
+//
+//    if (A4Count) {
+//        A4Ave = A4 * 1.0 / A4Count;
+//        printf("%.1f ", A4Ave);
 //    } else {
 //        printf("N ");
 //    }
-//    if (maxA5) {
-//        printf("%d", maxA5);
+//
+//    if (A5) {
+//        printf("%d", A5);
 //    } else {
 //        printf("N");
 //    }
 //
 //    return 0;
 //}
-

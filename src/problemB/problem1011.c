@@ -30,7 +30,7 @@ Case #4: false*/
 //    long A, B, C;
 //
 //    for (int i = 0; i < T; ++i) {
-//        scanf("%ld%ld%ld", &A, &B, &C);
+//        scanf("%ld %ld %ld", &A, &B, &C);
 //        if (A + B > C) {
 //            printf("Case #%d: true", i + 1);
 //        } else {

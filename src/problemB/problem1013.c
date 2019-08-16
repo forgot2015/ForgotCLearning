@@ -30,40 +30,8 @@
 47 53 59 61 67 71 73 79 83 89
 97 101 103*/
 
+//此题麻烦在最后的格式化打印
 #include <stdio.h>
-//int isPrime(int a);
-
-//int main() {
-//    int M, N;
-//    scanf("%d%d", &M, &N);
-//
-//    int prime[10001];
-//    int primeCount = 0;
-//    int num = 2;
-//
-//    while (primeCount <= N) {
-//        if (isPrime(num)) {
-//            prime[primeCount] = num;
-//            primeCount++;
-//        }
-//        num++;
-//    }
-//
-//    int printCount = 1;
-//    for (int k = M; k <= N; k++) {
-//        if (printCount == 1 || (printCount - 1) % 10 == 0) {
-//            printf("%d", prime[k - 1]);
-//        } else {
-//            printf(" %d", prime[k - 1]);
-//        }
-//
-//        if (printCount % 10 == 0) {
-//            printf("\n");
-//        }
-//
-//        printCount++;
-//    }
-//}
 
 //判断是否素数，是则返回1，不是返回0
 //int isPrime(int a) {
@@ -75,40 +43,35 @@
 //
 //    return 1;
 //}
-
-// M=N=10000时没通过
+//
 //int main() {
 //    int M, N;
-//    scanf("%d%d", &M, &N);
-//
+//    scanf("%d %d", &M, &N);
 //    int prime[10001];
-//    prime[0] = 2;
 //    int count = 1;
-//
-//    for (int i = 3; i <= 10000; ++i) {
-//        int isPrime = 1;
-//        for (int j = 2; j <= sqrt(i); j++) {
-//            if (i % j == 0) {
-//                isPrime = 0;
-//                break;
-//            }
-//        }
-//        if (isPrime) {
-//            prime[count] = i;
+//    int n = 2;
+//    while (count <= N) {
+//        if (isPrime(n)) {
+//            prime[count] = n;
 //            count++;
 //        }
+//        n++;
 //    }
 //
+////    当前正在打印第几位
 //    int printCount = 1;
-//    for (int k = M; k <= N; k++) {
-//        if (printCount == 1 || (printCount - 1) % 10 == 0) {
-//            printf("%d", prime[k - 1]);
-//        } else {
-//            printf(" %d", prime[k - 1]);
-//        }
-//
-//        if (printCount % 10 == 0) {
-//            printf("\n");
+////    需要打印的数量
+//    int needPrint = N - M + 1;
+//    for (int i = M; i <= N; i++) {
+//        printf("%d", prime[i]);
+////        如果当前不是在打印最后一位，则再判断
+//        if (printCount != needPrint) {
+//            if (printCount % 10 != 0) {
+//                printf(" ");
+//            } else {
+//                //如果打印10的整数倍，换行
+//                printf("\n");
+//            }
 //        }
 //
 //        printCount++;
@@ -116,4 +79,3 @@
 //
 //    return 0;
 //}
-

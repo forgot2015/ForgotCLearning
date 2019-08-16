@@ -16,16 +16,18 @@ Hello World Here I Come
 输出样例：
 Come I Here World Hello*/
 
+//麻烦
 #include <stdio.h>
 #include <string.h>
 
+//直接输出
 //int main() {
 //    char str[81];
 //    gets(str);
 //    for (int i = strlen(str); i > 0; i--) {
 //        if (str[i] == ' ') {
 //            printf("%s ", &str[i + 1]);
-//            str[i] = '\0'; //把空格改为 \0，使后续输出也只有一个单词???
+//            str[i] = '\0'; //\0表示结束符，后续字符串将在次中断
 //        }
 //    }
 //    printf("%s", &str[0]);
@@ -33,7 +35,7 @@ Come I Here World Hello*/
 //}
 
 
-
+//保存为数组，再输出
 //int main() {
 //    char *p[81];
 //    int index = 0;
