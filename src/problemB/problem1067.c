@@ -40,35 +40,35 @@ Welcome in*/
 #include "stdio.h"
 #include "string.h"
 // 注意在用gets()之前，要先用一次getchar(); 否则第一行获取的就是输入空行了
-int main() {
-    char pwd[21];
-    int N;
-    scanf("%s %d", pwd, &N);
-    char input[100];
-    getchar();
-    while (1) {
-//        fgets(input, 100, stdin);
-//        scanf("%s", input);
-        gets(input);
-        if (input[0] == '#' && strlen(input) == 1) {
-            break;
-        }
-        if (strcmp(input, pwd) == 0) {
-            printf("Welcome in\n");
-            break;
-        } else {
-            printf("Wrong password: %s\n", input);
-            --N;
-            if (N == 0) {
-                printf("Account locked\n");
-                break;
-            }
-        }
-
-    }
-
-    return 0;
-}
+//int main() {
+//    char pwd[21];
+//    int N;
+//    scanf("%s %d", pwd, &N);
+//    char input[100];
+//    getchar();
+//    while (1) {
+////        fgets(input, 100, stdin);
+////        scanf("%s", input);
+//        gets(input);
+//        if (input[0] == '#' && strlen(input) == 1) {
+//            break;
+//        }
+//        if (strcmp(input, pwd) == 0) {
+//            printf("Welcome in\n");
+//            break;
+//        } else {
+//            printf("Wrong password: %s\n", input);
+//            --N;
+//            if (N == 0) {
+//                printf("Account locked\n");
+//                break;
+//            }
+//        }
+//
+//    }
+//
+//    return 0;
+//}
 
 
 //错了两个用例？ 要过滤包含空格 回车 tab的尝试

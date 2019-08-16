@@ -27,13 +27,49 @@ Mike CS991301
 Joe Math990112*/
 
 #include <stdio.h>
+#include <string.h>
 
-struct STUDENT {
-    char name[11];
-    char no[11];
-    int grade;
-};
+//int main() {
+//    int N;
+//    scanf("%d", &N);
+//    char maxName[21];
+//    char maxNumber[21];
+//    int maxScore = -1;
+//
+//    char minName[21];
+//    char minNumber[21];
+//    int minScore = 101;
+//    for (int i = 0; i < N; i++) {
+//        char name[21];
+//        char number[21];
+//        int score;
+//        scanf("%s %s %d", name, number, &score);
+//        if (score > maxScore) {
+//            maxScore = score;
+//            strcpy(maxName, name);
+//            strcpy(maxNumber, number);
+//        }
+//        if (score < minScore) {
+//            minScore = score;
+//            strcpy(minName, name);
+//            strcpy(minNumber, number);
+//        }
+//    }
+//
+//    printf("%s %s\n", maxName, maxNumber);
+//    printf("%s %s\n", minName, minNumber);
+//
+//    return 0;
+//}
 
+
+//用结构体的解法
+//struct STUDENT {
+//    char name[11];
+//    char no[11];
+//    int grade;
+//};
+//
 //int main() {
 //    int n;
 //    scanf("%d", &n);
@@ -46,11 +82,6 @@ struct STUDENT {
 //
 //    for (int i = 0; i < n; i++) {
 //        scanf("%s %s %d", student[i].name, student[i].no, &student[i].grade);
-////        直接将第一个输入的分数赋值给minGrade和maxGrade，或者初始化时给一个范围外的值
-////        if (i == 0) {
-////            minGrade = student[i].grade;
-////            maxGrade = student[i].grade;
-////        }
 //        if (student[i].grade < minGrade) {
 //            minGrade = student[i].grade;
 //            minIndex = i;

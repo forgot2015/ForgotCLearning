@@ -7,26 +7,20 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug-MinGW" CONFIG_NAME="Debug" TOOLCHAIN_NAME="MinGW" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1802cf37-a4f1-4020-a48c-cea8b761d02d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1065.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1065.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1067.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1067.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1079.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1079.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1080.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1080.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1085.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/ForgotCLearning.dir/src/problemB/problem1085.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/ForgotCLearning.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/ForgotCLearning.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1065.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1065.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1002.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1002.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1003.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1003.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1004.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1004.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1005.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1005.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1006.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1006.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1007.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1007.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problemB/problem1067.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1067.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1079.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1079.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1080.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1080.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1085.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1085.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1095.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1095.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1094.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1094.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +45,7 @@
     <expand />
     <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-MinGW" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FavoritesManager">
     <favorites_list name="ForgotCLearning" />
   </component>
@@ -77,7 +71,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -138,6 +132,7 @@
       <workItem from="1565685038946" duration="5396000" />
       <workItem from="1565742735782" duration="22357000" />
       <workItem from="1565829649219" duration="24315000" />
+      <workItem from="1565922605949" duration="10771000" />
     </task>
     <servers />
   </component>
@@ -1099,6 +1094,86 @@
           <url>file://$PROJECT_DIR$/src/problemB/problem1090.c</url>
           <line>108</line>
           <option name="timeStamp" value="282" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>128</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>130</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>129</line>
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>131</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>150</line>
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>151</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>152</line>
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>153</line>
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>154</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>155</line>
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>156</line>
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>158</line>
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>159</line>
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>160</line>
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>164</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1003.c</url>
+          <line>165</line>
+          <option name="timeStamp" value="313" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

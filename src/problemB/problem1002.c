@@ -24,11 +24,44 @@ yi san wu*/
 //    int i = 0;
 //    scanf("%s", n);
 //    while (n[i] != 0) {
-//        int num = n[i] - 48;
+//        int num = n[i] - '0';
 //        sum += num;
 //        i++;
 //    }
-////    转化为pinyin并打印
+////    转化为pinyin并打印,10^100范围内的个位数相加最大为900，三位数
+//    int weishu[4];
+//    int index = 0;
+//    while (sum) {
+//        weishu[index] = sum % 10;
+//        sum = sum / 10;
+//        index++;
+//    }
+//
+//    for (int j = index - 1; j >= 0; j--) {
+//        printf("%s", pinyin[weishu[j]]);
+////        如果不是最后一位，则再输出一个空格
+//        if (j != 0) {
+//            printf(" ");
+//        }
+//    }
+//
+//    return 0;
+//}
+
+//指针实现
+//int main() {
+//    char *pinyin[] = {"ling", "yi", "er", "san", "si", "wu", "liu", "qi", "ba", "jiu"};
+//    int sum = 0;
+//    char n[101];
+//    char *p;
+//    scanf("%s", n);
+//    p = n;
+//    while (*p != 0) {
+//        int num = *p - '0';
+//        sum += num;
+//        p++;
+//    }
+//
 //    if (sum < 10) {
 //        printf("%s", pinyin[sum]);
 //    } else if (10 <= sum && sum < 100) {
@@ -42,22 +75,5 @@ yi san wu*/
 //    }
 //
 //    return 0;
-//}
-
-//指针实现
-//int main(){
-//    char pinyin[] = {"yi", "er", "san", "si", "wu", "liu", "qi", "ba", "jiu"};
-//    int sum = 0;
-//    char n[101];
-//    int i=0;
-//    char *p;
-//    scanf("%s", &n);
-//    p=n;
-//    while (*p!=0){
-//        int num = *p - 48;
-//        sum += num;
-//        p++;
-//    }
-//    printf("%d", sum);
 //}
 

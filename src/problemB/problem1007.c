@@ -19,47 +19,41 @@
 
 #include <stdio.h>
 
-//有一个用例没通过啊，不懂，在牛课网又是可以通过的
+//int isPrime(int n) {
+//    if (n == 1)return 0;
+//    for (int i = 2; i * i <= n; i++) {
+//        if (n % i == 0) {
+//            return 0;
+//        }
+//    }
+//    return 1;
+//}
+//
 //int main() {
 //    int N;
-//    int pairCount = 0;
 //    scanf("%d", &N);
-//
-//    if (N <= 3) {
-//        printf("0");
-//        return 0;
-//    }
-//
 //    int prime[N];
-//    prime[0] = 2;
-//    prime[1] = 3;
+//    int primeIndex = 0;
+//    int pairCount = 0;
 //
-//    int primeIndex = 2;
-//
-//    //求出N以内素数
-//    for (int i = 3; i < N; i++) {
-//        int isPrime = 1;
-//
-//        for (int j = 2; j <= i*i; j++) {
-//            if (i % j == 0) {
-//                isPrime = 0;
-//                break;
-//            }
-//        }
-//
-//        if (isPrime) {
+////    记录N以内的素数
+//    for (int i = 2; i <= N; i++) {
+//        if (isPrime(i)) {
 //            prime[primeIndex] = i;
 //            primeIndex++;
 //        }
 //    }
+////如果只有一个素数，则直接输出0
+//    if (primeIndex == 1) {
+//        printf("0");
+//        return 0;
+//    }
 //
-//    //输出差为2的素数对
-//    for (int k = 0; k < primeIndex - 1; k++) {
-//        if ((prime[k + 1] - prime[k]) == 2) {
+//    for (int j = 0; j < primeIndex - 1; j++) {
+//        if (prime[j + 1] - prime[j] == 2) {
 //            pairCount++;
 //        }
 //    }
-//
 //    printf("%d", pairCount);
 //
 //    return 0;
