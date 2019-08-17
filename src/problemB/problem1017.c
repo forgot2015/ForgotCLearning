@@ -20,32 +20,64 @@
 #include<string.h>
 
 //int main() {
-//    char a[1001], b[1005];
-//    int i, len, temp = 0, n, yushu, count = 0;
-//    scanf("%s%d", a, &n);
-//    len = strlen(a);
-//    temp = a[0] - '0';
-////    求第一位的商
-//    if (temp >= n) {
-//        b[count] = temp / n + '0';
-//        count++;
-//    }
-////    求剩余位的商
-//    for (i = 1; i < len; i++) {
-//        yushu = temp % n;
-//        temp = yushu * 10 + a[i] - '0';
-//        b[count] = temp / n + '0';
-//        count++;
-//    }
-//    b[count] = '/0';
-////    求余数
-//    yushu = temp % n;
+//    char A[1001];
+//    int B;
+//    int Q;
+//    int R = 0;
+//    scanf("%s %d", A, &B);
+//    int len = strlen(A);
 //
-////    若只有1位数 且A<B，则直接输出余数
-//    if (len == 1 && temp < n) {
-//        printf("0 %d/n", a[0] - '0');
-//    } else {
-//        printf("%s %d/n", b, yushu);
+//    Q = ((A[0] - '0') / B);
+//    if (len == 1 || (len > 1 && Q != 0)) {
+//        printf("%d", Q);
 //    }
+//
+//    R = (A[0] - '0') % B;
+//
+//    int temp;
+//    for (int i = 1; i < len; i++) {
+//        temp = R * 10 + (A[i] - '0');
+//        Q = (temp / B);
+//        printf("%d", Q);
+//        R = temp % B;
+//    }
+//
+//    printf(" %d", R);
+//
+//    return 0;
+//}
+
+
+//错了3个用例？ 先存数组再输出，还是逻辑有问题？
+//int main() {
+//    char A[1001];
+//    int B;
+//    char Q[1001];
+//    int index = 0;
+//    int R = 0;
+//    scanf("%s %d", A, &B);
+//
+////    如果A只有一位，则直接输出结果
+//    if (strlen(A) == 1) {
+//        printf("%d %d", (A[0] - '0') / B, (A[0] - '0') % B);
+//        return 0;
+//    }
+//
+//    if ((A[0] - '0') / B) {
+//        Q[index] = ((A[0] - '0') / B) + '0';
+//        index++;
+//    }
+//    R = (A[0] - '0') % B;
+//
+//    int temp;
+//    for (int i = 1; i < strlen(A); i++) {
+//        temp = R * 10 + (A[i] - '0');
+//        Q[index] = (temp / B) + '0';
+//        index++;
+//        R = temp % B;
+//    }
+//
+//    printf("%s %d", Q, R);
+//
 //    return 0;
 //}

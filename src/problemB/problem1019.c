@@ -37,50 +37,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sortMax(const void *a, const void *b) {
-    return *(int *) b - *(int *) a;
-}
-
-int sortMin(const void *a, const void *b) {
-    return *(int *) a - *(int *) b;
-}
-//有两个用例超时，待优化
+//int sortMax(const void *a, const void *b) {
+//    return *(int *) b - *(int *) a;
+//}
+//
 //int main() {
-//    int N;
-//    char str[5];
-//    scanf("%s", str);
-//    int NN[5];
-//    int nn[5];
+//    int numStr[4];
+//    int max, min;
+//    int right = 0;
+//    int num;
+//    scanf("%d", &num);
 //
-//    NN[0] = str[0] - '0';
-//    NN[1] = str[1] - '0';
-//    NN[2] = str[2] - '0';
-//    NN[3] = str[3] - '0';
-//
-//    if (NN[0] == NN[1] && NN[2] == NN[3] && NN[0] == NN[2]) {
-//        printf("%s - %s = 0000", str, str);
+////    若4位数字相同，则输出结果，程序结束
+//    if (num % 1111 == 0) {
+//        printf("%04d - %04d = 0000", num, num);
 //        return 0;
 //    }
 //
-//    int right = 0;
 //    while (right != 6174) {
-//        qsort(NN, 4, sizeof(NN[0]), sortMax);
-//        int left = NN[0] * 1000 + NN[1] * 100 + NN[2] * 10 + NN[3];
+//        numStr[0] = num / 1000;
+//        numStr[1] = num / 100 % 10;
+//        numStr[2] = num / 10 % 10;
+//        numStr[3] = num % 10;
+//        qsort(numStr, 4, sizeof(numStr[0]), sortMax);
+//        max = numStr[0] * 1000 + numStr[1] * 100 + numStr[2] * 10 + numStr[3];
+//        min = numStr[3] * 1000 + numStr[2] * 100 + numStr[1] * 10 + numStr[0];
+//        right = max - min;
 //
-//        qsort(NN, 4, sizeof(NN[0]), sortMin);
-//        int left2 = NN[0] * 1000 + NN[1] * 100 + NN[2] * 10 + NN[3];
-//        right = left - left2;
-//        printf("%04d - %04d = %04d\n", left, left2, right);
-//
-//        NN[0] = right / 1000;
-//        NN[1] = right % 1000 / 100;
-//        NN[2] = right % 100 / 10;
-//        NN[3] = right % 10;
-//
-//        if (NN[0] == NN[1] && NN[2] == NN[3] && NN[0] == NN[2]) {
-//            printf("%s - %s = 0000", str, str);
-//            return 0;
-//        }
+//        printf("%04d - %04d = %04d\n", max, min, right);
+//        num = right;
 //    }
 //
 //    return 0;

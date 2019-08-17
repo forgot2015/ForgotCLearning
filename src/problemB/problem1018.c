@@ -34,92 +34,99 @@ J J
 B B*/
 
 #include <stdio.h>
-
+// 统计输赢平数据时要细心，我第一次就粗心统计错了
 //int main() {
 //    int N;
 //    scanf("%d", &N);
-//    int jYing = 0, jPing = 0, jFu = 0;
-//    int yYing = 0, yPing = 0, yFu = 0;
-//    int jBwin = 0, jCwin = 0, jJwin = 0;
-//    int yBwin = 0, yCwin = 0, yJwin = 0;
-//    int jwinMax, ywinMax;
-//    char jMax,yMax;
+//    char jia, yi;
+//    int jiaWin = 0;
+//    int jiaPing = 0;
+//    int jiaLost = 0;
+//    int jiaWinB = 0;
+//    int jiaWinC = 0;
+//    int jiaWinJ = 0;
+//    int jiaWinMax;
+//    char jiaMaxChar;
+//
+//    int yiWin = 0;
+//    int yiPing = 0;
+//    int yiLost = 0;
+//    int yiWinB = 0;
+//    int yiWinC = 0;
+//    int yiWinJ = 0;
+//    int yiWinMax;
+//    int yiMaxChar;
 //
 //    for (int i = 0; i < N; i++) {
-//        char jia, yi;
-////        取出空格
 //        getchar();
-//        scanf("%c", &jia);
-////
-//        getchar();
-//        scanf("%c", &yi);
+//        scanf("%c %c", &jia, &yi);
 //        if (jia == 'B') {
-//            if (yi == 'B') {
-//                jPing++;
-//                yPing++;
-//            } else if (yi == 'C') {
-//                jYing++;
-//                jBwin++;
-//                yFu++;
+//            if (yi == 'C') {
+//                jiaWin++;
+//                jiaWinB++;
+//                yiLost++;
 //            } else if (yi == 'J') {
-//                jFu++;
-//                yYing++;
-//                yJwin++;
+//                jiaLost++;
+//                yiWin++;
+//                yiWinJ++;
+//            } else {
+//                jiaPing++;
+//                yiPing++;
 //            }
 //        } else if (jia == 'C') {
-//            if (yi == 'C') {
-//                jPing++;
-//                yPing++;
-//            } else if (yi == 'J') {
-//                jYing++;
-//                jJwin++;
-//                yFu++;
+//            if (yi == 'J') {
+//                jiaWin++;
+//                jiaWinC++;
+//                yiLost++;
 //            } else if (yi == 'B') {
-//                jFu++;
-//                yYing++;
-//                yBwin++;
+//                jiaLost++;
+//                yiWin++;
+//                yiWinB++;
+//            } else {
+//                jiaPing++;
+//                yiPing++;
 //            }
 //        } else if (jia == 'J') {
-//            if (yi == 'J') {
-//                jPing++;
-//                yPing++;
-//            } else if (yi == 'B') {
-//                jYing++;
-//                jBwin++;
-//                yFu++;
+//            if (yi == 'B') {
+//                jiaWin++;
+//                jiaWinJ++;
+//                yiLost++;
 //            } else if (yi == 'C') {
-//                jFu++;
-//                yYing++;
-//                yCwin++;
+//                jiaLost++;
+//                yiWin++;
+//                yiWinC++;
+//            } else {
+//                jiaPing++;
+//                yiPing++;
 //            }
 //        }
 //    }
 //
-//    printf("%d %d %d\n", jYing, jPing, jFu);
-//    printf("%d %d %d\n", yYing, yPing, yFu);
-//    jwinMax = jBwin;
-//    jMax = 'B';
-//    if (jCwin > jBwin) {
-//        jwinMax = jCwin;
-//        jMax = 'C';
+//    printf("%d %d %d\n", jiaWin, jiaPing, jiaLost);
+//    printf("%d %d %d\n", yiWin, yiPing, yiLost);
+//
+//    jiaWinMax = jiaWinB;
+//    jiaMaxChar = 'B';
+//    if (jiaWinC > jiaWinMax) {
+//        jiaWinMax = jiaWinC;
+//        jiaMaxChar = 'C';
 //    }
-//    if (jJwin > jwinMax) {
-//        jwinMax = jJwin;
-//        jMax = 'J';
+//    if (jiaWinJ > jiaWinMax) {
+//        jiaWinMax = jiaWinJ;
+//        jiaMaxChar = 'J';
 //    }
 //
-//    ywinMax = yBwin;
-//    yMax = 'B';
-//    if (yCwin > yBwin) {
-//        ywinMax = yCwin;
-//        yMax = 'C';
+//    yiWinMax = yiWinB;
+//    yiMaxChar = 'B';
+//    if (yiWinC > yiWinMax) {
+//        yiWinMax = yiWinC;
+//        yiMaxChar = 'C';
 //    }
-//    if (yJwin > ywinMax) {
-//        ywinMax = yJwin;
-//        yMax = 'J';
+//    if (yiWinJ > yiWinMax) {
+//        yiWinMax = yiWinJ;
+//        yiMaxChar = 'J';
 //    }
 //
-//    printf("%c %c", jMax, yMax);
-//
+//    printf("%c %c", jiaMaxChar, yiMaxChar);
 //    return 0;
 //}
