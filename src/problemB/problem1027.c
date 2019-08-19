@@ -28,7 +28,12 @@
  ***
 *****
 2*/
-#include <stdio.h>
+
+
+
+
+
+//#include <stdio.h>
 //错了一个用例
 //int main() {
 //    int N;

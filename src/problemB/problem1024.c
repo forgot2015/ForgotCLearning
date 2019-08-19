@@ -28,90 +28,91 @@
 #include <string.h>
 #include <stdlib.h>
 
-int main() {
-    char str[100001];
-    scanf("%s", str);
-    if (str[0] == '-') {
-        printf("-");
-    }
-
-//    小数点出现的位置
-    int decimalPointIndex = 0;
-//    小数的数量
-    int decimalPointCount;
-//    e出现的位置
-    int eIndex = 0;
-//   指数 e的正负
-    int eFlag;
-//    e的指数
-    int eExponent = 0;
-//    E字符出现的位置
-    int eExponentIndex = 0;
-    int len = strlen(str);
-    for (int i = 1; i < len; i++) {
-        if (str[i] == '.') {
-            decimalPointIndex = i;
-        } else if (str[i] == 'E') {
-            eIndex = i;
-            if (str[i + 1] == '+') {
-                eFlag = 1;
-            } else {
-                eFlag = -1;
-            }
-            char eExponentStr[5];
-
-            for (int j = i + 2; j < len; j++) {
-                eExponentStr[eExponentIndex] = str[j];
-                eExponentIndex++;
-            }
-            eExponent = atoi(eExponentStr);
-            break;
-        }
-    }
-
-//    如果指数为0，则直接输出结果
-    if (eExponent == 0) {
-        for (int i = 1; i < eIndex; i++) {
-            putchar(str[i]);
-        }
-        return 0;
-    }
-
-    decimalPointCount = eIndex - decimalPointIndex - 1;
-
-    if (eFlag == 1) {
-        int zeroCount = eExponent - decimalPointCount;
-        if (zeroCount >= 0) {
-            for (int i = 1; i < eIndex; i++) {
-                if (i == decimalPointIndex) { continue; }
-                putchar(str[i]);
-            }
-            for (int j = 0; j < zeroCount; j++) {
-                putchar('0');
-            }
-        } else {
-            //试下输入样例 -1.23125002E+5
-            for (int i = 1; i < eIndex; i++) {
-                if (i == decimalPointIndex) { continue; }
-                if (i == decimalPointIndex + eExponent) {
-                    putchar(str[i]);
-                    putchar('.');
-                    continue;
-                }
-                putchar(str[i]);
-            }
-        }
-    } else if (eFlag == -1) {
-        printf("0.");
-        for (int j = 0; j < eExponent - 1; j++) {
-            putchar('0');
-        }
-        for (int i = 1; i < eIndex; i++) {
-            if (i == decimalPointIndex) { continue; }
-            putchar(str[i]);
-        }
-    }
-
-    return 0;
-}
+//方法较复杂，有没有更简单的方法？
+//int main() {
+//    char str[100001];
+//    scanf("%s", str);
+//    if (str[0] == '-') {
+//        printf("-");
+//    }
+//
+////    小数点出现的位置
+//    int decimalPointIndex = 0;
+////    小数的数量
+//    int decimalPointCount;
+////    e出现的位置
+//    int eIndex = 0;
+////   指数 e的正负
+//    int eFlag;
+////    e的指数
+//    int eExponent = 0;
+////    E字符出现的位置
+//    int eExponentIndex = 0;
+//    int len = strlen(str);
+//    for (int i = 1; i < len; i++) {
+//        if (str[i] == '.') {
+//            decimalPointIndex = i;
+//        } else if (str[i] == 'E') {
+//            eIndex = i;
+//            if (str[i + 1] == '+') {
+//                eFlag = 1;
+//            } else {
+//                eFlag = -1;
+//            }
+//            char eExponentStr[5];
+//
+//            for (int j = i + 2; j < len; j++) {
+//                eExponentStr[eExponentIndex] = str[j];
+//                eExponentIndex++;
+//            }
+//            eExponent = atoi(eExponentStr);
+//            break;
+//        }
+//    }
+//
+////    如果指数为0，则直接输出结果
+//    if (eExponent == 0) {
+//        for (int i = 1; i < eIndex; i++) {
+//            putchar(str[i]);
+//        }
+//        return 0;
+//    }
+//
+//    decimalPointCount = eIndex - decimalPointIndex - 1;
+//
+//    if (eFlag == 1) {
+//        int zeroCount = eExponent - decimalPointCount;
+//        if (zeroCount >= 0) {
+//            for (int i = 1; i < eIndex; i++) {
+//                if (i == decimalPointIndex) { continue; }
+//                putchar(str[i]);
+//            }
+//            for (int j = 0; j < zeroCount; j++) {
+//                putchar('0');
+//            }
+//        } else {
+//            //试下输入样例 -1.23125002E+5
+//            for (int i = 1; i < eIndex; i++) {
+//                if (i == decimalPointIndex) { continue; }
+//                if (i == decimalPointIndex + eExponent) {
+//                    putchar(str[i]);
+//                    putchar('.');
+//                    continue;
+//                }
+//                putchar(str[i]);
+//            }
+//        }
+//    } else if (eFlag == -1) {
+//        printf("0.");
+//        for (int j = 0; j < eExponent - 1; j++) {
+//            putchar('0');
+//        }
+//        for (int i = 1; i < eIndex; i++) {
+//            if (i == decimalPointIndex) { continue; }
+//            putchar(str[i]);
+//        }
+//    }
+//
+//    return 0;
+//}
 
