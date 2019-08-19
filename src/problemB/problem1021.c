@@ -85,8 +85,8 @@
 //
 //    return 0;
 //}
-
-//法2
+//
+////法2
 //int main() {
 //    char strN[1001];
 //    scanf("%s", strN);

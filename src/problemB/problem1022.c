@@ -30,7 +30,7 @@ void zhuanhuan(int i, int d);
 //
 //    return 0;
 //}
-//
+////用递归法 辗转相除
 //void zhuanhuan(int i, int d) {
 //    int yushu = i % d;
 //    i = i / d;
