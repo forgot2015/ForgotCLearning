@@ -12,13 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1802cf37-a4f1-4020-a48c-cea8b761d02d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/problemA/problem1006.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemA/problem1036.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemA/problem1041.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problemA/problem1042.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemA/problem1001.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemA/problem1005.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemA/problem1050.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemA/problem1058.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemA/problem1090.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemA/problem1116.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problemA/problem1120.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemA/problem1094.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemA/problem1094.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemA/problem1042.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemA/problem1042.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1059.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1059.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +134,7 @@
       <workItem from="1565685038946" duration="5396000" />
       <workItem from="1565742735782" duration="22357000" />
       <workItem from="1565829649219" duration="24315000" />
-      <workItem from="1565922605949" duration="65415000" />
+      <workItem from="1565922605949" duration="76609000" />
     </task>
     <servers />
   </component>
@@ -1082,6 +1086,26 @@
           <url>file://$PROJECT_DIR$/src/problemA/problem1041.c</url>
           <line>74</line>
           <option name="timeStamp" value="398" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemA/problem1120.c</url>
+          <line>54</line>
+          <option name="timeStamp" value="411" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemA/problem1120.c</url>
+          <line>55</line>
+          <option name="timeStamp" value="412" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemA/problem1120.c</url>
+          <line>56</line>
+          <option name="timeStamp" value="415" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemA/problem1120.c</url>
+          <line>61</line>
+          <option name="timeStamp" value="416" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -41,41 +41,41 @@ S7 C11 C10 C12 S1 H7 H8 H9 D8 D9 S11 S12 S13 D10 D11 D12 S3 S4 S6 S10 H1 H2 C13 
 
 #include <stdio.h>
 //    待寻找更简单的打印方法
-int main() {
-    char cardType[5] = {'S', 'H', 'C', 'D', 'J'};
-    int times;
-    scanf("%d", &times);
-    int noChange[55];
-    int origin[55];
-    int next[55];
-
-    for (int i = 1; i <= 54; i++) {
-        origin[i] = i;
-        noChange[i] = i;
-    }
-
-    for (int i = 1; i <= 54; i++) {
-        scanf("%d", &next[i]);
-    }
-
-    for (int k = 0; k < times; k++) {
-        for (int i = 1; i <= 54; i++) {
-            origin[next[i]] = noChange[i];
-        }
-
-        for (int j = 1; j <= 54; j++) {
-            noChange[j] = origin[j];
-        }
-    }
-
-
-    for (int l = 1; l <= 54; l++) {
-        printf("%c%d", cardType[(origin[l] - 1) / 13], (origin[l] - 1) % 13 + 1);
-//        printf("%c%d", cardType[(origin[l] - 1) / 13], origin[l] % 13 ? origin[l] % 13 : 13);
-        if (l != 54) {
-            printf(" ");
-        }
-    }
-
-    return 0;
-}
+//int main() {
+//    char cardType[5] = {'S', 'H', 'C', 'D', 'J'};
+//    int times;
+//    scanf("%d", &times);
+//    int noChange[55];
+//    int origin[55];
+//    int next[55];
+//
+//    for (int i = 1; i <= 54; i++) {
+//        origin[i] = i;
+//        noChange[i] = i;
+//    }
+//
+//    for (int i = 1; i <= 54; i++) {
+//        scanf("%d", &next[i]);
+//    }
+//
+//    for (int k = 0; k < times; k++) {
+//        for (int i = 1; i <= 54; i++) {
+//            origin[next[i]] = noChange[i];
+//        }
+//
+//        for (int j = 1; j <= 54; j++) {
+//            noChange[j] = origin[j];
+//        }
+//    }
+//
+//
+//    for (int l = 1; l <= 54; l++) {
+//        printf("%c%d", cardType[(origin[l] - 1) / 13], (origin[l] - 1) % 13 + 1);
+////        printf("%c%d", cardType[(origin[l] - 1) / 13], origin[l] % 13 ? origin[l] % 13 : 13);
+//        if (l != 54) {
+//            printf(" ");
+//        }
+//    }
+//
+//    return 0;
+//}
