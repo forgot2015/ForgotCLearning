@@ -22,59 +22,59 @@
 输出样例：
 94.50*/
 
-//#include <stdio.h>
-//#include <stdlib.h>
-//
-//typedef struct Mooncakes {
-//    int stock;
-//    double totalPrice;
-//    double perPrice;
-//} Mooncake;
-//
-////售价从大到小排序
-//int cmp(const void *a, const void *b) {
-//    Mooncake A = *(Mooncake *) a;
-//    Mooncake B = *(Mooncake *) b;
-//    if (B.perPrice > A.perPrice) {
-//        return 1;
-//    } else if (B.perPrice < A.perPrice) {
-//        return -1;
-//    } else {
-//        return 0;
-//    }
-//}
-//
-////错了一个用例？
-//int main() {
-//    int N, D;
-//    scanf("%d %d", &N, &D);
-//    Mooncake mooncake[N + 1];
-//    for (int i = 0; i < N; i++) {
-//        scanf("%d", &mooncake[i].stock);
-//    }
-//    for (int j = 0; j < N; j++) {
-//        scanf("%lf", &mooncake[j].totalPrice);
-//        mooncake[j].perPrice = mooncake[j].totalPrice / mooncake[j].stock;
-//    }
-//
-//    qsort(mooncake, N, sizeof(mooncake[0]), cmp);
-//
-//    double sum = 0;
-//    for (int k = D; k > 0; k--) {
-//        for (int i = 0; i < N; i++) {
-//            if (mooncake[i].stock > 0) {
-//                sum += mooncake[i].perPrice;
-//                mooncake[i].stock--;
-//                break;
-//            }
-//        }
-//    }
-//
-//    printf("%.2lf", sum);
-//    return 0;
-//}
+//错了一个用例？原来是库存量stock有可能为小数的，不能用int,看到正数不要误以为就是正整数啊
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Mooncakes {
+    double stock;
+    double totalPrice;
+    double perPrice;
+} Mooncake;
+
+//售价从大到小排序
+int cmp(const void *a, const void *b) {
+    Mooncake A = *(Mooncake *) a;
+    Mooncake B = *(Mooncake *) b;
+
+    if (B.perPrice > A.perPrice) {
+        return 1;
+    } else if (B.perPrice < A.perPrice) {
+        return -1;
+    } else {
+        return 0;
+    }
+}
 
 
+int main() {
+    int N, D;
+    scanf("%d %d", &N, &D);
+    Mooncake mooncake[N + 1];
+    for (int i = 0; i < N; i++) {
+        scanf("%lf", &mooncake[i].stock);
+    }
+    for (int j = 0; j < N; j++) {
+        scanf("%lf", &mooncake[j].totalPrice);
+        mooncake[j].perPrice = mooncake[j].totalPrice / mooncake[j].stock;
+    }
+
+    qsort(mooncake, N, sizeof(mooncake[0]), cmp);
+
+    double sum = 0;
+    for (int k = D; k > 0; k--) {
+        for (int i = 0; i < N; i++) {
+            if (mooncake[i].stock > 0) {
+                sum += mooncake[i].perPrice;
+                mooncake[i].stock--;
+                break;
+            }
+        }
+    }
+
+    printf("%.2lf", sum);
+    return 0;
+}
 
 
 //网友答案
@@ -104,10 +104,11 @@
 //    for (i = 0; i < variety; i++)
 //        yue[i].aver_prise = yue[i].prise / yue[i].weight;
 //    qsort(yue, variety, sizeof(yue[0]), cmp);
-//    for (i = 0; i < variety && supersum <= need_weight; i++)
+//    for (i = 0; i < variety && supersum <= need_weight; i++) {
 //        supersum += yue[i].weight;
-//    for (j = 0; j < i - 1; j++)//前面所有全部售空
-//    {
+//    }
+//    for (j = 0; j < i - 1; j++) {
+//        //前面所有全部售空
 //        income += yue[j].prise;
 //        sum += yue[j].weight;
 //    }

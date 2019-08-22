@@ -29,67 +29,57 @@
 *****
 2*/
 
+#include <stdio.h>
 
-
-
-
-//#include <stdio.h>
-//错了一个用例
 //int main() {
 //    int N;
 //    char sign;
 //    scanf("%d %c", &N, &sign);
-//
-////    总共字符数量
-//    int sum = 1;
-////    最顶层的字符数量
-//    int topCount = 1;
-////    上面有几层， 总层数 = 上面+1+下面
-//    int topLayer = 0;
-//    while (sum < N) {
-//        topCount += 2;
-//        sum = sum + topCount * 2;
-//        topLayer++;
+//    if (N < 7) {
+//        printf("%c\n%d", sign, N - 1);
+//        return 0;
 //    }
 //
-//    sum = sum - topCount * 2;
-//    topCount = topCount - 2;
-//    topLayer = topLayer - 1;
+//    int topLevel = 0;
+//    int curLeverCount = 1;
+//    int useNum = 1;
+//    while (useNum + (curLeverCount + 2) * 2 <= N) {
+//        curLeverCount += 2;
+//        useNum += curLeverCount * 2;
+//        topLevel++;
+//    }
 //
-//    int topCountFinal = topCount;
-//
-//    for (int i = 0; i < topLayer; i++) {
+//    for (int i = 0; i < topLevel; i++) {
 //        for (int k = 0; k < i; k++) {
-//            printf(" ");
+//            putchar(' ');
 //        }
 //
-//        for (int j = 0; j < topCount; j++) {
+//        for (int j = 0; j < curLeverCount; j++) {
 //            putchar(sign);
 //        }
-//        printf("\n");
-//        topCount = topCount - 2;
+//        curLeverCount = curLeverCount - 2;
+//        putchar('\n');
 //    }
 //
-//    for (int l = 0; l < topCountFinal / 2; l++) {
-//        printf(" ");
+//    for (int k = 0; k < topLevel; k++) {
+//        putchar(' ');
 //    }
+//
 //    printf("%c\n", sign);
 //
-//    topCount = topCount + 2;
-//    for (int m = topLayer; m > 0; m--) {
-//        for (int k = m - 1; k > 0; k--) {
-//            printf(" ");
+//    for (int i = topLevel - 1; i >= 0; i--) {
+//        curLeverCount = curLeverCount + 2;
+//        for (int k = i; k > 0; k--) {
+//            putchar(' ');
 //        }
 //
-//        for (int j = topCount; j > 0; j--) {
+//        for (int j = 0; j < curLeverCount; j++) {
 //            putchar(sign);
 //        }
-//
-//        printf("\n");
-//        topCount = topCount + 2;
+//        putchar('\n');
 //    }
 //
-//    printf("%d", N - sum);
+//    printf("%d", N - useNum);
 //
 //    return 0;
 //}
