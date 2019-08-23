@@ -41,7 +41,7 @@ Address Data Next
 //    int data;
 //    int next;
 //} Node;
-//改自大佬解法
+////改自大佬解法
 //int main() {
 //    int beginAddr, N, K;
 //    scanf("%d %d %d", &beginAddr, &N, &K);

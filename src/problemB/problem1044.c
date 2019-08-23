@@ -26,84 +26,105 @@ hel mar
 may
 115
 13*/
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-//两个用例 Segmentation Fault  内存超出？
-//int main() {
-//    int N;
-//    char *geChar[13] = {"jan", "feb", "mar", "apr", "may", "jun", "jly", "aug", "sep", "oct", "nov", "dec"};
-//    char *shiChar[13] = {"tam", "hel", "maa", "huh", "tou", "kes", "hei", "elo", "syy", "lok", "mer", "jou"};
-//
-//    scanf("%d", &N);
-////    为何要+1才能获取到最后一行字符？
-//    for (int i = 0; i < N + 1; i++) {
-//        char input[12];
-////        scanf("%s", input);
-//        fgets(input, 12, stdin);
-////        gets(input);
-//        if (input[0] >= '0' && input[0] <= '9') {
-//            //数字转火星文
-//            int num = atoi(input);
-//            int ge = num % 13;
-//            int shi = num / 13;
-//            if (shi > 0) {
-//                printf("%s %s\n", shiChar[shi - 1], geChar[ge - 1]);
-//            } else {
-//                printf("%s\n", geChar[ge - 1]);
-//            }
-//        } else if (input[0] >= 'a' && input[0] <= 'z') {
-//            if (strlen(input) > 4) {
-//                char shiStr[4];
-//                char geStr[4];
-//                strncpy(shiStr, input, 3);
-//                strncpy(geStr, input + 4, 3);
-////               printf("shiStr: %s\n", shiStr);
-////               printf("geStr: %s\n", geStr);
-//                int shi = 0;
-//                int ge = 0;
-//                for (int j = 0; j < 12; j++) {
-//                    if (strcmp(shiChar[j], shiStr) == 0) {
-//                        shi = j + 1;
-//                        break;
-//                    }
-//                }
-//                for (int j = 0; j < 12; j++) {
-//                    if (strcmp(geChar[j], geStr) == 0) {
-//                        ge = j + 1;
-//                        break;
-//                    }
-//                }
-//                printf("%d\n", shi * 13 + ge);
-//            } else {
-////                printf("input = %s\n",input);
-////                char str[3];
-////                strncpy(str, input, 3);
-////知识点去掉最后一个字符串的换行符
-//                input[strlen(input) - 1] = 0;
-//                int ge = 0;
-//                int shi = 0;
-//                for (int j = 0; j < 12; j++) {
-//                    if (strcmp(geChar[j], input) == 0) {
-//                        ge = j + 1;
-//                        break;
-//                    }
-//                }
-//                for (int j = 0; j < 12; j++) {
-//                    if (strcmp(shiChar[j], input) == 0) {
-//                        shi = j + 1;
-//                        break;
-//                    }
-//                }
-//                if (ge) {
-//                    printf("%d\n", ge);
-//                } else {
-//                    printf("%d\n", shi * 13);
-//                }
-//            }
-//        }
-//    }
-//
-//    return 0;
-//}
+
+//一开始错了两用例，火星数字除了单独是0的时候写0，只要高位数字有数，个位数字如果是0就省略不写。
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int printNum(char *str);
+
+int printMars(int num);
+
+char *shiChar[14] = {"tret", "tam", "hel", "maa", "huh", "tou", "kes", "hei", "elo", "syy", "lok", "mer", "jou"};
+char *geChar[14] = {"tret", "jan", "feb", "mar", "apr", "may", "jun", "jly", "aug", "sep", "oct", "nov", "dec"};
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    char inputStr[10];
+    getchar();
+    for (int i = 0; i < N; i++) {
+        gets(inputStr);
+        if (inputStr[0] >= '0' && inputStr[0] <= '9') {
+            // 整数
+            int num = atoi(inputStr);
+            printMars(num);
+        } else {
+            printNum(inputStr);
+        }
+
+        if (i != N - 1) {
+            printf("\n");
+        }
+    }
+
+    return 0;
+}
+
+//打印数字
+int printNum(char *inputStr) {
+    if (strcmp(inputStr, "tret") == 0) {
+        printf("0");
+        return 0;
+    }
+
+    // 火星文
+    if (strlen(inputStr) < 5) {
+        //    火星单位数，可能是个位，可能是十位
+        //验证是否火星个位
+        for (int j = 0; j < 13; j++) {
+            if (strcmp(geChar[j], inputStr) == 0) {
+                printf("%d", j);
+                break;
+            }
+        }
+        //验证是否火星十位
+        for (int j = 0; j < 13; j++) {
+            if (strcmp(shiChar[j], inputStr) == 0) {
+                printf("%d", j * 13);
+                break;
+            }
+        }
+    } else {
+        //两位火星文
+        char shiStr[4];
+        char geStr[4];
+        //截取两段字符串
+        sscanf(inputStr, "%s %s", shiStr, geStr);
+
+        int shi = 0;
+        for (int j = 0; j < 13; j++) {
+            if (strcmp(shiChar[j], shiStr) == 0) {
+                shi = j;
+                break;
+            }
+        }
+
+        int ge = 0;
+        for (int j = 0; j < 13; j++) {
+            if (strcmp(geChar[j], geStr) == 0) {
+                ge = j;
+                break;
+            }
+        }
+        printf("%d", shi * 13 + ge);
+    }
+
+    return 0;
+}
+
+//打印火星文
+int printMars(int num) {
+    if (num / 13 == 0) {
+        printf("%s", geChar[num % 13]);
+        return 0;
+    } else if (num % 13 == 0) {
+        printf("%s", shiChar[num / 13]);
+        return 0;
+    } else {
+        printf("%s %s", shiChar[num / 13], geChar[num % 13]);
+        return 0;
+    }
+}

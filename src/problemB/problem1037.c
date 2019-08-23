@@ -21,14 +21,14 @@
 输出样例 2：
 -3.2.1*/
 
-#include <stdio.h>
-
-struct Money {
-    int Sickle;
-    int Galleon;
-    int Knut;
-};
-
+//#include <stdio.h>
+//
+//struct Money {
+//    int Sickle;
+//    int Galleon;
+//    int Knut;
+//};
+//
 //int main() {
 //    struct Money P, A, Out;
 //    int Psum;
@@ -38,46 +38,15 @@ struct Money {
 //
 //    Psum = P.Sickle * 17 * 29 + P.Galleon * 29 + P.Knut;
 //    Asum = A.Sickle * 17 * 29 + A.Galleon * 29 + A.Knut;
-////    0表示负数，1表示正数
-//    int flag = 0;
 //
-//    if (Asum >= Psum) {
-//        flag = 1;
+//    Out.Knut = Asum - Psum;
 //
-//        Out.Sickle = A.Sickle - P.Sickle;
-//        Out.Galleon = A.Galleon - P.Galleon;
-//        Out.Knut = A.Knut - P.Knut;
-//
-//        if (Out.Knut < 0) {
-//            Out.Knut += 29;
-//            Out.Galleon--;
-//        }
-//
-//        if (Out.Galleon < 0) {
-//            Out.Galleon += 17;
-//            Out.Sickle--;
-//        }
-//    } else {
-//        flag = 0;
-//
-//        Out.Sickle = P.Sickle - A.Sickle;
-//        Out.Galleon = P.Galleon - A.Galleon;
-//        Out.Knut = P.Knut - A.Knut;
-//
-//        if (Out.Knut < 0) {
-//            Out.Knut += 29;
-//            Out.Galleon--;
-//        }
-//
-//        if (Out.Galleon < 0) {
-//            Out.Galleon += 17;
-//            Out.Sickle--;
-//        }
-//    }
-//    if (!flag) {
+//    if (Asum < Psum) {
 //        printf("-");
+//        Out.Knut = -Out.Knut;
 //    }
-//    printf("%d.%d.%d", Out.Sickle, Out.Galleon, Out.Knut);
+//
+//    printf("%d.%d.%d", Out.Knut / (17 * 29), Out.Knut % (17 * 29) / 29, Out.Knut % 29);
 //
 //    return 0;
 //}

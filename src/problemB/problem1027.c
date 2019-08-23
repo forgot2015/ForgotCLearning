@@ -29,8 +29,8 @@
 *****
 2*/
 
-#include <stdio.h>
-
+//#include <stdio.h>
+//
 //int main() {
 //    int N;
 //    char sign;
@@ -49,6 +49,7 @@
 //        topLevel++;
 //    }
 //
+////    打印上部分
 //    for (int i = 0; i < topLevel; i++) {
 //        for (int k = 0; k < i; k++) {
 //            putchar(' ');
@@ -61,12 +62,13 @@
 //        putchar('\n');
 //    }
 //
+////    打印中间
 //    for (int k = 0; k < topLevel; k++) {
 //        putchar(' ');
 //    }
-//
 //    printf("%c\n", sign);
 //
+////    打印下部分
 //    for (int i = topLevel - 1; i >= 0; i--) {
 //        curLeverCount = curLeverCount + 2;
 //        for (int k = i; k > 0; k--) {

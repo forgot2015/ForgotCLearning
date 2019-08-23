@@ -28,3 +28,10 @@
 输出样例：
 3
 1 4 5*/
+
+#include <stdio.h>
+
+int main() {
+
+    return 0;
+}

@@ -8,7 +8,8 @@
 输入在一行中按照 a1/b1 a2/b2 的格式给出两个分数形式的有理数，其中分子和分母全是整型范围内的整数，负号只可能出现在分子前，分母不为 0。
 
 输出格式：
-分别在 4 行中按照 有理数1 运算符 有理数2 = 结果 的格式顺序输出 2 个有理数的和、差、积、商。注意输出的每个有理数必须是该有理数的最简形式 k a/b，其中 k 是整数部分，a/b 是最简分数部分；若为负数，则须加括号；若除法分母为 0，则输出 Inf。题目保证正确的输出中没有超过整型范围的整数。
+分别在 4 行中按照 有理数1 运算符 有理数2 = 结果 的格式顺序输出 2 个有理数的和、差、积、商。注意输出的每个有理数必须是该有理数的最简形式 k a/b，
+ 其中 k 是整数部分，a/b 是最简分数部分；若为负数，则须加括号；若除法分母为 0，则输出 Inf。题目保证正确的输出中没有超过整型范围的整数。
 
 输入样例 1：
 2/3 -4/2
@@ -25,161 +26,99 @@
 1 2/3 * 0 = 0
 1 2/3 / 0 = Inf*/
 
-#include <stdio.h>
 
-//shit 分子分母的计算啊
-
-void printFlag0(int a, int b) {
-    if (a > 0) {
-        printf("%d/%d", a, b);
-    } else {
-        printf("(%d/%d)", a, b);
-    }
-}
-
-void printFlag1(int a, int b) {
-    printf("0");
-}
-
-void printFlag2(int a, int b) {
-    if (a > 0) {
-        printf("%d", a / b);
-        printf("%d/%d", a - b, b);
-    } else {
-        printf("(%d", a / b);
-        printf("%d/%d)", a - b, b);
-    }
-}
-
-void printFlag3(int a, int b) {
-    if (a > 0) {
-        printf("%d", a / b);
-    } else {
-        printf("(%d)", a / b);
-    }
-}
-
+//一开始错一个用例，用a * b < 0来判断结果正负性会错第三个用例，原因未知
+//#include <stdio.h>
+//
+//long getGcd(long a, long b);
+//
+//long printShow(long a, long b);
+//
 //int main() {
-//    int a1, b1, a2, b2;
-//    scanf("%d/%d %d/%d", &a1, &b1, &a2, &b2);
-////    printf("%d %d %d %d", a1, b1, a2, b2);
+//    long a1, b1, a2, b2;
+//    scanf("%ld/%ld %ld/%ld", &a1, &b1, &a2, &b2);
+//    printShow(a1, b1);
+//    printf(" + ");
+//    printShow(a2, b2);
+//    printf(" = ");
+//    printShow(a1 * b2 + a2 * b1, b1 * b2);
+//    printf("\n");
 //
-////数字 + 分数 中的数字
-//    int c1, c2;
-////   数字 + 分数 中的分子
-//    int d1, d2;
+//    printShow(a1, b1);
+//    printf(" - ");
+//    printShow(a2, b2);
+//    printf(" = ");
+//    printShow(a1 * b2 - a2 * b1, b1 * b2);
+//    printf("\n");
 //
-//    //0表示最普通的情况，1表示a=0的情况, 2表示数字+分数的情况，3表示整除成纯数字的情况
-//    int flag1 = -1;
-//    if (a1 == 0) {
-//        flag1 = 1;
-//    } else if (a1 / b1 != 0) {
-//        if (a1 % b1 == 0) {
-//            flag1 = 3;
-//        } else {
-//            flag1 = 2;
-//        }
-//    } else {
-//        flag1 = 0;
-//    }
+//    printShow(a1, b1);
+//    printf(" * ");
+//    printShow(a2, b2);
+//    printf(" = ");
+//    printShow(a1 * a2, b1 * b2);
+//    printf("\n");
 //
-//    //0表示最普通的情况，1表示a=0的情况, 2表示数字+分数的情况，3表示整除成纯数字的情况
-//    int flag2 = -1;
-//    if (a2 == 0) {
-//        flag2 = 1;
-//    } else if (a2 / b2 != 0) {
-//        if (a2 % b2 != 0) {
-//            flag2 = 2;
-//        } else {
-//            flag2 = 3;
-//        }
-//    } else {
-//        flag2 = 0;
-//    }
-//
-//    if (flag1 == 0) {
-//        printFlag0(a1, b1);
-//        printf(" + ");
-//
-//        if (flag2 == 0) {
-//            printFlag0(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 1) {
-//            printFlag1(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 2) {
-//            printFlag2(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 3) {
-//            printFlag3(a2, b2);
-//            printf(" = ");
-//        }
-//
-//        printf("\n");
-//    }else if (flag1 == 1) {
-//        printFlag1(a1, b1);
-//        printf(" - ");
-//
-//        if (flag2 == 0) {
-//            printFlag0(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 1) {
-//            printFlag1(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 2) {
-//            printFlag2(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 3) {
-//            printFlag3(a2, b2);
-//            printf(" = ");
-//        }
-//
-//        printf("\n");
-//    }
-//    else if (flag1 == 2) {
-//        printFlag1(a1, b1);
-//        printf(" * ");
-//
-//        if (flag2 == 0) {
-//            printFlag0(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 1) {
-//            printFlag1(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 2) {
-//            printFlag2(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 3) {
-//            printFlag3(a2, b2);
-//            printf(" = ");
-//        }
-//
-//        printf("\n");
-//    }else if (flag1 == 3) {
-//        printFlag1(a1, b1);
-//        printf(" / ");
-//
-//        if (flag2 == 0) {
-//            printFlag0(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 1) {
-//            printFlag1(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 2) {
-//            printFlag2(a2, b2);
-//            printf(" = ");
-//        } else if (flag2 == 3) {
-//            printFlag3(a2, b2);
-//            printf(" = ");
-//        }
-//
-//    }
+//    printShow(a1, b1);
+//    printf(" / ");
+//    printShow(a2, b2);
+//    printf(" = ");
+//    printShow(a1 * b2, b1 * a2);
 //
 //    return 0;
 //}
-
-
-
-
-
-
+//
+//long printShow(long a, long b) {
+//    if (b == 0) {
+//        printf("Inf");
+//        return 0;
+//    }
+//
+//    int sign = 1;
+////    为何用这个来判断负号会错第三个用例，PAT编译器问题？
+////    if (a * b < 0) {
+////        sign = -1;
+////    }
+//
+//    if (a < 0) {
+//        a = -a;
+//        sign = sign * (-1);
+//    }
+//    if (b < 0) {
+//        b = -b;
+//        sign = sign * (-1);
+//    }
+//
+////    约分成最简分数
+//    long r = getGcd(a, b);
+//    a = a / r;
+//    b = b / r;
+//
+//    if (sign == -1) {
+//        printf("(-");
+//    }
+//
+//    if (b == 1) {
+//        printf("%ld", a);
+//    } else if (a < b) {
+//        printf("%ld/%ld", a, b);
+//    } else if (a > b) {
+//        printf("%ld %ld/%ld", a / b, a % b, b);
+//    }
+//
+//    if (sign == -1) {
+//        printf(")");
+//    }
+//    return 0;
+//}
+//
+////辗转相除法求最大公约数
+//long getGcd(long a, long b) {
+//    long r = a % b;
+//    while (r != 0) {
+//        a = b;
+//        b = r;
+//        r = a % b;
+//    }
+//
+//    return b;
+//}

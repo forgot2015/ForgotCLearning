@@ -17,18 +17,51 @@ _hs_s_a_es
 输出样例：
 7TI*/
 
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//    char input[81];
+//    char output[81];
+//    int alreadyPrint[128] = {0};
+//
+//    gets(input);
+//    gets(output);
+//
+//    for (int i = 0; i < strlen(input); i++) {
+//        int has = 0;
+//        for (int j = 0; j < strlen(output); j++) {
+//            if (output[j] == input[i]) {
+//                has = 1;
+//                break;
+//            }
+//        }
+////        判断是否包含某字符
+//        if (!has) {
+//            if (input[i] >= 'a' && input[i] <= 'z') {
+//                input[i] = input[i] + 'A' - 'a';
+//            }
+//
+////            如果没打印过，则打印，并标记为已打印
+//            if (!alreadyPrint[input[i]]) {
+//                putchar(input[i]);
+//                alreadyPrint[input[i]] = 1;
+//            }
+//        }
+//    }
+//
+//    return 0;
+//}
 
+//老方法
+//#include <stdio.h>
+//#include <string.h>
+//
 //int main() {
 //    char input[81];
 //    char out[81];
 //    char alreadyPrint[81];
 //    int count = 0;
-//
-////    用这两行出现RuntimeError , 改成下面的就好了？
-////    fgets(input, 256, stdin);
-////    fgets(out, 256, stdin);
 //
 //    gets(input);
 //    gets(out);
@@ -41,7 +74,7 @@ _hs_s_a_es
 //                break;
 //            }
 //        }
-////        判断是否包含某字符
+//
 //        if (!has) {
 //            if (input[i] >= 'a' && input[i] <= 'z') {
 //                input[i] = input[i] - 32;
@@ -54,7 +87,6 @@ _hs_s_a_es
 //                }
 //            }
 //
-////            判断该字符是否打印过
 //            if (!hasPrint){
 //                alreadyPrint[count] = input[i];
 //                putchar(input[i]);
@@ -84,7 +116,7 @@ _hs_s_a_es
 //            else {
 //                if (!f[a[i] - '0']) {
 //                    putchar(a[i]);
-//                    f[a[i] - '0']++;
+//                    f[a[i] - '0'] = 1;
 //                }
 //            }
 //        }

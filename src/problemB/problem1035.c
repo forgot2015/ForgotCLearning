@@ -31,8 +31,8 @@ Insertion Sort
 Merge Sort
 1 2 3 8 4 5 7 9 0 6*/
 
-#include <stdio.h>
-//还要判断用的是插入还是归并，输出不同结果啊
+//#include <stdio.h>
+////还要判断用的是插入还是归并，输出不同结果啊
 //int main() {
 //    int N;
 //    scanf("%d", &N);

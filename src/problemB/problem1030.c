@@ -7,13 +7,7 @@
 现在给定参数 p 和一些正整数，请你从中选择尽可能多的数构成一个完美数列。
 
 输入格式：
-输入第一行给出两个正整数 N 和 p，其中 N（≤10
-​5
-​​ ）是输入的正整数的个数，p（≤10
-​9
-​​ ）是给定的参数。第二行给出 N 个正整数，每个数不超过 10
-​9
-​​ 。
+输入第一行给出两个正整数 N 和 p，其中 N（≤10^5）是输入的正整数的个数，p（≤10^9）是给定的参数。第二行给出 N 个正整数，每个数不超过 10^​9。
 
 输出格式：
 在一行中输出最多可以选择多少个数可以用它们组成一个完美数列。
@@ -24,26 +18,30 @@
 输出样例：
 8*/
 
-#include <stdio.h>
-#include <stdlib.h>
 
-//int cmp(const void *a, const void *b);
+//注意要用long类型来表示数，最大10^9啊
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int cmp(const void *a, const void *b) { return *(long *) a - *(long *) b > 0 ? 1 : -1; }
 //
 //int main() {
-//    int N, p;
-//    scanf("%d %d", &N, &p);
-//    int num[N];
+//    int N;
+//    long p;
+//    scanf("%d %ld", &N, &p);
+//    long num[N];
 //    for (int i = 0; i < N; i++) {
-//        scanf("%d", &num[i]);
+//        scanf("%ld", &num[i]);
 //    }
 //
 //    qsort(num, N, sizeof(num[0]), cmp);
 //
 //    int maxLen = 0;
-//    for (int j = 0; j < N; j++) {
-//        for (int i = j + maxLen; i < N; i++) {
-//            if (num[i] > num[j] * p) {
+//    for (int i = 0; i < N; i++) {
+//        for (int j = i + maxLen; j < N; j++) {
+//            if (num[j] > num[i] * p) {
 //                break;
+////                注意，这里不要再去中断最外层循环，因为有可能下一个M m又满足条件了
 //            }
 //            maxLen++;
 //        }
@@ -53,5 +51,4 @@
 //
 //    return 0;
 //}
-//
-//int cmp(const void *a, const void *b) { return *(int *) a - *(int *) b; }
+

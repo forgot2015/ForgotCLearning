@@ -28,11 +28,11 @@ Steve 1967/11/20
 //1
 //Ann 2121/01/30
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-//注意，有一个坑是，可能一个有效生日都没有，这时候直接输出0
+//#include <stdio.h>
+//#include <string.h>
+//#include <stdlib.h>
+//
+////注意，有一个坑是，可能一个有效生日都没有，这时候直接输出0
 //typedef struct Birthdays {
 //    char name[6];
 //    char date[11];
@@ -72,7 +72,7 @@ Steve 1967/11/20
 
 
 
-//法2，直接比较法，不去排序了，时间复杂度和空间复杂度更低
+////法2，直接比较法，不去排序了，时间复杂度和空间复杂度更低
 //#include <stdio.h>
 //
 //struct Birthday {
