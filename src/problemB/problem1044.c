@@ -29,102 +29,102 @@ may
 
 
 //一开始错了两用例，火星数字除了单独是0的时候写0，只要高位数字有数，个位数字如果是0就省略不写。
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-int printNum(char *str);
-
-int printMars(int num);
-
-char *shiChar[14] = {"tret", "tam", "hel", "maa", "huh", "tou", "kes", "hei", "elo", "syy", "lok", "mer", "jou"};
-char *geChar[14] = {"tret", "jan", "feb", "mar", "apr", "may", "jun", "jly", "aug", "sep", "oct", "nov", "dec"};
-
-int main() {
-    int N;
-    scanf("%d", &N);
-    char inputStr[10];
-    getchar();
-    for (int i = 0; i < N; i++) {
-        gets(inputStr);
-        if (inputStr[0] >= '0' && inputStr[0] <= '9') {
-            // 整数
-            int num = atoi(inputStr);
-            printMars(num);
-        } else {
-            printNum(inputStr);
-        }
-
-        if (i != N - 1) {
-            printf("\n");
-        }
-    }
-
-    return 0;
-}
-
-//打印数字
-int printNum(char *inputStr) {
-    if (strcmp(inputStr, "tret") == 0) {
-        printf("0");
-        return 0;
-    }
-
-    // 火星文
-    if (strlen(inputStr) < 5) {
-        //    火星单位数，可能是个位，可能是十位
-        //验证是否火星个位
-        for (int j = 0; j < 13; j++) {
-            if (strcmp(geChar[j], inputStr) == 0) {
-                printf("%d", j);
-                break;
-            }
-        }
-        //验证是否火星十位
-        for (int j = 0; j < 13; j++) {
-            if (strcmp(shiChar[j], inputStr) == 0) {
-                printf("%d", j * 13);
-                break;
-            }
-        }
-    } else {
-        //两位火星文
-        char shiStr[4];
-        char geStr[4];
-        //截取两段字符串
-        sscanf(inputStr, "%s %s", shiStr, geStr);
-
-        int shi = 0;
-        for (int j = 0; j < 13; j++) {
-            if (strcmp(shiChar[j], shiStr) == 0) {
-                shi = j;
-                break;
-            }
-        }
-
-        int ge = 0;
-        for (int j = 0; j < 13; j++) {
-            if (strcmp(geChar[j], geStr) == 0) {
-                ge = j;
-                break;
-            }
-        }
-        printf("%d", shi * 13 + ge);
-    }
-
-    return 0;
-}
-
-//打印火星文
-int printMars(int num) {
-    if (num / 13 == 0) {
-        printf("%s", geChar[num % 13]);
-        return 0;
-    } else if (num % 13 == 0) {
-        printf("%s", shiChar[num / 13]);
-        return 0;
-    } else {
-        printf("%s %s", shiChar[num / 13], geChar[num % 13]);
-        return 0;
-    }
-}
+//#include <stdio.h>
+//#include <string.h>
+//#include <stdlib.h>
+//
+//int printNum(char *str);
+//
+//int printMars(int num);
+//
+//char *shiChar[14] = {"tret", "tam", "hel", "maa", "huh", "tou", "kes", "hei", "elo", "syy", "lok", "mer", "jou"};
+//char *geChar[14] = {"tret", "jan", "feb", "mar", "apr", "may", "jun", "jly", "aug", "sep", "oct", "nov", "dec"};
+//
+//int main() {
+//    int N;
+//    scanf("%d", &N);
+//    char inputStr[10];
+//    getchar();
+//    for (int i = 0; i < N; i++) {
+//        gets(inputStr);
+//        if (inputStr[0] >= '0' && inputStr[0] <= '9') {
+//            // 整数
+//            int num = atoi(inputStr);
+//            printMars(num);
+//        } else {
+//            printNum(inputStr);
+//        }
+//
+//        if (i != N - 1) {
+//            printf("\n");
+//        }
+//    }
+//
+//    return 0;
+//}
+//
+////打印数字
+//int printNum(char *inputStr) {
+//    if (strcmp(inputStr, "tret") == 0) {
+//        printf("0");
+//        return 0;
+//    }
+//
+//    // 火星文
+//    if (strlen(inputStr) < 5) {
+//        //    火星单位数，可能是个位，可能是十位
+//        //验证是否火星个位
+//        for (int j = 0; j < 13; j++) {
+//            if (strcmp(geChar[j], inputStr) == 0) {
+//                printf("%d", j);
+//                break;
+//            }
+//        }
+//        //验证是否火星十位
+//        for (int j = 0; j < 13; j++) {
+//            if (strcmp(shiChar[j], inputStr) == 0) {
+//                printf("%d", j * 13);
+//                break;
+//            }
+//        }
+//    } else {
+//        //两位火星文
+//        char shiStr[4];
+//        char geStr[4];
+//        //截取两段字符串
+//        sscanf(inputStr, "%s %s", shiStr, geStr);
+//
+//        int shi = 0;
+//        for (int j = 0; j < 13; j++) {
+//            if (strcmp(shiChar[j], shiStr) == 0) {
+//                shi = j;
+//                break;
+//            }
+//        }
+//
+//        int ge = 0;
+//        for (int j = 0; j < 13; j++) {
+//            if (strcmp(geChar[j], geStr) == 0) {
+//                ge = j;
+//                break;
+//            }
+//        }
+//        printf("%d", shi * 13 + ge);
+//    }
+//
+//    return 0;
+//}
+//
+////打印火星文
+//int printMars(int num) {
+//    if (num / 13 == 0) {
+//        printf("%s", geChar[num % 13]);
+//        return 0;
+//    } else if (num % 13 == 0) {
+//        printf("%s", shiChar[num / 13]);
+//        return 0;
+//    } else {
+//        printf("%s %s", shiChar[num / 13], geChar[num % 13]);
+//        return 0;
+//    }
+//}

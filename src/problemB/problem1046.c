@@ -63,12 +63,11 @@
 //            continue;
 //        }
 //
-//        if (aHua == aHan + bHan) {
+//        int sum = aHan + bHan;
+//        if (aHua == sum) {
 //            bDrink++;
-//        } else if (bHua == aHan + bHan) {
+//        } else if (bHua == sum) {
 //            aDrink++;
-//        } else {
-//            continue;
 //        }
 //    }
 //

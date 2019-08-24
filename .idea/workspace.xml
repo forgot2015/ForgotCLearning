@@ -13,19 +13,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1802cf37-a4f1-4020-a48c-cea8b761d02d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1020.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1020.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1025.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1025.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1027.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1027.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1028.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1028.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1029.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1029.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1030.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1030.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1031.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1031.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1033.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1033.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1034.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1034.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1035.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1035.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1037.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1037.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problemB/problem1044.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1044.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problemB/problem1045.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1045.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1046.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1046.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1048.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1048.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1049.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1049.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,12 +129,22 @@
       <workItem from="1565685038946" duration="5396000" />
       <workItem from="1565742735782" duration="22357000" />
       <workItem from="1565829649219" duration="24315000" />
-      <workItem from="1565922605949" duration="108943000" />
+      <workItem from="1565922605949" duration="118807000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1049,6 +1051,81 @@
           <url>file://$PROJECT_DIR$/src/problemB/problem1044.c</url>
           <line>111</line>
           <option name="timeStamp" value="476" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>110</line>
+          <option name="timeStamp" value="483" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>112</line>
+          <option name="timeStamp" value="484" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>111</line>
+          <option name="timeStamp" value="485" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>113</line>
+          <option name="timeStamp" value="486" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>114</line>
+          <option name="timeStamp" value="487" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>120</line>
+          <option name="timeStamp" value="488" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>119</line>
+          <option name="timeStamp" value="489" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>121</line>
+          <option name="timeStamp" value="490" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>57</line>
+          <option name="timeStamp" value="492" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>58</line>
+          <option name="timeStamp" value="493" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>59</line>
+          <option name="timeStamp" value="494" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1045.c</url>
+          <line>60</line>
+          <option name="timeStamp" value="495" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1048.c</url>
+          <line>73</line>
+          <option name="timeStamp" value="505" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1048.c</url>
+          <line>74</line>
+          <option name="timeStamp" value="506" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/problemB/problem1048.c</url>
+          <line>75</line>
+          <option name="timeStamp" value="507" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
