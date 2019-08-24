@@ -30,16 +30,76 @@
 o(^ε^)o
 Are you kidding me? @\/@*/
 
-#include <stdio.h>
-#include <string.h>
-//都错了。。。
+
+//难点在于如何解析输入的表情字符串, 用到 %[] 字符集输入方法
+// 还有一个坑，题目没有说明输入序号的范围，写的从1开始，让人以为输入的都是合法的，其实还要校验序号是否大于等一1
+//#include <stdio.h>
+//
+//int main() {
+//    char handStr[11][5];
+//    int handCount = 0;
+//
+//    char eyeStr[11][5];
+//    int eyeCount = 0;
+//
+//    char mouthStr[11][5];
+//    int mouthCount = 0;
+//
+//    int ch;
+//    while ((ch = getchar()) != '\n') {
+//        if (ch == '[') {
+////          []是字符集输入符号，^表示非，故[^]]表示读取除了]之外的字符，到]就会结束本次
+//            scanf("%[^]]", handStr[handCount++]);
+//        }
+//    }
+//
+//    while ((ch = getchar()) != '\n') {
+//        if (ch == '[') {
+//            scanf("%[^]]", eyeStr[eyeCount++]);
+//        }
+//    }
+//
+//    while ((ch = getchar()) != '\n') {
+//        if (ch == '[') {
+//            scanf("%[^]]", mouthStr[mouthCount++]);
+//        }
+//    }
+//
+//    int K;
+//    scanf("%d", &K);
+//    for (int k = 0; k < K; k++) {
+//        int hand1, eye1, mouth1, eye2, hand2;
+//        scanf("%d %d %d %d %d", &hand1, &eye1, &mouth1, &eye2, &hand2);
+//
+//        if (hand1 >= 1 && hand1 <= handCount && hand2 >= 1 && hand2 <= handCount && eye1 >= 1 && eye1 <= eyeCount &&
+//            eye2 >= 1 && eye2 <= eyeCount && mouth1 >= 1 && mouth1 <= mouthCount) {
+//            printf("%s(%s%s%s)%s", handStr[hand1 - 1], eyeStr[eye1 - 1], mouthStr[mouth1 - 1], eyeStr[eye2 - 1],
+//                   handStr[hand2 - 1]);
+//        } else {
+//            printf("Are you kidding me? @\\/@");
+//        }
+//
+//        if (k != K - 1) {
+//            printf("\n");
+//        }
+//    }
+//
+//    return 0;
+//}
+
+
+// shabi获取表情符号的方法
+//#include <stdio.h>
+//#include <string.h>
+//
 //int main() {
 //    char handInput[100];
 //    char eyeInput[100];
 //    char mouthInput[100];
-//    fgets(handInput, 100, stdin);
-//    fgets(eyeInput, 100, stdin);
-//    fgets(mouthInput, 100, stdin);
+//
+//    gets(handInput);
+//    gets(eyeInput);
+//    gets(mouthInput);
 //
 //    char *hand[11];
 //    char handStr[11][10];
@@ -59,7 +119,6 @@ Are you kidding me? @\/@*/
 //                if (handInput[j] == ']') {
 //                    strncpy(handStr[handCount], handInput + i + 1, j - i - 1);
 //                    hand[handCount] = handStr[handCount];
-////                    printf("hand[%d]= %s\n", handCount, hand[handCount]);
 //                    handCount++;
 //                    break;
 //                }
@@ -73,7 +132,6 @@ Are you kidding me? @\/@*/
 //                if (eyeInput[j] == ']') {
 //                    strncpy(eyeStr[eyeCount], eyeInput + i + 1, j - i - 1);
 //                    eye[eyeCount] = eyeStr[eyeCount];
-////                    printf("eye[%d]= %s\n", eyeCount, eye[eyeCount]);
 //                    eyeCount++;
 //                    break;
 //                }
@@ -94,27 +152,23 @@ Are you kidding me? @\/@*/
 //        }
 //    }
 //
-////    对于指针字符串数字，用sizeof或者strlen都是不准的，直接用计数变量
-////    printf("hand len = %d\n", handCount);
-////    printf("eye len = %d\n", eyeCount);
-////    printf("mouth len = %d\n", mouthCount);
-//
 //    int K;
 //    scanf("%d", &K);
 //    for (int k = 0; k < K; k++) {
 //        int hand1, eye1, mouth1, eye2, hand2;
 //        scanf("%d %d %d %d %d", &hand1, &eye1, &mouth1, &eye2, &hand2);
 //
-//        if (hand1 > handCount  || hand2 > handCount  || eye1 > eyeCount  || eye2 > eyeCount  ||
-//            mouth1 > mouthCount ) {
-//            printf("Are you kidding me? @\\/@");
-//        } else {
+//        if (hand1 >= 1 && hand1 <= handCount && hand2 >= 1 && hand2 <= handCount && eye1 >= 1 && eye1 <= eyeCount &&
+//            eye2 >= 1 && eye2 <= eyeCount && mouth1 >= 1 && mouth1 <= mouthCount) {
 //            printf("%s(%s%s%s)%s", hand[hand1 - 1], eye[eye1 - 1], mouth[mouth1 - 1], eye[eye2 - 1], hand[hand2 - 1]);
+//        } else {
+//            printf("Are you kidding me? @\\/@");
 //        }
+//
 //        if (k != K - 1) {
 //            printf("\n");
 //        }
 //    }
+//
 //    return 0;
 //}
-

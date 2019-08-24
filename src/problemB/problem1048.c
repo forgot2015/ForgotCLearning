@@ -22,21 +22,41 @@
 //注意理解题意，个位为第1位，也就是先从右边开始计算，若两字符串长度不等，要补全也是在最左边补全啊
 
 
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
 
 //与输出有差别
-int main() {
-    char ji[14] = "0123456789JQK";
-    char A[101], B[101];
-    scanf("%s %s", A, B);
+//int main() {
+//    char ji[14] = "0123456789JQK";
+//    char A[101], B[101];
+//    scanf("%s %s", A, B);
+//    int Alen = strlen(A);
+//    int Blen = strlen(B);
+//    int maxLen = Alen > Blen ? Alen : Blen;
+//
+//    for (int i = 0; i < maxLen; i++) {
+//        int a = Alen + i - maxLen < 0 ? 0 : A[Alen + i - maxLen] - '0';
+//        int b = Blen + i - maxLen < 0 ? 0 : B[Blen + i - maxLen] - '0';
+//
+////        个位是第一位，也就算从最右边开始计算起
+//        if ((maxLen - i) % 2 == 0) {
+////            偶数位
+//            int out = b - a >= 0 ? b - a : b - a + 10;
+//            printf("%d", out);
+//        } else {
+//            //            奇数位
+//            int outIndex = (a + b) % 13;
+//            putchar(ji[outIndex]);
+//
+//        }
+//    }
+//
+//    return 0;
+//}
 
 
-    return 0;
-}
 
-
-
+//法2 有错？ 还是PAT编译器问题？
 //#include <stdio.h>
 //#include <string.h>
 //
@@ -62,17 +82,20 @@ int main() {
 //        }
 //    }
 //    strcat(zeroB, B);
+//    int maxLen = strlen(zeroA);
+//    for (int i = 0; i < maxLen; i++) {
+//        int a = zeroA[i] - '0';
+//        int b = zeroB[i] - '0';
 //
-//    for (int i = 0; i < strlen(zeroA); i++) {
-////        序号0是第一位，故i+1
-//        if ((i + 1) % 2 == 0) {
-//            int cha = zeroB[i] - zeroA[i];
+////        从最右边开始算第一位
+//        if ((maxLen - i) % 2 == 0) {
+//            int cha = b - a;
 //            if (cha < 0) {
 //                cha = cha + 10;
 //            }
-//            putchar(ji[cha]);
+//            printf("%d", cha);
 //        } else {
-//            int yu = (zeroB[i] - '0' + zeroA[i] - '0') % 13;
+//            int yu = (a + b) % 13;
 //            putchar(ji[yu]);
 //        }
 //    }
