@@ -24,37 +24,93 @@
 6
 5
 2 2 3 4*/
-// 最后一行， 2表示错误最多的次数是2次， 2 3 4 表示错误2次的题目是第2、3、4题
 
-#include "stdio.h"
+// 注意题意，最后一行， 2表示错误最多的次数是2次， 2 3 4 表示错误2次的题目是第2、3、4题
+// 全部对时，打印"Too simple"
 
+
+//#include <stdio.h>
+//#include <string.h>
+//
+//typedef struct Problems {
+//    int score;
+//    int allCount;
+//    int ansCount;
+//    char answers[6];
+//} Problem;
+//
 //int main() {
 //    int N, M;
 //    scanf("%d %d", &N, &M);
-////    题目分数
-//    int mScore[M];
-////    题目选项数量
-//    int mAnswerSelect[M];
-////    题目答案数量
-//    int mAnswerCount[M];
-////    题目答案
-//    char *mAnswer[M];
-//    char mAnswerChar[M][6];
-//
-////    遍历题目，记录分数和答案
-//    for (int i = 1; i < M + 1; ++i) {
-//        int score, selectedCount, answerCount;
-//        scanf("%d %d %d", &score, &selectedCount, &answerCount);
-//        for (int j = 0; j < answerCount; ++j) {
-//            scanf("%c", &mAnswerChar[i][j]);
+//    Problem problem[M];
+//    for (int i = 0; i < M; i++) {
+//        scanf("%d %d %d", &problem[i].score, &problem[i].allCount, &problem[i].ansCount);
+////        记录题目答案
+//        for (int j = 0; j < problem[i].ansCount; j++) {
+////            要匹配前面的空格，否则获取出错
+//            scanf(" %c", &problem[i].answers[j]);
 //        }
-//        mAnswer[i] = mAnswerChar[i];
+////        将长度之外的字符清空，这样就不会有多余乱码
+//        problem[i].answers[problem[i].ansCount] = '\0';
 //    }
 //
-//    for (int k = 0; k < N; ++k) {
+////    for (int k = 0; k < M; k++) {
+////        printf("q[%d] answer = %s\n", k, problem[k].answers);
+////    }
 //
+////    遍历学生和答题情况
+//    int ch;
+//    int score[N];
+//    int index = 0;
+//    int wrongCount[M];
+////    初始化每题错误次数
+//    for (int n = 0; n < M; n++) {
+//        wrongCount[n] = 0;
+//    }
+//
+//    int maxWrongIndex = 0;
+//    int sAnswerCount;
+//    getchar();
+//    char input[6];
+//    for (int k = 0; k < N; k++) {
+//        score[k] = 0;
+//        index = 0;
+//        while ((ch = getchar()) != '\n') {
+//            if (ch == '(') {
+//                scanf("%d", &sAnswerCount);
+////                将长度之外的字符清空，这样就不会有多余乱码
+//                input[sAnswerCount] = '\0';
+//                for (int j = 0; j < sAnswerCount; j++) {
+//                    scanf(" %c", &input[j]);
+//                }
+//
+////                printf("children[%d] answer[%d] = %s\n", k, index, input);
+//                if (strcmp(input, problem[index].answers) == 0) {
+//                    score[k] += problem[index].score;
+//                } else {
+////                    统计错的最多的题目
+//                    wrongCount[index]++;
+//                    if (wrongCount[index] > wrongCount[maxWrongIndex]) {
+//                        maxWrongIndex = index;
+//                    }
+//                }
+//                index++;
+//            }
+//        }
+//        printf("%d\n",score[k]);
+//    }
+//
+//    if (wrongCount[maxWrongIndex] == 0) {
+//        printf("Too simple");
+//        return 0;
+//    }
+//
+//    printf("%d", wrongCount[maxWrongIndex]);
+//    for (int m = 0; m < M; m++) {
+//        if (wrongCount[m] == wrongCount[maxWrongIndex]) {
+//            printf(" %d", m + 1);
+//        }
 //    }
 //
 //    return 0;
 //}
-

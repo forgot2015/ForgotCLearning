@@ -18,13 +18,55 @@
 PAT (Basic)
 输出样例：
 3 4*/
-#include <stdio.h>
-#include <string.h>
 
-void decimalToBinary(int n);
+//一开始错了一个用例，注意若没有输入任何字母时，直接输出 0 0即可，而不要输出 1 0
+//#include <stdio.h>
+//#include <string.h>
+//
+//int count0 = 0;
+//int count1 = 0;
+//
+//void decimalToBinary(int n) {
+//    if (n / 2 > 0) {
+//        decimalToBinary(n / 2);
+//        n % 2 ? count1++ : count0++;
+//    } else {
+//        n ? count1++ : count0++;
+//    }
+//}
+//
+//int main() {
+//    char str[100001];
+//    gets(str);
+//    int sum = 0;
+//    int len = strlen(str);
+//    for (int i = 0; i < len; i++) {
+//        if (str[i] >= 'a' && str[i] <= 'z') {
+//            sum += str[i] - 'a' + 1;
+//        } else if (str[i] >= 'A' && str[i] <= 'Z') {
+//            sum += str[i] - 'A' + 1;
+//        }
+//    }
+//    if (sum) {
+//        decimalToBinary(sum);
+//        printf("%d %d", count0, count1);
+//    } else {
+//        printf("0 0");
+//    }
+//
+//    return 0;
+//}
 
-int count0 = 0;
-int count1 = 0;
+
+
+
+//#include <stdio.h>
+//#include <string.h>
+//
+//void decimalToBinary(int n);
+//
+//int count0 = 0;
+//int count1 = 0;
 //错了一个用例，为何?
 //int main() {
 //    char str[100001];
@@ -45,11 +87,11 @@ int count1 = 0;
 //    return 0;
 //}
 
-void decimalToBinary(int n) {
-    if (n / 2 > 0) {
-        decimalToBinary(n / 2);
-        n % 2 ? count1++ : count0++;
-    } else {
-        n ? count1++ : count0++;
-    }
-}
+//void decimalToBinary(int n) {
+//    if (n / 2 > 0) {
+//        decimalToBinary(n / 2);
+//        n % 2 ? count1++ : count0++;
+//    } else {
+//        n ? count1++ : count0++;
+//    }
+//}

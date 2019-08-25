@@ -21,8 +21,44 @@
 输出样例：
 6*/
 
-#include "stdio.h"
-//错了3个用例
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+////从大到小排序
+//int cmp(const void *a, const void *b) {
+//    return *(int *) b - *(int *) a;
+//}
+//
+//int main() {
+//    int N;
+//    scanf("%d", &N);
+//    int mile[N];
+//    for (int i = 0; i < N; i++) {
+//        scanf("%d", &mile[i]);
+//    }
+//    qsort(mile, N, sizeof(mile[0]), cmp);
+//
+//    int E = 0;
+//    for (int j = 0; j < N; j++) {
+//        for (int i = j; i >= 0; i--) {
+//            if (mile[j] > i + 1) {
+//                if (i + 1 > E) {
+//                    E = i + 1;
+////                    满足一个当前最大的E就break，否则时间复杂度太大，超时
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//    printf("%d", E);
+//    return 0;
+//}
+
+
+
+//#include "stdio.h"
+//错了3个用例, 时间复杂度太大
 //int main() {
 //    int N;
 //    scanf("%d", &N);
