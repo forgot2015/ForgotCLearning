@@ -17,40 +17,101 @@
 7/18 13/20 12
 输出样例：
 5/12 7/12*/
-#include "stdio.h"
 
-//判断两数是否有公约数
-int hasCommonDivisor(int i, int k) {
-    for (int j = 2; j <= i; ++j) {
-        if (i % j == 0 && k % j == 0) {
-            return 1;
-        }
-    }
-    return 0;
-}
-//错了两个用例？
+// 一开始错了一个用例，坑点是没有说明两分数的大小，可能第一个比第二个大...被给出的测试用例误导了...
+//#include <stdio.h>
+//
+////判断两数是否有公约数
+//int hasCommonDivisor(int i, int k) {
+//    for (int j = 2; j <= i; ++j) {
+//        if (i % j == 0 && k % j == 0) {
+//            return 1;
+//        }
+//    }
+//    return 0;
+//}
+//
 //int main() {
 //    int N1, M1, N2, M2, K;
 //    scanf("%d/%d %d/%d %d", &N1, &M1, &N2, &M2, &K);
-//    double f1 = N1 * 1.0 / M1;
-//    double f2 = N2 * 1.0 / M2;
+//    double d1 = N1 * 1.0 / M1;
+//    double d2 = N2 * 1.0 / M2;
+//    if (d1 > d2) {
+//        double tmp = d1;
+//        d1 = d2;
+//        d2 = tmp;
+//    }
 //
-//    int count = 0;
-//    int num[K];
-//    for (int i = 1; i < K; ++i) {
-//        float f3 = i * 1.0 / K;
-//        if (f3 >= f1 && f3 <= f2 && !hasCommonDivisor(i, K)) {
-////            printf("%d/%d", i, K);
-//            num[count] = i;
-//            count++;
+//    int isFirst = 1;
+//    for (int i = 1; i <= K; i++) {
+//        if (!hasCommonDivisor(i, K)) {
+//            double di = i * 1.0 / K;
+////            注意，d1 d2之间不包含两端点，否则会错1个用例
+//            if (di > d1 && di < d2) {
+//                if(isFirst){
+//                    printf("%d/%d", i, K);
+//                    isFirst = 0;
+//                }else{
+//                    printf(" %d/%d", i, K);
+//                }
+//
+//            }
 //        }
 //    }
 //
-//    for (int j = 0; j < count - 1; ++j) {
-//        printf("%d/%d ", num[j], K);
-//    }
-//    printf("%d/%d", num[count - 1], K);
 //    return 0;
 //}
+
+
+
+
+//#include <stdio.h>
+//
+////判断两数是否有公约数
+//int hasCommonDivisor(int i, int k) {
+//    for (int j = 2; j <= i; ++j) {
+//        if (i % j == 0 && k % j == 0) {
+//            return 1;
+//        }
+//    }
+//    return 0;
+//}
+//
+//int main() {
+//    int N1, M1, N2, M2, K;
+//    scanf("%d/%d %d/%d %d", &N1, &M1, &N2, &M2, &K);
+//    double d1 = N1 * 1.0 / M1;
+//    double d2 = N2 * 1.0 / M2;
+//    if (d1 > d2) {
+//        double tmp = d1;
+//        d1 = d2;
+//        d2 = tmp;
+//    }
+//
+//    int count = 0;
+//    int num[K];
+//    for (int i = 1; i <= K; i++) {
+//        if (!hasCommonDivisor(i, K)) {
+//            double di = i * 1.0 / K;
+////            注意，d1 d2之间不包含两端点，否则会错1个用例
+//            if (di > d1 && di < d2) {
+//                num[count] = i;
+//                count++;
+//            }
+//        }
+//    }
+//
+//    for (int j = 0; j < count; ++j) {
+//        printf("%d/%d", num[j], K);
+//
+//        if (j != count - 1) {
+//            printf(" ");
+//        }
+//    }
+//
+//    return 0;
+//}
+
+
 
 
