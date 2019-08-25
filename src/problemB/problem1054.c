@@ -26,57 +26,87 @@ aaa -9999
 ERROR: aaa is not a legal number
 ERROR: -9999 is not a legal number
 The average of 0 numbers is Undefined*/
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-//错了一个用例，Runtime Error
-//int main() {
-//    int N;
-//    scanf("%d", &N);
-//    char *str[N];
-//    int legalCount = 0;
-//    float legalSum = 0;
+//推荐用例
+/*
+6
+- -1.1 0.111 1.1.1 -1000 1000.1
+ * */
+
+// 跑gcc时错了一个用例，Runtime Error , 换成clang就通过了...暂时不知原因
+//#include <stdio.h>
+//#include <string.h>
+//#include <stdlib.h>
 //
-//    for (int i = 0; i < N; i++) {
-//        char string[10];
-//        int legal = 1;
-//        scanf("%s", string);
-//        for (int j = 0; j < strlen(string); j++) {
-//            if (string[j] == '.' || string[j] == '-' || (string[j] >= '0' && string[j] <= '9')) {
-////                如果小数点在倒数第三位之前，也是非法
-//                if (string[j] == '.' && j < strlen(string) - 3) {
-//                    legal = 0;
-//                    break;
-//                }
-//            } else {
-//                legal = 0;
-//                break;
-//            }
+//int isValid(char *str) {
+//    int len = strlen(str);
+//    if (len > 8) {
+//        return 0;
+//    }
+//
+//    // 如果只有一位，且首位是 - 或 .
+//    if (len == 1 && (str[0] == '-' || str[0] == '.')) {
+//        return 0;
+//    }
+//
+//    // 如果超过1位，首位却是1，也错误
+//    if (len > 1 && str[0] == '0') {
+//        return 0;
+//    }
+//
+//    for (int i = 0; i < len; i++) {
+////        允许出现的字符是 - . 0123456789
+//        if ((str[i] < '0' || str[i] > '9') && (str[i] != '.' && str[i] != '-')) {
+//            return 0;
 //        }
 //
-//        if (legal) {
-//            float num = atof(string);
-//            if (num >= -1000 && num <= 1000) {
-//                legalCount++;
-//                legalSum += atof(string);
-//            } else {
-//                printf("ERROR: %s is not a legal number\n", string);
+//        if (str[i] == '-' && i != 0) {
+//            return 0;
+//        }
+//
+//        int pointCount = 0;
+//        if (str[i] == '.') {
+//            pointCount = pointCount + 1;
+//            if (pointCount > 1) {
+//                return 0;
 //            }
-//        } else {
-//            printf("ERROR: %s is not a legal number\n", string);
+//            if (i < len - 3) {
+//                return 0;
+//            }
 //        }
 //    }
 //
-//    if (legalCount) {
-////        注意，有复数个合法数字时，要加s变成numbers
-//        if (legalCount == 1) {
-//            printf("The average of %d number is %.2f", legalCount, legalSum * 1.0 / legalCount);
-//        } else {
-//            printf("The average of %d numbers is %.2f", legalCount, legalSum * 1.0 / legalCount);
-//        }
+//    double num = atof(str);
+//    if (num > 1000.00 || num < -1000.00) {
+//        return 0;
 //    } else {
+//        return 1;
+//    }
+//}
+//
+//int main() {
+//    int N;
+//    double sum = 0.0;
+//    int validCount = 0;
+//    scanf("%d", &N);
+//    for (int i = 0; i < N; i++) {
+//        char input[20];
+//        scanf("%s", input);
+//        if (isValid(input)) {
+//            validCount++;
+//            double num = atof(input);
+//            sum += num;
+//        } else {
+//            printf("ERROR: %s is not a legal number\n", input);
+//        }
+//    }
+//
+//    if (validCount == 0) {
 //        printf("The average of 0 numbers is Undefined");
+//    } else if (validCount == 1) {
+//        printf("The average of 1 number is %.2lf", sum);
+//    } else {
+//        printf("The average of %d numbers is %.2lf", validCount, sum / validCount);
 //    }
 //
 //    return 0;

@@ -13,10 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1802cf37-a4f1-4020-a48c-cea8b761d02d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1048.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1048.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1050.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1050.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1051.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1051.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1052.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1052.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1053.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1053.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1054.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1054.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1055.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1055.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +66,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -128,7 +127,7 @@
       <workItem from="1565685038946" duration="5396000" />
       <workItem from="1565742735782" duration="22357000" />
       <workItem from="1565829649219" duration="24315000" />
-      <workItem from="1565922605949" duration="128406000" />
+      <workItem from="1565922605949" duration="142033000" />
     </task>
     <servers />
   </component>

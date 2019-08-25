@@ -41,35 +41,75 @@ Bob Tom Joe Nick
 Ann Mike Eva
 Tim Amy John*/
 
+// 获取输入，排序，顺序输出左边，中间，右边的名字，注意打印格式
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-struct Person {
+typedef struct Persons {
     char name[9];
     int height;
-};
+} Person;
 
 int comparePerson(const void *personA, const void *personB);
 
-//int main() {
-//    int N, K;
-//    scanf("%d %d", &N, &K);
-////    每行排列的人
-//    int rowPerson = N / K;
-////    多出来的人
-//    int excessPerson = N % K;
-//    struct Person person[N];
-//    for (int i = 0; i < N; i++) {
-//        scanf("%s %d", person[i].name, &person[i].height);
-//    }
-//
-//    qsort(person, N, sizeof(person[0]), comparePerson);
-//
-//    return 0;
-//}
-//
-//int comparePerson(const void *a, const void *b) {
-//    struct Person *c=(Person*)a;
-//    return
-//}
+int main() {
+    int N, K;
+    scanf("%d %d", &N, &K);
+    Person person[N];
+    for (int i = 0; i < N; i++) {
+        scanf("%s %d", person[i].name, &person[i].height);
+    }
+    qsort(person, N, sizeof(person[0]), comparePerson);
+
+    //当前排到总共第几位序号
+    int curNum = 0;
+    for (int j = 0; j < K; j++) {
+//        每排m个人
+        int m;
+        if (j == 0) {
+            m = N / K + N % K;
+        } else {
+            m = N / K;
+        }
+
+//        输出左边
+        for (int i = 0; i < m / 2; i++) {
+            printf("%s ", person[curNum + (m / 2 - i) * 2 - 1].name);
+        }
+
+//        输出中间
+        printf("%s", person[curNum].name);
+        if (m != 1) {
+            printf(" ");
+        }
+
+//        输出右边
+        for (int i = m / 2 + 1; i < m; i++) {
+            printf("%s", person[curNum + (i - m / 2) * 2].name);
+            if (i != m - 1) {
+                printf(" ");
+            }
+        }
+
+        if (j != K - 1) {
+            printf("\n");
+        }
+
+        curNum += m;
+    }
+
+    return 0;
+}
+
+//身高从大到小排序 , 字母从小到大
+int comparePerson(const void *a, const void *b) {
+    Person A = *(Person *) a;
+    Person B = *(Person *) b;
+    if (A.height != B.height) {
+        return B.height - A.height;
+    } else {
+        return strcmp(A.name, B.name);
+    }
+}
 
