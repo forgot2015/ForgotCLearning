@@ -20,8 +20,8 @@ a        a
 a        a
 aaaaaaaaaa*/
 
-#include <stdio.h>
-
+//#include <stdio.h>
+//
 //int main() {
 //    int N = 0;
 //    char sign;

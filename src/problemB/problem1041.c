@@ -24,15 +24,15 @@
 3310120150912002 2
 3310120150912119 1*/
 
-#include <stdio.h>
-
-struct Student {
-    long no;
-    int shijiNo;
-    int kaoshiNo;
-
-};
-
+//#include <stdio.h>
+//
+//struct Student {
+//    long no;
+//    int shijiNo;
+//    int kaoshiNo;
+//
+//};
+//
 //int main() {
 //    int N, M;
 //    scanf("%d", &N);
@@ -52,7 +52,6 @@ struct Student {
 //                break;
 //            }
 //        }
-//
 //    }
 //
 //    return 0;

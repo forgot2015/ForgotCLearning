@@ -13,10 +13,25 @@
   <component name="ChangeListManager">
     <list default="true" id="1802cf37-a4f1-4020-a48c-cea8b761d02d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1061.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1061.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1062.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1062.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1065.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1065.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problemB/problem1068.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1068.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/sort.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sort.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1031.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1031.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1032.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1032.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1034.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1034.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1035.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1035.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1036.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1036.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1038.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1038.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1039.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1039.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1040.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1040.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1041.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1041.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1042.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1042.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1043.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1043.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1044.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1044.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1045.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1045.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1046.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1046.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1047.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1047.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1048.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1048.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1049.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1049.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problemB/problem1050.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/problemB/problem1050.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +82,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="CLionExternalConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -128,7 +143,11 @@
       <workItem from="1565685038946" duration="5396000" />
       <workItem from="1565742735782" duration="22357000" />
       <workItem from="1565829649219" duration="24315000" />
-      <workItem from="1565922605949" duration="158828000" />
+      <workItem from="1565922605949" duration="158883000" />
+      <workItem from="1566797100607" duration="574000" />
+      <workItem from="1566798057141" duration="2555000" />
+      <workItem from="1566801040533" duration="251000" />
+      <workItem from="1566801477717" duration="12290000" />
     </task>
     <servers />
   </component>
@@ -163,32 +182,32 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/algorithm/sort.c</url>
-          <line>11</line>
+          <line>18</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/algorithm/sort.c</url>
-          <line>12</line>
+          <line>19</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/algorithm/sort.c</url>
-          <line>19</line>
+          <line>26</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/algorithm/sort.c</url>
-          <line>21</line>
+          <line>34</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/algorithm/sort.c</url>
-          <line>23</line>
+          <line>36</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/algorithm/sort.c</url>
-          <line>22</line>
+          <line>35</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -1113,42 +1132,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/problemB/problem1048.c</url>
-          <line>96</line>
+          <line>93</line>
           <option name="timeStamp" value="505" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/problemB/problem1048.c</url>
-          <line>97</line>
+          <line>94</line>
           <option name="timeStamp" value="506" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/problemB/problem1048.c</url>
-          <line>98</line>
+          <line>95</line>
           <option name="timeStamp" value="507" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/problemB/problem1048.c</url>
-          <line>45</line>
+          <line>42</line>
           <option name="timeStamp" value="530" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/problemB/problem1048.c</url>
-          <line>41</line>
+          <line>38</line>
           <option name="timeStamp" value="535" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/problemB/problem1048.c</url>
-          <line>36</line>
+          <line>33</line>
           <option name="timeStamp" value="540" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/problemB/problem1048.c</url>
-          <line>37</line>
+          <line>34</line>
           <option name="timeStamp" value="541" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/problemB/problem1048.c</url>
-          <line>38</line>
+          <line>35</line>
           <option name="timeStamp" value="542" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">

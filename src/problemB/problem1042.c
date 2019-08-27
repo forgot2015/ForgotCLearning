@@ -15,9 +15,9 @@ This is a simple TEST.  There ARE numbers and other symbols 1&2&3...........
 输出样例：
 e 7*/
 
-#include <stdio.h>
-#include <string.h>
-
+//#include <stdio.h>
+//#include <string.h>
+//
 //int main() {
 //    char ascCount[129] = {0};
 //    char str[1001];
@@ -53,6 +53,7 @@ e 7*/
 //    printf("%c %d", maxIndex, ascCount[maxIndex]);
 //    return 0;
 //}
+
 
 //int ascii[26]; //26个字母
 //

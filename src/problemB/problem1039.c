@@ -27,16 +27,15 @@ YrR8RrY
 输出样例 2：
 No 2*/
 
-#include <stdio.h>
-#include <string.h>
-
+//#include <stdio.h>
+//#include <string.h>
+//
 //int main() {
 //    char input[1001];
 //    char want[1001];
 //    int match = 0;
 //
 //    scanf("%s %s", input, want);
-//    char *p = input;
 //
 //    for (int i = 0; i < strlen(want); i++) {
 //        for (int j = 0; j < strlen(input); j++) {
@@ -44,8 +43,6 @@ No 2*/
 //                match++;
 ////                已匹配的珠子，修改为一个范围外的字符，不在参与匹配
 //                input[j] = '*';
-//通过指针去修改数组值
-////                *(p + j) = '*';
 //                break;
 //            }
 //        }

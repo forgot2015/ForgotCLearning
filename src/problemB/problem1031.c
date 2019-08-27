@@ -35,9 +35,9 @@ M：1 0 X 9 8 7 6 5 4 3 2
 输出样例2：
 All passed*/
 
-#include <stdio.h>
-#include <string.h>
-
+//#include <stdio.h>
+//#include <string.h>
+//
 //int main() {
 //    int N;
 //    scanf("%d", &N);

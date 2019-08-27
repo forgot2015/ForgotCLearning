@@ -22,8 +22,8 @@
 输出样例：
 2 150*/
 
-#include <stdio.h>
-
+//#include <stdio.h>
+//
 //int main() {
 //    int N;
 //    scanf("%d", &N);

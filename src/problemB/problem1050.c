@@ -40,7 +40,6 @@
 //    qsort(num, N, sizeof(num[0]), cmp);
 //
 ////    求出m和n，满足m×n 等于 N；m≥n；且 m−n 取所有可能值中的最小值，m从根号N开始往上算
-////这种算法会错两个用例，换一个
 //    int row = 0, column = 0;
 //    for (row = sqrt(N); row <= N; row++) {
 //        column = N / row;
@@ -49,17 +48,15 @@
 //        }
 //    }
 //
-//    printf("row = %d, column = %d", row, column);
-//
 //    //螺旋矩阵数组
 //    int arr[row][column];
 //    //每种方向最多次数 ， 如行分左右，所以row/2 , 当行为奇数时，有可能多1次
-//    int mark = row / 2 + row % 2;
+//    int times = row / 2 + row % 2;
 ////    正在填充第几个数
 //    int t = 0;
 //
 //    //四种方向，每次循环填充四种方向各一轮
-//    for (int i = 0; i < mark; i++) {
+//    for (int i = 0; i < times; i++) {
 //        //往右填充
 //        for (int j = i; t < N && j < column - i; j++) {
 //            arr[i][j] = num[t++];
@@ -84,7 +81,7 @@
 //
 //            if (j == column - 1 && i != row - 1) {
 //                printf("\n");
-//            } else {
+//            } else if (j != column - 1) {
 //                printf(" ");
 //            }
 //        }

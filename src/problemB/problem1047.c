@@ -24,8 +24,8 @@
 3-2 61
 输出样例：
 11 176*/
-#include <stdio.h>
-
+//#include <stdio.h>
+//
 //int main() {
 //    int N;
 //    scanf("%d", &N);

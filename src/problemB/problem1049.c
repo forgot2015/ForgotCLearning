@@ -21,7 +21,7 @@
 
 #include <stdio.h>
 
-//寻找数列规律，巧妙计算，用float会用两个用例，要用double
+//寻找数列规律，巧妙计算，用float会错两个用例，要用double, 穷举会超时
 //int main() {
 //    int N;
 //    scanf("%d", &N);

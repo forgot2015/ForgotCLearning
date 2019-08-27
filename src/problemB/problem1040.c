@@ -19,10 +19,10 @@ APPAPT
 输出样例：
 2*/
 
-#include <stdio.h>
-#include <string.h>
-
-//一层循环搞定
+//#include <stdio.h>
+//#include <string.h>
+//
+////一层循环搞定
 //int main() {
 //    char str[100001];
 //    int p = 0, pa = 0, pat = 0;

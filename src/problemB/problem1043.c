@@ -19,9 +19,9 @@ redlesPayBestPATTopTeePHPereatitAPPT
 输出样例：
 PATestPATestPTetPTePePee*/
 
-#include <stdio.h>
-#include <string.h>
-
+//#include <stdio.h>
+//#include <string.h>
+//
 //int main() {
 //    char str[10001];
 //    gets(str);

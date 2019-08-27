@@ -18,8 +18,8 @@
 3 75 90 88
 输出样例：
 3 2 0*/
-#include <stdio.h>
-
+//#include <stdio.h>
+//
 //int main() {
 //    int N, K;
 //    scanf("%d", &N);
