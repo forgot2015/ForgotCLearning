@@ -19,27 +19,92 @@ d, d1, d111, d113, d11231, d112213111, ...
 1 8
 输出样例：
 1123123111*/
+//与78题类似
 
-#include <stdio.h>
-#include <string.h>
-
-//c语言比较麻烦
+//注意最后输入 1 40 时，字符串长度将指数性增长，故预留的长度要足够，否则会Runtime Error 或 Segment Fault
+//#include <stdio.h>
+//#include <string.h>
+//
+//char wrap[100000];
+//char tmp[100000];
+//
 //int main() {
-//    int N;
-//    char d;
-//    scanf("%c %d", &d, &N);
-////    printf("%c %d", d, N);
-//    char dn[100];
-//    dn[0] = d;
-//
-//
-//    for (int i = 0; i < strlen(dn); i++) {
-//        int count[10] = {0};
-//        for (int j = 0; j < 10; j++) {
-//
+//    int d, N;
+//    scanf("%d %d", &d, &N);
+//    wrap[0] = d + '0';
+//    int len;
+//    int step;
+//    int index;
+//    for (int i = 1; i < N; i++) {
+//        len = strlen(wrap);
+//        step = 1;
+//        index = 0;
+//        for (int j = 0; j < len; j = j + step) {
+//            for (int k = j; k < len; k++) {
+////寻找下一个不同字符的位置
+//                if (wrap[k] != wrap[j]) {
+//                    step = k - j;
+//                    tmp[index] = wrap[j];
+//                    tmp[index + 1] = step + '0';
+//                    index = index + 2;
+//                    break;
+//                } else if (k == len - 1) {
+////如果遍历到最后一位，也没找到下一个不同的字符，那么就是剩下的都是相同字符了，特殊处理
+//                    step = k - j + 1;
+//                    tmp[index] = wrap[j];
+//                    tmp[index + 1] = step + '0';
+//                    index = index + 2;
+//                    break;
+//                } else {
+//                    step = 1;
+//                }
+//            }
 //        }
+//        strcpy(wrap, tmp);
 //    }
+//    printf("%s", wrap);
 //
 //    return 0;
 //}
 
+
+//segment fault
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//    int d, N;
+//    scanf("%d %d", &d, &N);
+//    char wrap[200];
+//    wrap[0] = d + '0';
+//
+//    for (int i = 1; i < N; i++) {
+//        int len = strlen(wrap);
+//        char tmp[200];
+//        int count = 1;
+//        int index = 0;
+//        for (int j = 0; j < len; j = j + count) {
+//            for (int k = j; k < len; k++) {
+//                if (wrap[k] != wrap[j]) {
+//                    count = k - j;
+//                    tmp[index] = wrap[j];
+//                    tmp[index + 1] = count + '0';
+//                    index = index + 2;
+//                    break;
+//                } else if (k == len - 1) {
+//                    count = k - j + 1;
+//                    tmp[index] = wrap[j];
+//                    tmp[index + 1] = count + '0';
+//                    index = index + 2;
+//                    break;
+//                } else {
+//                    count = 1;
+//                }
+//            }
+//        }
+//        strcpy(wrap, tmp);
+//    }
+//    printf("%s", wrap);
+//
+//    return 0;
+//}
