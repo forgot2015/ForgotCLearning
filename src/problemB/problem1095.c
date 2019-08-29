@@ -42,6 +42,7 @@ A107180908021 98
 2 107
 3 180908
 2 999
+
 输出样例：
 Case 1: 1 A
 A107180908108 100
@@ -55,6 +56,257 @@ Case 3: 3 180908
 102 1
 Case 4: 2 999
 NA*/
+
+//#include "stdio.h"
+//#include "string.h"
+//#include "stdlib.h"
+//
+//typedef struct PatStus {
+//    char num[20];
+//    int score;
+//    char level;
+//    char room[4];
+//    char date[7];
+//    char no[4];
+//} PatStu;
+//
+//typedef struct DateStuds {
+//    int room;
+//    int count;
+//} DateStud;
+//
+//int cmp(const void *a, const void *b) {
+//    PatStu stuA = *(PatStu *) a;
+//    PatStu stuB = *(PatStu *) b;
+//    if (stuB.score - stuA.score) {
+//        return stuB.score - stuA.score;
+//    }
+//
+//    return strcmp(stuA.num, stuB.num);
+//}
+//
+//int cmpByRoom(const void *a, const void *b) {
+//    DateStud stuA = *(DateStud *) a;
+//    DateStud stuB = *(DateStud *) b;
+//    if (stuA.count == stuB.count) {
+//        return stuA.room - stuB.room;
+//    }
+//
+//    return stuB.count - stuA.count;
+//}
+//
+//int main() {
+//    int N, M;
+//    scanf("%d %d", &N, &M);
+//    PatStu stu[N];
+//    for (int i = 0; i < N; i++) {
+//        scanf("%s %d", stu[i].num, &stu[i].score);
+//        sscanf(stu[i].num, "%1c%3s%6s%3s", &stu[i].level,
+//               stu[i].room, stu[i].date,
+//               stu[i].no);
+//    }
+//
+////    按分数和考号排名
+//    qsort(stu, N, sizeof(stu[0]), cmp);
+//
+//    for (int j = 0; j < M; j++) {
+//        int caseNum;
+//        char value[7];
+//        scanf("%d %s", &caseNum, value);
+//
+//        printf("Case %d: %d %s\n", j + 1, caseNum, value);
+//        if (caseNum == 1) {
+//            int stuCount = 0;
+//            for (int i = 0; i < N; i++) {
+//                if (stu[i].level == value[0]) {
+//                    printf("%s %d\n", stu[i].num, stu[i].score);
+//                    stuCount++;
+//                }
+//            }
+//            if (!stuCount) {
+//                printf("NA\n");
+//            }
+//        } else if (caseNum == 2) {
+//            int stuCount = 0;
+//            int scoreSum = 0;
+//            for (int i = 0; i < N; i++) {
+//                if (strcmp(stu[i].room, value) == 0) {
+//                    stuCount++;
+//                    scoreSum += stu[i].score;
+//                }
+//            }
+//            if (stuCount) {
+//                printf("%d %d\n", stuCount, scoreSum);
+//            } else {
+//                printf("NA\n");
+//            }
+//        } else if (caseNum == 3) {
+//            DateStud roomStu[N];
+//            int stuCount = 0;
+//            int roomCount[1000] = {0};
+////            计算各考场的考生人数
+//            for (int i = 0; i < N; i++) {
+//                if (strcmp(stu[i].date, value) == 0) {
+//                    roomCount[atoi(stu[i].room)]++;
+//                }
+//            }
+//        //将考场号和考生人数转移到结构体中，方便人数排序
+//            for (int k = 0; k < 1000; k++) {
+//                if (roomCount[k]) {
+//                    roomStu[stuCount].room = k;
+//                    roomStu[stuCount].count = roomCount[k];
+//                    stuCount++;
+//                }
+//            }
+//
+//            qsort(roomStu, stuCount, sizeof(roomStu[0]), cmpByRoom);
+//
+//            if (stuCount) {
+//                for (int i = 0; i < stuCount; i++) {
+//                    printf("%d %d\n", roomStu[i].room, roomStu[i].count);
+//                }
+//            } else {
+//                printf("NA\n");
+//            }
+//        }
+//    }
+//
+//    return 0;
+//}
+
+
+//更惨，错两个用例
+//#include "stdio.h"
+//#include "string.h"
+//#include "stdlib.h"
+//
+//typedef struct PatStus {
+//    char num[15];
+//    int score;
+//    char level[2];
+//    int room;
+//    int date;
+//    int no;
+//} PatStu;
+//
+//typedef struct {
+//    int room;
+//    int stuCount;
+//} RoomStu;
+//
+//int cmpRoom(const void *a, const void *b) {
+//    RoomStu A = *(RoomStu *) a;
+//    RoomStu B = *(RoomStu *) b;
+////    考生人数相等时，考场从小到大排序
+//    if (A.stuCount == B.stuCount) {
+//        return A.room - B.room;
+//    } else {
+//        return B.stuCount - A.stuCount;
+//    }
+//}
+//
+//int cmp(const void *a, const void *b) {
+//    PatStu stuA = *(PatStu *) a;
+//    PatStu stuB = *(PatStu *) b;
+//    if (stuB.score == stuA.score) {
+////        分数相等时，按考号从小到大排行
+//        return strcmp(stuA.num, stuB.num);
+//    } else {
+////        学生分数从大到小排行
+//        return stuB.score - stuA.score;
+//    }
+//}
+//
+//int main() {
+//    int N, M;
+//    scanf("%d %d", &N, &M);
+//    PatStu stu[N];
+//    for (int i = 0; i < N; i++) {
+//        scanf("%s %d", stu[i].num, &stu[i].score);
+////        解析输入的字符串
+//        sscanf(stu[i].num, "%1s%3d%6d%3d", stu[i].level,
+//               &stu[i].room, &stu[i].date,
+//               &stu[i].no);
+//    }
+////    按分数和考号排名
+//    qsort(stu, N, sizeof(stu[0]), cmp);
+//
+//    for (int j = 0; j < M; j++) {
+//        int caseNum;
+//        scanf("%d", &caseNum);
+//
+//        if (caseNum == 1) {
+//            //输出某个指定级别的考生
+//            char level[2];
+//            scanf(" %s", level);
+//            printf("Case %d: %d %s\n", j + 1, caseNum, level);
+//            int stuCount = 0;
+//            for (int i = 0; i < N; i++) {
+//                if (strcmp(stu[i].level, level) == 0) {
+//                    printf("%s %d\n", stu[i].num, stu[i].score);
+//                    stuCount++;
+//                }
+//            }
+//            if (!stuCount) {
+//                printf("NA\n");
+//            }
+//        } else if (caseNum == 2) {
+//            //将某指定考场的考生人数和总分统计输出
+//            int room;
+//            scanf(" %d", &room);
+//            printf("Case %d: %d %d\n", j + 1, caseNum, room);
+//            int stuCount = 0;
+//            int scoreSum = 0;
+//            for (int i = 0; i < N; i++) {
+//                if (stu[i].room == room) {
+//                    stuCount++;
+//                    scoreSum += stu[i].score;
+//                }
+//            }
+//            if (stuCount) {
+//                printf("%d %d\n", stuCount, scoreSum);
+//            } else {
+//                printf("NA\n");
+//            }
+//        } else if (caseNum == 3) {
+//            //将某指定日期的考生人数分考场统计输出
+//            int date;
+//            scanf(" %d", &date);
+//            printf("Case %d: %d %d\n", j + 1, caseNum, date);
+//
+//            RoomStu roomStu[N];
+//            int stuCount = 0;
+//            int roomCount[1000] = {0};
+//            for (int i = 0; i < N; i++) {
+//                if (stu[i].date == date) {
+//                    roomCount[stu[i].room]++;
+//                }
+//            }
+//
+//            for (int k = 0; k < 1000; k++) {
+//                if (roomCount[k]) {
+//                    roomStu[stuCount].room = k;
+//                    roomStu[stuCount].stuCount = roomCount[k];
+//                    stuCount++;
+//                }
+//            }
+//
+//            qsort(roomStu, stuCount, sizeof(roomStu[0]), cmpRoom);
+//
+//            if (stuCount) {
+//                for (int i = 0; i < stuCount; i++) {
+//                    printf("%d %d\n", roomStu[i].room, roomStu[i].stuCount);
+//                }
+//            } else {
+//                printf("NA\n");
+//            }
+//        }
+//    }
+//
+//    return 0;
+//}
+
+
 
 //有一个用例超时了
 //#include "stdio.h"
@@ -85,7 +337,7 @@ NA*/
 //    return strcmp(stuA.num, stuB.num);
 //}
 //
-//int cmpByDate(const void *a, const void *b) {
+//int cmpByRoom(const void *a, const void *b) {
 //    DateStud stuA = *(DateStud *) a;
 //    DateStud stuB = *(DateStud *) b;
 //    if (stuA.count == stuB.count) {
@@ -179,7 +431,7 @@ NA*/
 //                }
 //            }
 //
-//            qsort(dateStud, N, sizeof(dateStud[0]), cmpByDate);
+//            qsort(dateStud, N, sizeof(dateStud[0]), cmpByRoom);
 //
 //            if (stuCount) {
 //                for (int i = 0; i < stuCount; i++) {

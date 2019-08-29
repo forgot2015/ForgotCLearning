@@ -26,46 +26,46 @@
 No Solution*/
 
 
-#include "stdio.h"
-
-//注意，丙可能为小数
-char *comp(int me, double a) {
-    if (me == a) {
-        return "Ping";
-    } else if (me < a) {
-        return "Cong";
-    } else {
-        return "Gai";
-    }
-}
-
-int main() {
-    int M, X, Y;
-    scanf("%d %d %d", &M, &X, &Y);
-    int a = -1, b = -1;
-    double c = -1.0;
-    for (int i = 99; i >= 1; i--) {
-        int ge = i % 10;
-        int shi = i / 10;
-        int tmpA = i;
-        int tmpB = 10 * ge + shi;
-        double tmpC = tmpB * 1.0 / Y;
-        if (tmpA - tmpB == tmpC * X || tmpB - tmpA == tmpC * X) {
-            a = tmpA;
-            b = tmpB;
-            c = tmpC;
-            break;
-        }
-    }
-
-    if (a != -1) {
-        printf("%d %s %s %s", a, comp(M, a), comp(M, b), comp(M, c));
-    } else {
-        printf("No Solution");
-    }
-
-    return 0;
-}
+//#include "stdio.h"
+//
+////注意，丙可能为小数
+//char *comp(int me, double a) {
+//    if (me == a) {
+//        return "Ping";
+//    } else if (me < a) {
+//        return "Cong";
+//    } else {
+//        return "Gai";
+//    }
+//}
+//
+//int main() {
+//    int M, X, Y;
+//    scanf("%d %d %d", &M, &X, &Y);
+//    int a = -1, b = -1;
+//    double c = -1.0;
+//    for (int i = 99; i >= 1; i--) {
+//        int ge = i % 10;
+//        int shi = i / 10;
+//        int tmpA = i;
+//        int tmpB = 10 * ge + shi;
+//        double tmpC = tmpB * 1.0 / Y;
+//        if (tmpA - tmpB == tmpC * X || tmpB - tmpA == tmpC * X) {
+//            a = tmpA;
+//            b = tmpB;
+//            c = tmpC;
+//            break;
+//        }
+//    }
+//
+//    if (a != -1) {
+//        printf("%d %s %s %s", a, comp(M, a), comp(M, b), comp(M, c));
+//    } else {
+//        printf("No Solution");
+//    }
+//
+//    return 0;
+//}
 
 
 //#include "stdio.h"
