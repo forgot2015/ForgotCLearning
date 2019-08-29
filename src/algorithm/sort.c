@@ -152,7 +152,149 @@ void selectSort(int arr[], int n) {
     }
 }
 
+//堆排序-优化之后的选择排序
+//堆排序
+//public static void heapSort(int[] arr) {
+//    //构造大根堆
+//    heapInsert(arr);
+//    int size = arr.length;
+//    while (size > 1) {
+//        //固定最大值
+//        swap(arr, 0, size - 1);
+//        size--;
+//        //构造大根堆
+//        heapify(arr, 0, size);
+//
+//    }
+//
+//}
+//
+////构造大根堆（通过新插入的数上升）
+//public static void heapInsert(int[] arr) {
+//    for (int i = 0; i < arr.length; i++) {
+//        //当前插入的索引
+//        int currentIndex = i;
+//        //父结点索引
+//        int fatherIndex = (currentIndex - 1) / 2;
+//        //如果当前插入的值大于其父结点的值,则交换值，并且将索引指向父结点
+//        //然后继续和上面的父结点值比较，直到不大于父结点，则退出循环
+//        while (arr[currentIndex] > arr[fatherIndex]) {
+//            //交换当前结点与父结点的值
+//            swap(arr, currentIndex, fatherIndex);
+//            //将当前索引指向父索引
+//            currentIndex = fatherIndex;
+//            //重新计算当前索引的父索引
+//            fatherIndex = (currentIndex - 1) / 2;
+//        }
+//    }
+//}
+////将剩余的数构造成大根堆（通过顶端的数下降）
+//public static void heapify(int[] arr, int index, int size) {
+//    int left = 2 * index + 1;
+//    int right = 2 * index + 2;
+//    while (left < size) {
+//        int largestIndex;
+//        //判断孩子中较大的值的索引（要确保右孩子在size范围之内）
+//        if (arr[left] < arr[right] && right < size) {
+//            largestIndex = right;
+//        } else {
+//            largestIndex = left;
+//        }
+//        //比较父结点的值与孩子中较大的值，并确定最大值的索引
+//        if (arr[index] > arr[largestIndex]) {
+//            largestIndex = index;
+//        }
+//        //如果父结点索引是最大值的索引，那已经是大根堆了，则退出循环
+//        if (index == largestIndex) {
+//            break;
+//        }
+//        //父结点不是最大值，与孩子中较大的值交换
+//        swap(arr, largestIndex, index);
+//        //将索引指向孩子中较大的值的索引
+//        index = largestIndex;
+//        //重新计算交换之后的孩子的索引
+//        left = 2 * index + 1;
+//        right = 2 * index + 2;
+//    }
+//
+//}
+////交换数组中两个元素的值
+//public static void swap(int[] arr, int i, int j) {
+//    int temp = arr[i];
+//    arr[i] = arr[j];
+//    arr[j] = temp;
+//}
 
+
+// 堆排序 法2，更简洁
+//void updateHeap(int a[], int i, int n) {
+//    int iMax = i,
+//            iLeft = 2 * i + 1,
+//            iRight = 2 * (i + 1);
+//    if (iLeft < n && a[iMax] < a[iLeft]) {
+//        iMax = iLeft;
+//    }
+//    if (iRight < n && a[iMax] < a[iRight]) {
+//        iMax = iRight;
+//    }
+//    if (iMax != i) {
+//        int tmp = a[iMax];
+//        a[iMax] = a[i];
+//        a[i] = tmp;
+//        updateHeap(a, iMax, n);
+//    }
+//}
+//
+//void heapSort(int a[], int n) {
+//    for (int i = (n - 1) / 2; i >= 0; i--) {
+//        updateHeap(a, i, n);
+//    }
+//    for (int i = n - 1; i > 0; --i) {
+//        int tmp = a[i];
+//        a[i] = a[0];
+//        a[0] = tmp;
+//        updateHeap(a, i, n);
+//    }
+//}
+
+
+//直接插入排序
+void insertSort(int s[], int n) {
+    for (int i = 1; i < n; i++) {
+        if (s[i] < s[i - 1]) {//若第 i 个元素大于 i-1 元素则直接插入；反之，需要找到适当的插入位置后在插入。
+            int j = i - 1;
+            int x = s[i];
+            while (j > -1 && x < s[j]) {  //采用顺序查找方式找到插入的位置，在查找的同时，将数组中的元素进行后移操作，给插入元素腾出空间
+                s[j + 1] = s[j];
+                j--;
+            }
+            s[j + 1] = x;      //插入到正确位置
+        }
+    }
+}
+
+//希尔插入排序
+#include <stdio.h>
+
+int shellSort(int *s, int n)    /* 自定义函数 shellSort()*/
+{
+    int i, j, d;
+    d = n / 2;    /*确定固定增虽值*/
+    while (d >= 1) {
+        for (i = d + 1; i <= n; i++)    /*数组下标从d+1开始进行直接插入排序*/
+        {
+            s[0] = s[i];    /*设置监视哨*/
+            j = i - d;    /*确定要进行比较的元素的最右边位置*/
+            while ((j > 0) && (s[0] < s[j])) {
+                s[j + d] = s[j];    /*数据右移*/
+                j = j - d;    /*向左移d个位置V*/
+            }
+            s[j + d] = s[0];    /*在确定的位罝插入s[i]*/
+        }
+        d = d / 2;    /*增里变为原来的一半*/
+    }
+    return 0;
+}
 
 
 //归并排序，效率仅次于快排
@@ -200,45 +342,6 @@ void mergeSort(int *arr, int *tempArr, int low, int high) {
 //    printf("\n");
 //    return 0;
 //}
-
-
-//直接插入排序
-void insertSort(int s[], int n) {
-    for (int i = 1; i < n; i++) {
-        if (s[i] < s[i - 1]) {//若第 i 个元素大于 i-1 元素则直接插入；反之，需要找到适当的插入位置后在插入。
-            int j = i - 1;
-            int x = s[i];
-            while (j > -1 && x < s[j]) {  //采用顺序查找方式找到插入的位置，在查找的同时，将数组中的元素进行后移操作，给插入元素腾出空间
-                s[j + 1] = s[j];
-                j--;
-            }
-            s[j + 1] = x;      //插入到正确位置
-        }
-    }
-}
-
-//希尔插入排序
-#include <stdio.h>
-
-int shellSort(int *s, int n)    /* 自定义函数 shellSort()*/
-{
-    int i, j, d;
-    d = n / 2;    /*确定固定增虽值*/
-    while (d >= 1) {
-        for (i = d + 1; i <= n; i++)    /*数组下标从d+1开始进行直接插入排序*/
-        {
-            s[0] = s[i];    /*设置监视哨*/
-            j = i - d;    /*确定要进行比较的元素的最右边位置*/
-            while ((j > 0) && (s[0] < s[j])) {
-                s[j + d] = s[j];    /*数据右移*/
-                j = j - d;    /*向左移d个位置V*/
-            }
-            s[j + d] = s[0];    /*在确定的位罝插入s[i]*/
-        }
-        d = d / 2;    /*增里变为原来的一半*/
-    }
-    return 0;
-}
 //
 //int main() {
 //    int a[11], i;    /*定义数组及变量为基本整型*/

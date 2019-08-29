@@ -33,7 +33,7 @@ The average of 0 numbers is Undefined*/
 - -1.1 0.111 1.1.1 -1000 1000.1
  * */
 
-// 跑gcc时错了一个用例，Runtime Error , 换成clang就通过了...暂时不知原因
+//// 跑gcc时错了一个用例，Runtime Error , 换成clang就通过了...暂时不知原因
 //#include <stdio.h>
 //#include <string.h>
 //#include <stdlib.h>

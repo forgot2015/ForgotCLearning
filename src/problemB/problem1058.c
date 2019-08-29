@@ -25,10 +25,9 @@
 5
 2 2 3 4*/
 
-// 注意题意，最后一行， 2表示错误最多的次数是2次， 2 3 4 表示错误2次的题目是第2、3、4题
-// 全部对时，打印"Too simple"
-
-
+//// 注意题意，最后一行， 2表示错误最多的次数是2次， 2 3 4 表示错误2次的题目是第2、3、4题
+//// 全部对时，打印"Too simple"
+//
 //#include <stdio.h>
 //#include <string.h>
 //
@@ -78,11 +77,11 @@
 //        while ((ch = getchar()) != '\n') {
 //            if (ch == '(') {
 //                scanf("%d", &sAnswerCount);
-////                将长度之外的字符清空，这样就不会有多余乱码
-//                input[sAnswerCount] = '\0';
 //                for (int j = 0; j < sAnswerCount; j++) {
 //                    scanf(" %c", &input[j]);
 //                }
+////                将长度之外的字符清空，这样就不会有多余乱码
+//                input[sAnswerCount] = '\0';
 //
 ////                printf("children[%d] answer[%d] = %s\n", k, index, input);
 //                if (strcmp(input, problem[index].answers) == 0) {

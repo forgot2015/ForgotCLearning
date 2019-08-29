@@ -21,10 +21,10 @@
 输出样例：
 -8.68-8.23i*/
 
-#include <stdio.h>
-#include <math.h>
-
-//注意，当A B的绝对值小于0.01时要将它们变为0，否则有两个用例过不去
+//#include <stdio.h>
+//#include <math.h>
+//
+////注意，当A B的绝对值小于0.01时要将它们变为0，否则有两个用例过不去
 //int main() {
 //    double R1, P1, R2, P2;
 //    scanf("%lf %lf %lf %lf", &R1, &P1, &R2, &P2);

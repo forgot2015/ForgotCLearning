@@ -41,7 +41,7 @@ Bob Tom Joe Nick
 Ann Mike Eva
 Tim Amy John*/
 
-// 获取输入，排序，顺序输出左边，中间，右边的名字，注意打印格式
+//// 获取输入，排序，顺序输出左边，中间，右边的名字，注意打印格式
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>

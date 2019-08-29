@@ -40,8 +40,8 @@
 8888: Checked
 2222: Are you kidding?*/
 
-#include <stdio.h>
-
+//#include <stdio.h>
+//
 //int isPrime(int a) {
 //    for (int i = 2; i * i <= a; i++) {
 //        if (a % i == 0) {

@@ -54,13 +54,75 @@ A + B = C
 10755470 + 07455701 = 18211171
 Not found in 10 iterations.*/
 
-#include "stdio.h"
-#include "string.h"
+//#include "stdio.h"
+//#include "string.h"
+//
+//int isHuiwen(char *str) {
+//    int len = strlen(str);
+//    for (int i = 0; i <= len / 2; i++) {
+//        if (str[i] != str[len - i - 1]) {
+//            return 0;
+//        }
+//    }
+//
+//    return 1;
+//}
+//
+//int main() {
+//    char str[1100] = {0};
+//    char daoStr[1100] = {0};
+//    scanf("%s", str);
+//    int iterations = 0;
+//    int len;
+//    while (!isHuiwen(str) && iterations != 10) {
+//        len = strlen(str);
+//
+//        for (int i = 0; i < len; i++) {
+//            daoStr[i] = str[len - i - 1];
+//        }
+//        daoStr[len] = '\0';
+//        char sumStr[len];
+//        int shi = 0;
+//        int ge = 0;
+////        将两个数从最后一位个位开始相加，最后如果还有进位，则字符串再扩展一位
+//        for (int i = len - 1; i >= 0; i--) {
+//            int a = str[i] - '0';
+//            int b = daoStr[i] - '0';
+//            ge = (a + b + shi) % 10;
+//            sumStr[i] = ge + '0';
+//            shi = (a + b + shi) / 10;
+//        }
+//        sumStr[len] = '\0';
+//
+//        if (shi) {
+//            memmove(sumStr + 1, sumStr, len + 1); /* Shift to right by 1 */
+//            sumStr[0] = shi + '0';         /* Add the carry to beginning */
+//        }
+//
+//        printf("%s + %s = %s\n", str, daoStr, sumStr);
+//        strcpy(str, sumStr);
+//        iterations++;
+//    }
+//    if (isHuiwen(str)) {
+//        printf("%s is a palindromic number.", str);
+//    } else {
+//        printf("Not found in 10 iterations.");
+//    }
+//    return 0;
+//}
 
-int isHuiwen(int a);
 
-int getDaoN(int n);
-//错了两个用例
+
+
+
+////错了两个用例，要用字符串来算，因为1000位超出int范围了
+//#include "stdio.h"
+//#include "string.h"
+//
+//int isHuiwen(int a);
+//
+//int getDaoN(int n);
+//
 //int main() {
 //    int N;
 //    scanf("%d", &N);
@@ -78,33 +140,33 @@ int getDaoN(int n);
 //    }
 //    return 0;
 //}
-
-int isHuiwen(int a) {
-    char str[20];
-//    itoa(a, str, 10);
-    sprintf(str, "%d", a);
-    int n = strlen(str);
-    int halfN = strlen(str) / 2;
-    for (int i = 0; i < halfN; i++) {
-        if (str[i] != str[n - i - 1]) {
-            return 0;
-        }
-    }
-
-    return 1;
-}
-
-int getDaoN(int n) {
-    if (n < 10) {
-        return n;
-    }
-
-    int daoN = 0;
-    while (n / 10 != 0) {
-        daoN = daoN * 10 + n % 10;
-        n = n / 10;
-    }
-    daoN = daoN * 10 + n;
-    return daoN;
-}
+//
+//int isHuiwen(int a) {
+//    char str[20];
+////    itoa(a, str, 10);
+//    sprintf(str, "%d", a);
+//    int n = strlen(str);
+//    int halfN = strlen(str) / 2;
+//    for (int i = 0; i < halfN; i++) {
+//        if (str[i] != str[n - i - 1]) {
+//            return 0;
+//        }
+//    }
+//
+//    return 1;
+//}
+//
+//int getDaoN(int n) {
+//    if (n < 10) {
+//        return n;
+//    }
+//
+//    int daoN = 0;
+//    while (n / 10 != 0) {
+//        daoN = daoN * 10 + n % 10;
+//        n = n / 10;
+//    }
+//    daoN = daoN * 10 + n;
+//    return daoN;
+//}
 
