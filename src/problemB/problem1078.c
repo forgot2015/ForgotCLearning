@@ -28,83 +28,83 @@ D
 TTTTThhiiiis isssss a   tesssst CAaaa asZZZZZZZZZZ*/
 
 //与84题类似解法
-
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-char out[2001];
-
-int main() {
-    char ch;
-    scanf("%c", &ch);
-    getchar();
-    if (ch == 'C') {
-        char input[1001];
-        gets(input);
-        int index = 0;
-        int len = strlen(input);
-//        步长，决定下一次从第几个位置开始遍历
-        int step = 1;
-        for (int i = 0; i < len; i = i + step) {
-            for (int j = i; j < len; j++) {
-                //寻找下一个不同字符的位置
-                if (input[j] != input[i]) {
-                    step = j - i;
-                    if (step >= 2) {
-                        out[index] = step + '0';
-                        out[index + 1] = input[i];
-                        index = index + 2;
-                    } else {
-                        out[index] = input[i];
-                        index++;
-                    }
-                    break;
-                } else if (j == len - 1) {
-//如果遍历到最后一位，也没找到下一个不同的字符，那么就是剩下的都是相同字符了，特殊处理
-                    step = j - i + 1;
-                    if (step >= 2) {
-                        out[index] = step + '0';
-                        out[index + 1] = input[i];
-                        index = index + 2;
-                    } else {
-                        out[index] = input[i];
-                        index++;
-                    }
-                    break;
-                } else {
-                    step = 1;
-                }
-            }
-        }
-        printf("%s", out);
-    } else if (ch == 'D') {
-        char input[1001];
-        gets(input);
-        int len = strlen(input);
-        int step = 1;
-        for (int i = 0; i < len; i += step) {
-            if (input[i] >= '0' && input[i] <= '9') {
-                for (int k = i; k < len; k++) {
-                    if (input[k] > '9' || input[k] < '0') {
-                        char numStr[k - i];
-                        strncpy(numStr, input + i, k - i);
-                        numStr[k - i] = '\0';
-                        int count = atoi(numStr);
-                        for (int j = 0; j < count; j++) {
-                            putchar(input[k]);
-                        }
-                        step = k - i + 1;
-                        break;
-                    }
-                }
-
-            } else {
-                putchar(input[i]);
-                step = 1;
-            }
-        }
-    }
-
-    return 0;
-}
+// 错了一个用例
+//#include <stdio.h>
+//#include <string.h>
+//#include <stdlib.h>
+//
+//char out[2001];
+//
+//int main() {
+//    char ch;
+//    scanf("%c", &ch);
+//    getchar();
+//    if (ch == 'C') {
+//        char input[1001];
+//        gets(input);
+//        int index = 0;
+//        int len = strlen(input);
+////        步长，决定下一次从第几个位置开始遍历
+//        int step = 1;
+//        for (int i = 0; i < len; i = i + step) {
+//            for (int j = i; j < len; j++) {
+//                //寻找下一个不同字符的位置
+//                if (input[j] != input[i]) {
+//                    step = j - i;
+//                    if (step >= 2) {
+//                        out[index] = step + '0';
+//                        out[index + 1] = input[i];
+//                        index = index + 2;
+//                    } else {
+//                        out[index] = input[i];
+//                        index++;
+//                    }
+//                    break;
+//                } else if (j == len - 1) {
+////如果遍历到最后一位，也没找到下一个不同的字符，那么就是剩下的都是相同字符了，特殊处理
+//                    step = j - i + 1;
+//                    if (step >= 2) {
+//                        out[index] = step + '0';
+//                        out[index + 1] = input[i];
+//                        index = index + 2;
+//                    } else {
+//                        out[index] = input[i];
+//                        index++;
+//                    }
+//                    break;
+//                } else {
+//                    step = 1;
+//                }
+//            }
+//        }
+//        printf("%s", out);
+//    } else if (ch == 'D') {
+//        char input[1001];
+//        gets(input);
+//        int len = strlen(input);
+//        int step = 1;
+//        for (int i = 0; i < len; i += step) {
+//            if (input[i] >= '0' && input[i] <= '9') {
+//                for (int k = i; k < len; k++) {
+//                    if (input[k] > '9' || input[k] < '0') {
+//                        char numStr[k - i];
+//                        strncpy(numStr, input + i, k - i);
+//                        numStr[k - i] = '\0';
+//                        int count = atoi(numStr);
+//                        for (int j = 0; j < count; j++) {
+//                            putchar(input[k]);
+//                        }
+//                        step = k - i + 1;
+//                        break;
+//                    }
+//                }
+//
+//            } else {
+//                putchar(input[i]);
+//                step = 1;
+//            }
+//        }
+//    }
+//
+//    return 0;
+//}
