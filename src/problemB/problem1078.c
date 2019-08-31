@@ -27,8 +27,73 @@ D
 输出样例 2：
 TTTTThhiiiis isssss a   tesssst CAaaa asZZZZZZZZZZ*/
 
+//D
+//5T2h4is i5s a3 te4st CA3a as10Z8
+/*
+D
+5T2h4is i5s a3 te4st CA3a as10Z200z9999b99999999a
+ * */
+
 //与84题类似解法
 // 错了一个用例
+//#include <stdio.h>
+//#include <string.h>
+//
+//void doTypeC() {
+//    char input[1001];
+//    gets(input);
+//    int len = strlen(input);
+//    for (int i = 0; i < len; i++) {
+//        int count = 1;
+//        while (input[i + 1] == input[i]) {
+//            count++;
+//            i++;
+//        }
+//
+//        if (count > 1) {
+//            printf("%d", count);
+//        }
+//        putchar(input[i]);
+//    }
+//}
+//
+//void doTypeD() {
+//    char input[1001];
+//    gets(input);
+//    int len = strlen(input);
+//
+//    for (int i = 0; i < len; i++) {
+//        int count = 0;
+//        while (input[i] >= '0' && input[i] <= '9') {
+//            count = count * 10 + input[i] - '0';
+//            i++;
+//        }
+//        for (int j = 0; j < count; j++) {
+//            putchar(input[i]);
+//        }
+//        if (count == 0) {
+//            putchar(input[i]);
+//        }
+//    }
+//}
+//
+//int main() {
+//    char ch;
+//    scanf("%c", &ch);
+//    getchar();
+//    if (ch == 'C') {
+//        doTypeC();
+//    } else if (ch == 'D') {
+//        doTypeD();
+//    }
+//    return 0;
+//}
+
+
+
+
+//与84题类似解法
+// 错了一个用例, 而且思维方向不对，简单问题复杂化了
 //#include <stdio.h>
 //#include <string.h>
 //#include <stdlib.h>

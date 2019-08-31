@@ -40,7 +40,120 @@ A03274 45 hypu
 4 hypu 81 2
 4 lanx 81 2*/
 
-//错一个用例，还有两个超时
+//错2个用例,  2,5
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+typedef struct {
+    char level;
+    char schoolName[7];
+    int score;
+} Stu;
+
+typedef struct {
+    int rank;
+    char schoolName[7];
+    double sumScore;
+    int stuCount;
+} School;
+
+int cmpSchool(const void *a, const void *b) {
+    School A = *(School *) a;
+    School B = *(School *) b;
+    if (A.sumScore == B.sumScore) {
+        if (B.stuCount == A.stuCount) {
+            return strcmp(A.schoolName, B.schoolName);
+        } else {
+            return A.stuCount - B.stuCount;
+        }
+    }
+
+    return B.sumScore - A.sumScore > 0 ? 1 : -1;
+}
+
+int cmpSchoolName(const void *a, const void *b) {
+    Stu A = *(Stu *) a;
+    Stu B = *(Stu *) b;
+    return strcmp(A.schoolName, B.schoolName);
+}
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    Stu stu[N];
+    School school[N];
+    int sIndex = 0;
+
+    for (int i = 0; i < N; i++) {
+        char no[7];
+        char schoolName[7];
+        scanf("%s %d %s", no, &stu[i].score, schoolName);
+        stu[i].level = no[0];
+        for (int j = 0; j < strlen(schoolName); j++) {
+            schoolName[j] = tolower(schoolName[j]);
+        }
+        strcpy(stu[i].schoolName, schoolName);
+    }
+
+    //按学校名排序,这样相同校名的排序就会相邻了
+    qsort(stu, N, sizeof(stu[0]), cmpSchoolName);
+
+    //计算学校分数信息
+    double TScore = 0;
+    double AScore = 0;
+    double BScore = 0;
+    int count = 0;
+    for (int i = 0; i < N; i++) {
+        if (stu[i].level == 'T') {
+            TScore += stu[i].score * 1.5;
+        } else if (stu[i].level == 'A') {
+            AScore += stu[i].score;
+        } else if (stu[i].level == 'B') {
+            BScore += stu[i].score / 1.5;
+        }
+
+        count++;
+        if ((i == N - 1) || strcmp(stu[i].schoolName, stu[i + 1].schoolName) != 0) {
+            strcpy(school[sIndex].schoolName, stu[i].schoolName);
+            school[sIndex].sumScore = (int) TScore + (int) AScore + (int) BScore;
+            school[sIndex].stuCount = count;
+            count = 0;
+            TScore = 0;
+            AScore = 0;
+            BScore = 0;
+            sIndex++;
+        }
+    }
+
+    qsort(school, sIndex, sizeof(school[0]), cmpSchool);
+
+//    计算排名
+    int rank = 1;
+    school[0].rank = 1;
+    for (int l = 1; l < sIndex; l++) {
+        if ((int) school[l].sumScore == (int) school[l - 1].sumScore) {
+            school[l].rank = school[l - 1].rank;
+        } else {
+            rank = l + 1;
+            school[l].rank = rank;
+        }
+    }
+
+    printf("%d\n", sIndex);
+
+    for (int k = 0; k < sIndex; k++) {
+        printf("%d %s %.0lf %d\n", school[k].rank, school[k].schoolName, school[k].sumScore,
+               school[k].stuCount);
+    }
+
+    return 0;
+}
+
+
+
+//错两用例
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
@@ -73,6 +186,12 @@ A03274 45 hypu
 //    return B.sumScore - A.sumScore > 0 ? 1 : -1;
 //}
 //
+//int cmpSchoolName(const void *a, const void *b) {
+//    Stu A = *(Stu *) a;
+//    Stu B = *(Stu *) b;
+//    return strcmp(A.schoolName, B.schoolName);
+//}
+//
 //int main() {
 //    int N;
 //    scanf("%d", &N);
@@ -95,148 +214,30 @@ A03274 45 hypu
 ////        printf("%c %s %d\n", stu[k].level, stu[k].schoolName, stu[k].score);
 ////    }
 //
-////导入学校分数信息
-//    for (int i = 0; i < N; i++) {
-//        int hasFound = 0;
-//        for (int j = 0; j < schoolCount; j++) {
-//            if (strcmp(stu[i].schoolName, school[j].schoolName) == 0) {
-//                hasFound = 1;
-//                school[j].stuCount++;
-//                double score = stu[i].score * 1.0;
-//                if (stu[i].level == 'T') {
-//                    score = score * 1.5;
-//                } else if (stu[i].level == 'B') {
-//                    score = score / 1.5;
-//                }
-//                school[j].sumScore += score;
-//            }
-//        }
-//        //若是未创建的学校，则创建一个
-//        if (!hasFound) {
-//            strcpy(school[schoolCount].schoolName, stu[i].schoolName);
-//            school[schoolCount].stuCount = 1;
+//    //按学校名排序,这样相同校名的排序就会相邻了
+//    qsort(stu, N, sizeof(stu[0]), cmpSchoolName);
 //
-//            double score = stu[i].score * 1.0;
-//            if (stu[i].level == 'T') {
-//                score = score * 1.5;
-//            } else if (stu[i].level == 'B') {
-//                score = score / 1.5;
-//            }
+//    //计算学校分数信息
+//    for (int i = 0; i < N; i++) {
+//        double score = stu[i].score * 1.0;
+//        if (stu[i].level == 'T') {
+//            score = score * 1.5;
+//        } else if (stu[i].level == 'B') {
+//            score = score / 1.5;
+//        }
+//
+//        if (i == 0) {
+//            strcpy(school[schoolCount].schoolName, stu[i].schoolName);
 //            school[schoolCount].sumScore = score;
+//            school[schoolCount].stuCount = 1;
 //            schoolCount++;
-//        }
-//    }
-//
-//    qsort(school, schoolCount, sizeof(school[0]), cmpSchool);
-//
-////    计算排名
-//    int rank = 1;
-//    school[0].rank = 1;
-//    for (int l = 1; l < schoolCount; l++) {
-//        if ((int) school[l].sumScore == (int) school[l - 1].sumScore) {
-//            school[l].rank = school[l - 1].rank;
+//        } else if (strcmp(stu[i].schoolName, stu[i - 1].schoolName) == 0) {
+//            school[schoolCount - 1].sumScore += score;
+//            school[schoolCount - 1].stuCount++;
 //        } else {
-//            rank = l + 1;
-//            school[l].rank = rank;
-//        }
-//    }
-//
-//    printf("%d\n", schoolCount);
-//
-//    for (int k = 0; k < schoolCount; k++) {
-//        printf("%d %s %.0lf %d\n", school[k].rank, school[k].schoolName, school[k].sumScore,
-//               school[k].stuCount);
-//    }
-//
-//    return 0;
-//}
-
-
-
-
-//错一个用例，还有两个超时
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <string.h>
-//#include <ctype.h>
-//
-//typedef struct {
-//    char level;
-//    char schoolName[7];
-//    int score;
-//} Stu;
-//
-//typedef struct {
-//    int rank;
-//    char schoolName[7];
-//    double sumScore;
-//    int stuCount;
-//} School;
-//
-//int cmpSchool(const void *a, const void *b) {
-//    School A = *(School *) a;
-//    School B = *(School *) b;
-//    if (A.sumScore == B.sumScore) {
-//        if (B.stuCount == A.stuCount) {
-//            return strcmp(A.schoolName, B.schoolName);
-//        } else {
-//            return B.stuCount - A.stuCount;
-//        }
-//    }
-//
-//    return B.sumScore - A.sumScore > 0 ? 1 : -1;
-//}
-//
-//int main() {
-//    int N;
-//    scanf("%d", &N);
-//    Stu stu[N];
-//    School school[N];
-//    int schoolCount = 0;
-//
-//    for (int i = 0; i < N; i++) {
-//        char no[7];
-//        char schoolName[7];
-//        scanf("%s %d %s", no, &stu[i].score, schoolName);
-//        stu[i].level = no[0];
-//        for (int j = 0; j < strlen(schoolName); j++) {
-//            schoolName[j] = tolower(schoolName[j]);
-//        }
-//        strcpy(stu[i].schoolName, schoolName);
-//    }
-//
-////    for (int k = 0; k < N; k++) {
-////        printf("%c %s %d\n", stu[k].level, stu[k].schoolName, stu[k].score);
-////    }
-//
-////导入学校分数信息
-//    for (int i = 0; i < N; i++) {
-//        int hasFound = 0;
-//        for (int j = 0; j < schoolCount; j++) {
-//            if (strcmp(stu[i].schoolName, school[j].schoolName) == 0) {
-//                hasFound = 1;
-//                school[j].stuCount++;
-//                double score = stu[i].score * 1.0;
-//                if (stu[i].level == 'T') {
-//                    score = score * 1.5;
-//                } else if (stu[i].level == 'B') {
-//                    score = score / 1.5;
-//                }
-//                school[j].sumScore += score;
-//            }
-//        }
-//        //若是未创建的学校，则创建一个
-//        if (!hasFound) {
 //            strcpy(school[schoolCount].schoolName, stu[i].schoolName);
-//            school[schoolCount].stuCount = 1;
-//
-//            double score = stu[i].score * 1.0;
-//            if (stu[i].level == 'T') {
-//                score = score * 1.5;
-//            } else if (stu[i].level == 'B') {
-//                score = score / 1.5;
-//            }
 //            school[schoolCount].sumScore = score;
+//            school[schoolCount].stuCount = 1;
 //            schoolCount++;
 //        }
 //    }
