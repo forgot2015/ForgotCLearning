@@ -23,8 +23,8 @@
 3 25392
 1 25
 No*/
-#include <stdio.h>
-
+//#include <stdio.h>
+//
 //int main() {
 //    int M;
 //    scanf("%d", &M);

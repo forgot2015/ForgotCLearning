@@ -16,9 +16,9 @@ to show you_How it works
 输出样例：
 This ampletowyu_Hrk*/
 
-#include <stdio.h>
-#include <string.h>
-
+//#include <stdio.h>
+//#include <string.h>
+//
 //int main() {
 //    char A[2000002];
 //    char B[1000001];

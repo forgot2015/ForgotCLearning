@@ -22,6 +22,8 @@
 输出样例：
 5
 10000 23333 44444 55555 88888*/
+
+////一开始错了一个用例,打印格式问题，最终要打印5位数字啊，不满就前面补0
 //#include "stdio.h"
 //#include "stdlib.h"
 //
@@ -29,7 +31,6 @@
 //    return *(int *) a - *(int *) b;
 //}
 //
-////一开始错了一个用例,打印格式问题，最终要打印5位数字啊，不满就前面补0
 //int main() {
 //    int N;
 //    scanf("%d", &N);
@@ -73,66 +74,6 @@
 //    for (int l = 0; l < dogCount; l++) {
 //        printf("%05d", dog[l]);
 //
-//        if (l != dogCount - 1) {
-//            printf(" ");
-//        }
-//    }
-//
-//    return 0;
-//}
-
-
-
-
-//#include "stdio.h"
-//#include "stdlib.h"
-//
-//int cmpInput(const void *a, const void *b) {
-//    return *(int *) a - *(int *) b;
-//}
-
-//错了一个用例？
-//int main() {
-//    int N;
-//    scanf("%d", &N);
-//    int pair[100001];
-//    for (int i = 0; i < N; i++) {
-//        int a, b;
-//        scanf("%d %d", &a, &b);
-//        pair[a] = b;
-//        pair[b] = a;
-//    }
-//
-//    int M;
-//    scanf("%d", &M);
-//    int input[M + 1];
-//    for (int j = 0; j < M; j++) {
-//        scanf("%d", &input[j]);
-//    }
-//
-//    qsort(input, M, sizeof(input[0]), cmpInput);
-//
-//    int dogCount = 0;
-//    int dog[M + 1];
-//    for (int k = 0; k < M; k++) {
-//        int isDog = 1;
-//
-//        for (int i = 0; i < M; i++) {
-//            if (pair[input[i]] == input[k]) {
-//                isDog = 0;
-//                break;
-//            }
-//        }
-//
-//        if (isDog) {
-//            dog[dogCount] = input[k];
-//            dogCount++;
-//        }
-//    }
-//
-//    printf("%d\n", dogCount);
-//    for (int l = 0; l < dogCount; l++) {
-//        printf("%d", dog[l]);
 //        if (l != dogCount - 1) {
 //            printf(" ");
 //        }

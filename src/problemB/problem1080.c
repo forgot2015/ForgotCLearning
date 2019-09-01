@@ -71,35 +71,35 @@ ydjh2 200 98 82 88
 dx86w 220 88 81 84
 wehu8 300 55 84 84*/
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-typedef struct {
-    char name[21];
-    int programming;
-    int midterm;
-    int finalexam;
-    int total_mark;
-} Score;
-
-int cmp_sort_total(const void *a, const void *b) {
-    Score *s1 = *(Score **) a, *s2 = *(Score **) b;
-    if (s2->total_mark - s1->total_mark)
-        return s2->total_mark - s1->total_mark;
-    return strcmp(s1->name, s2->name);
-}
-
-int cmp_sort_name(const void *a, const void *b) {
-    Score *s1 = *(Score **) a, *s2 = *(Score **) b;
-    return strcmp(s1->name, s2->name);
-}
-
-int cmp_bsearch(const void *strptr, const void *scoreptr) {
-    Score *s = *(Score **) scoreptr;
-    char *name = (char *) strptr;
-    return strcmp(name, s->name);
-}
+//#include <stdio.h>
+//#include <string.h>
+//#include <stdlib.h>
+//
+//typedef struct {
+//    char name[21];
+//    int programming;
+//    int midterm;
+//    int finalexam;
+//    int total_mark;
+//} Score;
+//
+//int cmp_sort_total(const void *a, const void *b) {
+//    Score *s1 = *(Score **) a, *s2 = *(Score **) b;
+//    if (s2->total_mark - s1->total_mark)
+//        return s2->total_mark - s1->total_mark;
+//    return strcmp(s1->name, s2->name);
+//}
+//
+//int cmp_sort_name(const void *a, const void *b) {
+//    Score *s1 = *(Score **) a, *s2 = *(Score **) b;
+//    return strcmp(s1->name, s2->name);
+//}
+//
+//int cmp_bsearch(const void *strptr, const void *scoreptr) {
+//    Score *s = *(Score **) scoreptr;
+//    char *name = (char *) strptr;
+//    return strcmp(name, s->name);
+//}
 
 //int main() {
 //    int P, M, N;
@@ -160,6 +160,9 @@ int cmp_bsearch(const void *strptr, const void *scoreptr) {
 //
 //    return 0;
 //}
+
+
+
 
 // 我的超时还有错，先用别人的吧，学到了二分查找法的使用
 //#include "stdio.h"

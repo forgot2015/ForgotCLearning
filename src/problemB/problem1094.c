@@ -30,7 +30,7 @@ prime.jpg
 输出样例 2：
 404*/
 
-//注意输出格式，如0023，输出也是0023，而不是23
+////注意输出格式，如0023，输出也是0023，而不是23
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>

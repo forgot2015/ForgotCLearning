@@ -33,14 +33,14 @@ No
 Yes
 Yes*/
 
-// 硬查会超时，需要排序后再用二分查找
+//// 硬查会超时，需要排序后再用二分查找
 //#include <stdio.h>
 //#include <stdlib.h>
 //
 //int cmp(const void *a, const void *b) {
 //    return *(int *) a - *(int *) b;
 //}
-
+//
 //int main() {
 //    int N, M;
 //    scanf("%d %d", &N, &M);

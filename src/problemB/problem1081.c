@@ -30,8 +30,8 @@ Your password needs zi mu.
 Your password is wan mei.
 Your password is tai luan le.*/
 
-//如果只有小数点会怎样？好像文中没有说啊, 那首先判断没有数字，就输出 Your password needs shu zi.
-// 题目没说密码不能有空格，所以要注意处理空格输入，不然会错第三个用例
+////如果只有小数点会怎样？好像文中没有说啊, 那首先判断没有数字，就输出 Your password needs shu zi.
+//// 题目没说密码不能有空格，所以要注意处理空格输入，不然会错第三个用例
 //#include "stdio.h"
 //#include "string.h"
 //
@@ -41,7 +41,6 @@ Your password is tai luan le.*/
 //    getchar();
 //    for (int i = 0; i < N; ++i) {
 //        char pwd[81];
-////        scanf("%s", pwd);
 //        gets(pwd);
 //        int illegal = 0;
 //        int hasChar = 0;

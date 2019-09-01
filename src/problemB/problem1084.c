@@ -21,7 +21,7 @@ d, d1, d111, d113, d11231, d112213111, ...
 1123123111*/
 //与78题类似
 
-//注意最后输入 1 40 时，字符串长度将指数性增长，故预留的长度要足够，否则会Runtime Error 或 Segment Fault
+////注意最后输入 1 40 时，字符串长度将指数性增长，故预留的长度要足够，否则会Runtime Error 或 Segment Fault
 //#include <stdio.h>
 //#include <string.h>
 //

@@ -37,9 +37,9 @@ Wrong password: coolman@gplt
 Wrong password: coollady@gplt
 Welcome in*/
 
-#include "stdio.h"
-#include "string.h"
-// 注意在用gets()之前，要先用一次getchar(); 否则第一行获取的就是输入空行了
+//#include "stdio.h"
+//#include "string.h"
+//// 注意在用gets()之前，要先用一次getchar(); 否则第一行获取的就是输入空行了
 //int main() {
 //    char pwd[21];
 //    int N;
@@ -47,8 +47,6 @@ Welcome in*/
 //    char input[100];
 //    getchar();
 //    while (1) {
-////        fgets(input, 100, stdin);
-////        scanf("%s", input);
 //        gets(input);
 //        if (input[0] == '#' && strlen(input) == 1) {
 //            break;
