@@ -3,8 +3,8 @@
 //
 
 //使用递归来翻转字符串。
-//
 //实例 - 字符串翻转
+
 #include <stdio.h>
 
 void reverseSentence();

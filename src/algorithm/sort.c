@@ -4,14 +4,21 @@
 
 #include <stdio.h>
 
-//void quick_sort(int s[], int l, int r);
+//快速排序
+void quick_sort(int s[], int l, int r);
+
 void quick_sort2(int s[], int l, int r);
 
+//冒泡排序
 void bubbleSort(int arr[], int n);
 
+//选择排序
 void selectSort(int arr[], int n);
 
+//插入排序
 void insertSort(int s[], int n);
+
+//归并排序
 void mergeSort(int *arr, int *tempArr, int low, int high);
 
 void swap(int *a, int *b);
@@ -274,8 +281,6 @@ void insertSort(int s[], int n) {
 }
 
 //希尔插入排序
-#include <stdio.h>
-
 int shellSort(int *s, int n)    /* 自定义函数 shellSort()*/
 {
     int i, j, d;
@@ -317,7 +322,7 @@ void merge(int *arr, int *tempArr, int low, int mid, int high) {
     }
     for (i = low; i <= high; i++) {
         arr[i] = tempArr[i];
-        printf("%d ",arr[i]);
+        printf("%d ", arr[i]);
     }
     printf("\n");
 }
@@ -365,6 +370,4 @@ void swap(int *a, int *b) {
     *b = temp;
 //    printf("in swap1()  *a = %d, *b = %d\n", *a, *b);
 }
-
-
 

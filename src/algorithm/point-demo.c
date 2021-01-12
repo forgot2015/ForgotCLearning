@@ -10,6 +10,7 @@
 #include <string.h>
 
 void swap0(int a, int b) {
+//    虚假的交换
     printf("in swap()  a = %d, b = %d\n", a, b);
     int tmp = a;
     a = b;
@@ -18,6 +19,7 @@ void swap0(int a, int b) {
 }
 
 void swap1(int *a, int *b) {
+//    交换指针地址,真正交换两个变量
     printf("in swap1()  *a = %d, *b = %d\n", *a, *b);
     int tmp = *a;
     *a = *b;
@@ -29,9 +31,9 @@ void swap1(int *a, int *b) {
 //    int x = 10, y = 20;
 //    printf("in main()  x = %d, y = %d\n", x, y);
 //    swap0(x, y);
-//    printf("in main()  x = %d, y = %d\n", x, y);
+//    printf("in main() after swap0()  x = %d, y = %d\n", x, y);
 //    swap1(&x, &y);
-//    printf("in main()  x = %d, y = %d\n", x, y);
+//    printf("in main() after swap1()  x = %d, y = %d\n", x, y);
 //    return 0;
 //}
 

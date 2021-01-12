@@ -3,7 +3,7 @@
 //
 
 #include "stdio.h"
-
+//一些经典问题
 //1、/*输出9*9口诀。共9行9列，i控制行，j控制列。*/
 //int main() {
 //    int i, j, result;
@@ -20,6 +20,7 @@
 
 //2、/*古典问题：有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到第三个月后每个月又生一对兔子，假如兔子都不死，问每个月的兔子总数为多少？
 //兔子的规律为数列1,1,2,3,5,8,13,21....*/
+//斐波那契数列,递推法
 //int main() {
 //    long f1, f2;
 //    int i;
@@ -34,16 +35,45 @@
 //    return 0;
 //}
 
+//单个兔子数解法
+
+//int main() {
+//    long f1, f2;
+//    f1 = 1;
+//    f2 = 1;
+//    for (int i = 1; i <= 20; ++i) {
+//        if (i < 3) {
+//            printf("第%d个月兔子数量为 %lu\n", i, f1);
+//        } else {
+//            if (i % 2 == 0) {
+//                f2 = f1 + f2;
+//                printf("第%d 个月兔子数量为 %lu\n", i, f2);
+//            } else {
+//                f1 = f1 + f2;
+//                printf("第%d 个月兔子数量为 %lu\n", i, f1);
+//            }
+//        }
+//    }
+//
+//    return 0;
+//}
+
 //3、/*判断101-200之间有多少个素数，并输出所有素数及素数的个数。
 //程序分析：判断素数的方法：用一个数分别去除2到sqrt(这个数)，如果能被整除，
 //　　　　　则表明此数不是素数，反之是素数。*/
 //#include "math.h"
+//#include "time.h"
 //
 //int main() {
+////    计算算法耗时
+//    clock_t start, finish;
+//    double duration;
+//    start = clock();
+//
 //    int m, i, k, h = 0, leap = 1;
 //    printf("\n");
 //    for (m = 101; m <= 200; m++) {
-//        k = sqrt(m + 1);
+//        k = sqrt(m + 1);//为何要加 1,有必要吗?
 //        for (i = 2; i <= k; i++)
 //            if (m % i == 0) {
 //                leap = 0;
@@ -53,12 +83,50 @@
 //        {
 //            printf("%-4d", m); //左对齐，4位长度
 //            h++;
-//            if (h % 10 == 0)
+//            if (h % 10 == 0) {
+////                每打印 10 个数换行
 //                printf("\n");
+//            }
 //        }
 //        leap = 1;
 //    }
-//    printf("\nThe total is %d", h);
+//    printf("\nThe total is %d\n", h);
+//
+//    finish = clock();
+//    duration = (double)(finish - start) / CLOCKS_PER_SEC;
+//    printf( "算法耗时: %f seconds\n", duration );
+//    return 0;
+//}
+
+//个人解法, 不够效率(本法效率约降低了10%~50%), 没必要除到一个数-1, 除到该数的开方即可,
+//#include "time.h"
+//int main() {
+//    //    计算算法耗时
+//    clock_t start, finish;
+//    double duration;
+//    start = clock();
+//
+//    int count = 0;
+//    printf("素数有:\n");
+//    for (int i = 101; i < 201; ++i) {
+//        _Bool isPrime = 1;
+//        for (int j = 2; j < i; ++j) {
+//            if (i % j == 0) {
+//                isPrime = 0;
+//                break;
+//            }
+//        }
+//        if (isPrime) {
+//            count++;
+//            printf("%d,", i);
+//        }
+//    }
+//
+//    printf("素数一共有 %d 个\n", count);
+//
+//    finish = clock();
+//    duration = (double)(finish - start) / CLOCKS_PER_SEC;
+//    printf( "算法耗时: %f seconds\n", duration );
 //    return 0;
 //}
 
@@ -137,24 +205,29 @@
 //int main() {
 //    float a[4][5], sum1, sum2;
 //    int i, j;
-//    for (i = 0; i < 3; i++)
-//        for (j = 0; j < 4; j++)
+//    for (i = 0; i < 3; i++) {
+//        for (j = 0; j < 4; j++) {
 //            scanf("%f", &a[i][j]);
+//        }
+//    }
 //    for (i = 0; i < 3; i++) {
 //        sum1 = 0;
-//        for (j = 0; j < 4; j++)
+//        for (j = 0; j < 4; j++) {
 //            sum1 += a[i][j];
+//        }
 //        a[i][4] = sum1 / 4;
 //    }
 //    for (j = 0; j < 5; j++) {
 //        sum2 = 0;
-//        for (i = 0; i < 3; i++)
+//        for (i = 0; i < 3; i++) {
 //            sum2 += a[i][j];
+//        }
 //        a[3][j] = sum2 / 3;
 //    }
 //    for (i = 0; i < 4; i++) {
-//        for (j = 0; j < 5; j++)
+//        for (j = 0; j < 5; j++) {
 //            printf("%6.2f", a[i][j]);
+//        }
 //        printf("\n");
 //    }
 //    return 0;
@@ -164,25 +237,24 @@
 //如输入windows 输出swodniw。*/
 
 //#include <string.h>
-//
 //int main() {
 //    char c[200], c1;
 //    int i, j, k;
 //    printf("Enter a string: ");
 //    scanf("%s", c);
 //    k = strlen(c);
-//    for (i = 0, j = k - 1; i < k / 2; i++, j--) {
-//        c1 = c[i];
-//        c[i] = c[j];
-//        c[j] = c1;
-//    }
-//    printf("%s\n", c);
+////    for (i = 0, j = k - 1; i < k / 2; i++, j--) {
+////        c1 = c[i];
+////        c[i] = c[j];
+////        c[j] = c1;
+////    }
+////    printf("%s\n", c);
 //
 ////    法2 有问题吗？
-////    for (int l = k - 1; l >= 0; l--) {
+//    for (int l = k - 1; l >= 0; l--) {
 ////        putchar(c[l]);
-////    }
-//
+//        printf("%c", c[l]);
+//    }
 //    return 0;
 //}
 
@@ -204,7 +276,6 @@
 //    printf("\n%s", s);
 //    return 0;
 //}
-
 
 //11、已知数组a中的元素已按由小到大顺序排列，以下程序的功能是将输入的一个数插入数组a中，插入后，数组a中的元素仍然由小到大顺序排列*/
 //int main() {
@@ -235,12 +306,12 @@
 //    char s1[6] = "thisis";
 //    char s2[5] = "is";
 //    printf("%d\n", search(s1, s2));
-////    return 0;
+//   return 0;
 //}
 //
 //int search(char s1[], char s2[]) {
 //    int i = 0, j, len = strlen(s2);
-////    s1[i]表示元素不为空
+////    s1[i] = true时表示元素不为空
 //    while (s1[i]) {
 //        for (j = 0; j < len; j++) {
 //            if (s1[i + j] != s2[j]) {
@@ -248,6 +319,7 @@
 //            }
 //        }
 //        if (j >= len) {
+////相同的字符数量>=s2 长度,说明包含了 s2
 //            return i;
 //        } else {
 //            i++;
@@ -273,11 +345,13 @@
 //    struct student *ps;
 //    printf("Num \tName\t\t\tSex\tAge\t\n");
 ///*用指针变量输出结构体数组元素。*/
-//    for (ps = stu; ps < stu + 5; ps++)
+//    for (ps = stu; ps < stu + 5; ps++) {
 //        printf("%d\t%-10s\t\t%c\t%d\t\n", ps->num, ps->name, ps->sex, ps->age);
+//    }
 ///*用数组下标法输出结构体数组元素学号和年龄。*/
-//    for (i = 0; i < 5; i++)
+//    for (i = 0; i < 5; i++) {
 //        printf("%d\t%d\t\n", stu[i].num, stu[i].age);
+//    }
 //}
 
 //15、/*建立一个有三个结点的简单链表：*/
@@ -305,10 +379,15 @@
 //    b.next = &c;
 //    c.next = NULL;
 //    p = head;                            /*  输出链表  */
-//    do {
+////    do {
+////        printf("%5d,%s,%3d\n", p->num, p->name, p->age);
+////        p = p->next;
+////    } while (p != NULL);
+//
+//    while (p != NULL) {
 //        printf("%5d,%s,%3d\n", p->num, p->name, p->age);
 //        p = p->next;
-//    } while (p != NULL);
+//    }
 //    return 0;
 //}
 
