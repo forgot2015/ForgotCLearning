@@ -54,17 +54,16 @@ extern int errno;
 //}
 
 
-//#include <stdio.h>
+#include <stdio.h>
+
+//int main() {
+//    char str[10];
 //
-//int main( )
-//{
-//    char str[100];
+//    printf("Enter a value :");
+//    gets(str);
 //
-//    printf( "Enter a value :");
-//    gets( str );
-//
-//    printf( "\nYou entered: ");
-//    puts( str );
+//    printf("\nYou entered: ");
+//    puts(str);
 ////    int d =str;
 ////    printf( "\n %d ",d);
 //    return 0;

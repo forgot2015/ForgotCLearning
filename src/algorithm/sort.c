@@ -4,19 +4,24 @@
 
 #include <stdio.h>
 
-//快速排序
+//冒泡排序
+void bubbleSort(int arr[], int n);
+
+//快速排序,冒泡排序的优化版
 void quick_sort(int s[], int l, int r);
 
 void quick_sort2(int s[], int l, int r);
 
-//冒泡排序
-void bubbleSort(int arr[], int n);
 
 //选择排序
 void selectSort(int arr[], int n);
 
+
 //插入排序
 void insertSort(int s[], int n);
+
+//希尔排序,插入排序的优化版
+int shellSort(int *s, int n);
 
 //归并排序
 void mergeSort(int *arr, int *tempArr, int low, int high);
@@ -59,6 +64,25 @@ void bubbleSort(int arr[], int n) {
     }
 }
 
+// 改进的冒泡排序算法
+void bubbleSort2(int a[], int n) {
+    int flag;
+    for (int i = 0; i < n; i++) {
+        flag = 0;
+        for (int j = 1; j < n - i; j++) {
+            if (a[j - 1] > a[j]) {
+                int temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+                flag = 1;
+            }
+        }
+        // flag = 0 ,则表示内层循环中，没有发生相邻元素的交换，即已排序，直接跳出外层循环
+        if (flag == 0) {
+            break;
+        }
+    }
+}
 
 //快速排序，是冒泡排序的优化
 //从右向左找第一个小于x的数,从左向右找第一个大于等于x的数
@@ -140,7 +164,6 @@ void bubbleSort(int arr[], int n) {
 //    }
 //}
 
-
 //简单选择排序
 void selectSort(int arr[], int n) {
     for (int i = 0; i < n; i++) {
@@ -171,11 +194,9 @@ void selectSort(int arr[], int n) {
 //        size--;
 //        //构造大根堆
 //        heapify(arr, 0, size);
-//
 //    }
-//
 //}
-//
+
 ////构造大根堆（通过新插入的数上升）
 //public static void heapInsert(int[] arr) {
 //    for (int i = 0; i < arr.length; i++) {
@@ -281,8 +302,7 @@ void insertSort(int s[], int n) {
 }
 
 //希尔插入排序
-int shellSort(int *s, int n)    /* 自定义函数 shellSort()*/
-{
+int shellSort(int *s, int n) {
     int i, j, d;
     d = n / 2;    /*确定固定增虽值*/
     while (d >= 1) {
@@ -300,7 +320,6 @@ int shellSort(int *s, int n)    /* 自定义函数 shellSort()*/
     }
     return 0;
 }
-
 
 //归并排序，效率仅次于快排
 void merge(int *arr, int *tempArr, int low, int mid, int high) {

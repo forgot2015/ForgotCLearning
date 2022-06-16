@@ -15,8 +15,9 @@
 输出样例：
 yi san wu*/
 
-#include <stdio.h>
 
+//#include <stdio.h>
+//
 //int main() {
 //    char *pinyin[] = {"ling", "yi", "er", "san", "si", "wu", "liu", "qi", "ba", "jiu"};
 //    int sum = 0;
@@ -28,17 +29,17 @@ yi san wu*/
 //        sum += num;
 //        i++;
 //    }
-////    转化为pinyin并打印,10^100范围内的个位数相加最大为900，三位数
-//    int weishu[4];
-//    int index = 0;
-//    while (sum) {
-//        weishu[index] = sum % 10;
+////    转化为pinyin并打印,10^100 范围内的个位数相加最大的数是 100 个 9,相加即为 900，三位数
+//    int digit[3];
+//    int index = 0;//以个位数作为索引 0, 十位数为 1,百位数为 2
+//    while (sum != 0) {
+//        digit[index] = sum % 10;
 //        sum = sum / 10;
 //        index++;
 //    }
 //
 //    for (int j = index - 1; j >= 0; j--) {
-//        printf("%s", pinyin[weishu[j]]);
+//        printf("%s", pinyin[digit[j]]);
 ////        如果不是最后一位，则再输出一个空格
 //        if (j != 0) {
 //            printf(" ");
@@ -48,7 +49,7 @@ yi san wu*/
 //    return 0;
 //}
 
-//指针实现
+//法 2,指针实现
 //int main() {
 //    char *pinyin[] = {"ling", "yi", "er", "san", "si", "wu", "liu", "qi", "ba", "jiu"};
 //    int sum = 0;

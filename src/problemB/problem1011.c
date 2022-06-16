@@ -22,8 +22,8 @@ Case #2: true
 Case #3: true
 Case #4: false*/
 
-#include <stdio.h>
-
+//#include <stdio.h>
+//
 //int main() {
 //    int T;
 //    scanf("%d", &T);
@@ -31,6 +31,7 @@ Case #4: false*/
 //
 //    for (int i = 0; i < T; ++i) {
 //        scanf("%ld %ld %ld", &A, &B, &C);
+//
 //        if (A + B > C) {
 //            printf("Case #%d: true", i + 1);
 //        } else {

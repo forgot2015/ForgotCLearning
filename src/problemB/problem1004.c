@@ -29,38 +29,38 @@ Joe Math990112*/
 #include <stdio.h>
 #include <string.h>
 
-//int main() {
-//    int N;
-//    scanf("%d", &N);
-//    char maxName[21];
-//    char maxNumber[21];
-//    int maxScore = -1;
-//
-//    char minName[21];
-//    char minNumber[21];
-//    int minScore = 101;
-//    for (int i = 0; i < N; i++) {
-//        char name[21];
-//        char number[21];
-//        int score;
-//        scanf("%s %s %d", name, number, &score);
-//        if (score > maxScore) {
-//            maxScore = score;
-//            strcpy(maxName, name);
-//            strcpy(maxNumber, number);
-//        }
-//        if (score < minScore) {
-//            minScore = score;
-//            strcpy(minName, name);
-//            strcpy(minNumber, number);
-//        }
-//    }
-//
-//    printf("%s %s\n", maxName, maxNumber);
-//    printf("%s %s\n", minName, minNumber);
-//
-//    return 0;
-//}
+int main() {
+    int N;
+    scanf("%d", &N);
+    char maxName[21];
+    char maxNumber[21];
+    int maxScore = -1;
+
+    char minName[21];
+    char minNumber[21];
+    int minScore = 101;
+    for (int i = 0; i < N; i++) {
+        char name[21];
+        char number[21];
+        int score;
+        scanf("%s %s %d", name, number, &score);
+        if (score > maxScore) {
+            maxScore = score;
+            strcpy(maxName, name);
+            strcpy(maxNumber, number);
+        }
+        if (score < minScore) {
+            minScore = score;
+            strcpy(minName, name);
+            strcpy(minNumber, number);
+        }
+    }
+
+    printf("%s %s\n", maxName, maxNumber);
+    printf("%s %s\n", minName, minNumber);
+
+    return 0;
+}
 
 
 //用结构体的解法

@@ -41,7 +41,7 @@ NO
 NO
 NO*/
 
-//解题思路，难点在条件3的理解上，注意句子"a、 b、 c 均或者是空字符串，或者是仅由字母 A 组成的字符串" ， 及abc要么都为空，要么都是A组成的字符串，
+//解题思路，难点在条件3的理解上，注意句子"a、 b、 c 均或者是空字符串，或者是仅由字母 A 组成的字符串" ， 即abc要么都为空，要么都是A组成的字符串，
 //不会出现a是非空字符串，而b、c为空的情况。
 
 //#include <stdio.h>
@@ -52,10 +52,9 @@ NO*/
 //int main() {
 //    int n;
 //    scanf("%d", &n);
-//    getchar();
 //    for (int i = 0; i < n; i++) {
 //        char str[101];
-//        gets(str);
+//        scanf("%s",str);
 //        if (checkIsPAT(str)) {
 //            printf("YES\n");
 //        } else {
@@ -91,7 +90,8 @@ NO*/
 ////    P T 必须有且仅有一个，且A数量至少1个
 //    if (pCount == 1 && tCount == 1 && aCount) {
 //        for (int i = 0; i < len; i++) {
-//            //检查是否满足第二、三个条件，即P左边的A数量 = PT中间A数量 * T右边的A数量
+//            //检查是否满足第二、三个条件，
+////            T右边的A数量 = PT中间A数量 * P左边的A数量??
 //            if (str[i] == 'P') {
 //                int countA1 = i;
 //                for (int j = i + 1; j < len; j++) {
